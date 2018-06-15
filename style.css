@@ -52,6 +52,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--button-hover-text-color: #fff;
 	--site-title-color: #fff;
 	--title-color: #202020;
+	--title-hover-color: #ee1133;
 	--navi-color: #202020;
 	--navi-text-color: #fff;
 	--navi-hover-text-color: rgba(255, 255, 255, 0.5);
@@ -312,6 +313,8 @@ h5,
 h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
+	font-family: Montserrat, Tahoma, Arial;
+	font-family: var(--title-font);
 	line-height: 1.4;
 }
 
@@ -757,7 +760,7 @@ textarea {
 	font-size: 2rem;
 	font-family: Montserrat, Tahoma, Arial;
 	font-family: var(--title-font);
-	font-weight: normal;
+	font-weight: bold;
 	line-height: 1.4;
 }
 
@@ -1055,7 +1058,6 @@ textarea {
 	font-size: 1.5rem;
 	font-family: Montserrat, Tahoma, Arial;
 	font-family: var(--title-font);
-	font-weight: normal;
 	line-height: 1.4;
 }
 
@@ -1068,7 +1070,8 @@ textarea {
 
 .entry-title a:hover,
 .entry-title a:active {
-	text-decoration: underline;
+	color: #ee1133;
+	color: var(--title-hover-color);
 }
 
 /* Entry Content */

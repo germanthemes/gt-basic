@@ -17,6 +17,7 @@ h5,
 h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
+	@include font-family(--title-font);
 	line-height: 1.4;
 }
 

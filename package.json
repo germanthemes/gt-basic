@@ -28,13 +28,13 @@
     "postcss-wprtl": "^1.2.1",
     "stylelint-config-wordpress": "^12.0.0"
   },
-  "stylelint" : {
-      "extends": "stylelint-config-wordpress",
-      "rules": {
-        "indentation": "tab",
-        "color-hex-length": null,
-        "font-weight-notation": null,
-        "max-line-length": null
-      }
+  "stylelint": {
+    "extends": "stylelint-config-wordpress",
+    "rules": {
+      "indentation": "tab",
+      "color-hex-length": null,
+      "font-weight-notation": null,
+      "max-line-length": null
+    }
   }
 }

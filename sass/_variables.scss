@@ -15,6 +15,7 @@ $themeColors: (
 	--button-hover-text-color  : #fff,
 	--site-title-color         : #fff,
 	--title-color              : #202020,
+	--title-hover-color        : #ee1133,
 	--navi-color               : #202020,
 	--navi-text-color          : #fff,
 	--navi-hover-text-color    : rgba(255, 255, 255, 0.5),
@@ -48,6 +49,7 @@ $themeFonts: (
 	--button-hover-text-color: map-get($themeColors, --button-hover-text-color);
 	--site-title-color: map-get($themeColors, --site-title-color);
 	--title-color: map-get($themeColors, --title-color);
+	--title-hover-color: map-get($themeColors, --title-hover-color);
 	--navi-color: map-get($themeColors, --navi-color);
 	--navi-text-color: map-get($themeColors, --navi-text-color);
 	--navi-hover-text-color: map-get($themeColors, --navi-hover-text-color);

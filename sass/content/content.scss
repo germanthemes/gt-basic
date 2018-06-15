@@ -28,7 +28,6 @@
 	word-wrap: break-word;
 	@include font-size(24);
 	@include font-family(--title-font);
-	font-weight: normal;
 	line-height: 1.4;
 }
 
@@ -40,7 +39,7 @@
 
 .entry-title a:hover,
 .entry-title a:active {
-	text-decoration: underline;
+	@include color(--title-hover-color);
 }
 
 /* Entry Content */
