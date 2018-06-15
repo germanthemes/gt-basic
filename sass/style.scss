@@ -1,0 +1,138 @@
+/*
+Theme Name: GT Vision
+Theme URI: https://themezee.com/themes/gt-vision/
+Author: ThemeZee
+Author URI: https://themezee.com
+Description: GT Vision is a flexible yet easy to use blogging theme with a clean and modern design. It features an elegant mobile first design, three different blog layouts and extensive post settings. GT Vision is perfect for your personal blog or any content focused website.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: gt-vision
+Tags: two-columns, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, one-column, left-sidebar, right-sidebar, three-columns
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+GT Vision is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# - CSS Variables
+# - Normalize
+# - Typography
+# - Elements
+# - Forms
+# - Accessibility
+# - Alignments
+# - Layout Structure
+# - Header
+# - Navigation
+# - Posts and pages
+# - Footer
+# - Media
+# - Blocks
+# - Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# - CSS Variables
+--------------------------------------------------------------*/
+@import '_mixins';
+@import '_variables';
+
+/*--------------------------------------------------------------
+# - Normalize
+--------------------------------------------------------------*/
+@import 'setup/normalize';
+
+/*--------------------------------------------------------------
+# - Typography
+--------------------------------------------------------------*/
+@import 'setup/typography';
+
+/*--------------------------------------------------------------
+# - Elements
+--------------------------------------------------------------*/
+@import 'setup/elements';
+
+/*--------------------------------------------------------------
+# - Forms
+--------------------------------------------------------------*/
+@import 'setup/forms';
+
+/*--------------------------------------------------------------
+# - Accessibility
+--------------------------------------------------------------*/
+@import 'setup/accessibility';
+
+/*--------------------------------------------------------------
+# - Alignments
+--------------------------------------------------------------*/
+@import 'setup/alignments';
+
+/*--------------------------------------------------------------
+# - Layout Structure
+--------------------------------------------------------------*/
+@import 'layout/layout';
+
+/*--------------------------------------------------------------
+# - Header
+--------------------------------------------------------------*/
+@import 'layout/header';
+
+/*--------------------------------------------------------------
+# - Navigation
+--------------------------------------------------------------*/
+@import 'layout/navigation';
+
+/*--------------------------------------------------------------
+# - Posts and pages
+--------------------------------------------------------------*/
+@import 'content/content';
+@import 'content/entry-meta';
+@import 'content/pagination';
+
+/*--------------------------------------------------------------
+# - Footer
+--------------------------------------------------------------*/
+@import 'layout/footer';
+
+/*--------------------------------------------------------------
+# - Media
+--------------------------------------------------------------*/
+@import 'content/media';
+
+/*--------------------------------------------------------------
+# - Blocks
+--------------------------------------------------------------*/
+@import 'content/blocks';
+
+/*--------------------------------------------------------------
+# - Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## - Media Queries for Typography
+--------------------------------------------------------------*/
+@import 'media-queries/mq-typography';
+
+/*--------------------------------------------------------------
+## - Media Queries for Layout
+--------------------------------------------------------------*/
+@import 'media-queries/mq-layout';
+
+/*--------------------------------------------------------------
+## - Media Queries for Navigation
+--------------------------------------------------------------*/
+@import 'media-queries/mq-navigation';
+
+/*--------------------------------------------------------------
+## - Media Queries for Media
+--------------------------------------------------------------*/
+@import 'media-queries/mq-media';

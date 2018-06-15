@@ -1,0 +1,142 @@
+/*
+ * Block Editor Styles
+ *
+ * @package GT Vision
+ */
+
+/* Editor Styles */
+body.gutenberg-editor-page {
+    color: #202020;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor,
+body.gutenberg-editor-page .edit-post-visual-editor p,
+body.gutenberg-editor-page .editor-rich-text__tinymce.mce-content-body {
+	font-family: Arial;
+	font-size: 19px;
+	font-size: 1.1875rem;
+    line-height: 1.75;
+}
+
+body.gutenberg-editor-page .editor-post-title .editor-post-title__input {
+	font-family: Arial;
+	font-size: 40px;
+	font-size: 2.5rem;
+	font-weight: normal;
+    line-height: 1.4;
+}
+
+/* Editor Width */
+body.gutenberg-editor-page .editor-post-title,
+body.gutenberg-editor-page .editor-default-block-appender,
+body.gutenberg-editor-page .editor-block-list__block {
+    max-width: 988px;
+}
+
+body.gutenberg-editor-page .editor-block-list__block[data-align="wide"] {
+    max-width: 1468px;
+}
+
+body.gutenberg-editor-page .editor-block-list__block[data-align="full"] {
+    max-width: none;
+}
+
+/* Headings */
+body.gutenberg-editor-page .edit-post-visual-editor h1.editor-rich-text__tinymce.mce-content-body,
+body.gutenberg-editor-page .edit-post-visual-editor h2.editor-rich-text__tinymce.mce-content-body,
+body.gutenberg-editor-page .edit-post-visual-editor h3.editor-rich-text__tinymce.mce-content-body,
+body.gutenberg-editor-page .edit-post-visual-editor h4.editor-rich-text__tinymce.mce-content-body,
+body.gutenberg-editor-page .edit-post-visual-editor h5.editor-rich-text__tinymce.mce-content-body,
+body.gutenberg-editor-page .edit-post-visual-editor h6.editor-rich-text__tinymce.mce-content-body {
+	clear: both;
+	margin: 1em 0 0.75em;
+	line-height: 1.4;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor h1.editor-rich-text__tinymce.mce-content-body {
+	font-size: 32px;
+	font-size: 2rem;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor h2.editor-rich-text__tinymce.mce-content-body {
+	font-size: 26px;
+	font-size: 1.625rem;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor h3.editor-rich-text__tinymce.mce-content-body {
+	font-size: 22px;
+	font-size: 1.375rem;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor h4.editor-rich-text__tinymce.mce-content-body {
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor h5.editor-rich-text__tinymce.mce-content-body {
+	font-size: 19px;
+	font-size: 1.1875rem;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor h6.editor-rich-text__tinymce.mce-content-body {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+/* Colors */
+.has-primary-color {
+	color: #0c557a;
+}
+
+.has-secondary-color {
+	color: #ff6600;
+}
+
+.has-accent-color {
+	color: #a156b4;
+}
+
+.has-white-color {
+	color: #ffffff;
+}
+
+.has-light-gray-color {
+	color: #e5e5e5;
+}
+
+.has-dark-gray-color {
+	color: #444444;
+}
+
+.has-black-color {
+	color: #151515;
+}
+
+/* Background Colors */
+.has-primary-background-color {
+	background-color: #0c557a;
+}
+
+.has-secondary-background-color {
+	background-color: #ff6600;
+}
+
+.has-accent-background-color {
+	background-color: #a156b4;
+}
+
+.has-white-background-color {
+	background-color: #ffffff;
+}
+
+.has-light-gray-background-color {
+	background-color: #e5e5e5;
+}
+
+.has-dark-gray-background-color {
+	background-color: #444444;
+}
+
+.has-black-background-color {
+	background-color: #151515;
+}

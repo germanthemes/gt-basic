@@ -1,0 +1,26 @@
+.site-footer {
+	display: grid;
+	grid-template-columns: 1fr minmax(0, $containerWidth) 1fr;
+	grid-column-gap: 1.5rem;
+	@include font-size(15);
+	@include font-family(--navi-font);
+	@include color(--footer-hover-text-color);
+	@include background(--footer-color);
+}
+
+.site-footer a:link,
+.site-footer a:visited {
+	@include color(--footer-text-color);
+	text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:active {
+	text-decoration: underline;
+}
+
+.site-footer .site-info {
+	grid-column: 2 / -2;
+	padding: 1.5rem 0;
+	text-align: center;
+}

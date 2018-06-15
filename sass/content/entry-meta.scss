@@ -1,0 +1,31 @@
+.entry-meta {
+	margin: 0.5rem 0 0;
+	color: rgba(0,0,0,0.5);
+	@include font-size(15);
+}
+
+.entry-meta a:link,
+.entry-meta a:visited {
+	text-decoration: none;
+}
+
+.entry-meta a:hover,
+.entry-meta a:active {
+	text-decoration: underline;
+}
+
+.entry-meta .updated:not(.published) {
+	display: none;
+}
+
+/* Hide post meta if they are deactivated in settings */
+body.date-hidden .type-post .entry-meta .posted-on,
+body.author-hidden .type-post .entry-meta .posted-by,
+body.categories-hidden .type-post .entry-meta .posted-in,
+body.date-hidden.author-hidden.categories-hidden .entry-meta {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+	height: 1px;
+}

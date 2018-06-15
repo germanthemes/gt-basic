@@ -1,0 +1,84 @@
+@media only screen and (min-width: 20em) {
+	body,
+	button,
+	input,
+	select,
+	textarea {
+		@include font-size(16);
+	}
+}
+
+@media only screen and (min-width: 30em) {
+	.site-title {
+		@include font-size(36);
+	}
+
+	.entry-title {
+		@include font-size(28);
+	}
+}
+
+@media only screen and (min-width: 40em) {
+	body,
+	button,
+	input,
+	select,
+	textarea {
+		@include font-size(17);
+	}
+
+	.site-title {
+		@include font-size(40);
+	}
+
+	.site-description {
+		@include font-size(15);
+	}
+
+	.entry-title {
+		@include font-size(32);
+	}
+
+	.entry-meta,
+	.more-link,
+	.pagination {
+		@include font-size(16);
+	}
+
+	.widget-title,
+	.archive-title,
+	.comments-title,
+	.comment-reply-title {
+		@include font-size(20);
+	}
+}
+
+@media only screen and (min-width: 50em) {
+	.entry-title {
+		@include font-size(36);
+	}
+
+	.entry-content {
+		@include font-size(18);
+	}
+}
+
+@media only screen and (min-width: 60em) {
+	.site-title {
+		@include font-size(44);
+	}
+
+	.entry-title {
+		@include font-size(40);
+	}
+
+	.entry-meta,
+	.more-link,
+	.pagination {
+		@include font-size(17);
+	}
+
+	.entry-content {
+		@include font-size(19);
+	}
+}

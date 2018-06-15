@@ -1,0 +1,28 @@
+/* Theme Pagination */
+.pagination {
+	margin: 1.5rem 0;
+	padding: 0;
+	@include font-size(15);
+}
+
+.pagination .page-numbers,
+.pagination .current {
+	display: inline-block;
+	margin: 0 1px 0 0;
+	padding: 0.35em 1em;
+	text-align: center;
+	text-decoration: none;
+	@include color(--button-text-color);
+	@include background(--button-color);
+}
+
+.pagination .page-numbers.dots {
+	padding: 0 0.5rem;
+}
+
+.pagination .current,
+.pagination a:hover,
+.pagination a:active {
+	@include color(--button-hover-text-color);
+	@include background(--button-hover-color);
+}

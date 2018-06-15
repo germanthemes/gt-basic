@@ -1,0 +1,66 @@
+// containerWidth.
+$containerWidth: 60rem;
+$contentWidth: 60rem;
+
+// Text Color
+$textColor: #202020;
+
+// Theme Colors
+$themeColors: (
+	--link-color               : #ee1133,
+	--link-hover-color         : #D5001A,
+	--button-color             : #ee1133,
+	--button-text-color        : #fff,
+	--button-hover-color       : #D5001A,
+	--button-hover-text-color  : #fff,
+	--site-title-color         : #fff,
+	--title-color              : #202020,
+	--navi-color               : #202020,
+	--navi-text-color          : #fff,
+	--navi-hover-text-color    : rgba(255, 255, 255, 0.5),
+	--navi-border-color        : rgba(255, 255, 255, 0.05),
+	--submenu-color            : #ee1133,
+	--submenu-text-color       : #fff,
+	--submenu-hover-text-color : rgba(255, 255, 255, 0.5),
+	--submenu-border-color     : rgba(255, 255, 255, 0.075),
+	--widget-title-color       : #202020,
+	--footer-color             : #202020,
+	--footer-text-color        : #fff,
+	--footer-hover-text-color  : rgba(255, 255, 255, 0.5),
+	--footer-border-color      : rgba(255, 255, 255, 0.035),
+);
+
+// Theme Fonts
+$baseFont: "Open Sans", Arial, Helvetica;
+$titleFont: Montserrat, Tahoma, Arial;
+$themeFonts: (
+	--text-font         : $baseFont,
+	--title-font        : $titleFont,
+	--navi-font         : $baseFont,
+);
+
+:root {
+	--link-color: map-get($themeColors, --link-color);
+	--link-hover-color: map-get($themeColors, --link-hover-color);
+	--button-color: map-get($themeColors, --button-color);
+	--button-text-color: map-get($themeColors, --button-text-color);
+	--button-hover-color: map-get($themeColors, --button-hover-color);
+	--button-hover-text-color: map-get($themeColors, --button-hover-text-color);
+	--site-title-color: map-get($themeColors, --site-title-color);
+	--title-color: map-get($themeColors, --title-color);
+	--navi-color: map-get($themeColors, --navi-color);
+	--navi-text-color: map-get($themeColors, --navi-text-color);
+	--navi-hover-text-color: map-get($themeColors, --navi-hover-text-color);
+	--navi-border-color: map-get($themeColors, --navi-border-color);
+	--submenu-color: map-get($themeColors, --submenu-color);
+	--submenu-text-color: map-get($themeColors, --submenu-text-color);
+	--submenu-hover-text-color: map-get($themeColors, --submenu-hover-text-color);
+	--submenu-border-color: map-get($themeColors, --submenu-border-color);
+	--footer-color: map-get($themeColors, --footer-color);
+	--footer-text-color: map-get($themeColors, --footer-text-color);
+	--footer-hover-text-color: map-get($themeColors, --footer-hover-text-color);
+	--footer-border-color: map-get($themeColors, --footer-border-color);
+	--text-font: map-get($themeFonts, --text-font);
+	--title-font: map-get($themeFonts, --title-font);
+	--navi-font: map-get($themeFonts, --navi-font);
+}
