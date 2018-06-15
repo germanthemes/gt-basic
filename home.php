@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 get_header();
@@ -18,7 +18,7 @@ if ( have_posts() ) :
 
 	endwhile;
 
-	gt_vision_pagination();
+	gt_basic_pagination();
 
 else :
 

@@ -2,7 +2,7 @@
 /**
  * The template for displaying articles in the search loop
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 ?>

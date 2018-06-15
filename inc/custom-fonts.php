@@ -4,13 +4,13 @@
  *
  * Generates Custom Fonts CSS code and loads Google Fonts from Google Font API
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 /**
 * Custom Fonts Class
 */
-class GT_Vision_Custom_Fonts {
+class GT_Basic_Custom_Fonts {
 
 	/**
 	 * Actions Setup
@@ -35,10 +35,10 @@ class GT_Vision_Custom_Fonts {
 	static function custom_fonts_css() {
 
 		// Get Theme Options from Database.
-		$theme_options = gt_vision_theme_options();
+		$theme_options = gt_basic_theme_options();
 
 		// Get Default Fonts from settings.
-		$default_options = gt_vision_default_options();
+		$default_options = gt_basic_default_options();
 
 		// Font Variables.
 		$font_variables = '';
@@ -71,7 +71,7 @@ class GT_Vision_Custom_Fonts {
 		$custom_css = preg_replace( '/\t/', '', $custom_css );
 
 		// Enqueue Custom CSS.
-		wp_add_inline_style( 'gt-vision-stylesheet', $custom_css );
+		wp_add_inline_style( 'gt-basic-stylesheet', $custom_css );
 	}
 
 	/**
@@ -98,11 +98,11 @@ class GT_Vision_Custom_Fonts {
 		$fonts = self::get_selected_fonts();
 
 		if ( in_array( 'Open Sans', $fonts, true ) ) {
-			wp_enqueue_style( 'gt-vision-open-sans-font', get_theme_file_uri( '/assets/css/open-sans.css' ), array(), '15.0' );
+			wp_enqueue_style( 'gt-basic-open-sans-font', get_theme_file_uri( '/assets/css/open-sans.css' ), array(), '15.0' );
 		}
 
 		if ( in_array( 'Montserrat', $fonts, true ) ) {
-			wp_enqueue_style( 'gt-vision-montserrat-font', get_theme_file_uri( '/assets/css/montserrat.css' ), array(), '12.0' );
+			wp_enqueue_style( 'gt-basic-montserrat-font', get_theme_file_uri( '/assets/css/montserrat.css' ), array(), '12.0' );
 		}
 	}
 
@@ -114,7 +114,7 @@ class GT_Vision_Custom_Fonts {
 	static function get_selected_fonts() {
 
 		// Get theme options from database.
-		$theme_options = gt_vision_theme_options();
+		$theme_options = gt_basic_theme_options();
 
 		// Get selected fonts.
 		$selected_fonts = array(
@@ -165,7 +165,7 @@ class GT_Vision_Custom_Fonts {
 		);
 
 		// Get Default Fonts from settings.
-		$default_options = gt_vision_default_options();
+		$default_options = gt_basic_default_options();
 
 		// Add default fonts to local fonts.
 		if ( isset( $default_options['text_font'] ) and ! array_key_exists( $default_options['text_font'], $fonts ) ) :
@@ -189,4 +189,4 @@ class GT_Vision_Custom_Fonts {
 }
 
 // Run Class.
-GT_Vision_Custom_Fonts::setup();
+GT_Basic_Custom_Fonts::setup();

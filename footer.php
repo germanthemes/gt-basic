@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 ?>
@@ -14,12 +14,12 @@
 		</main><!-- #main -->
 	</div><!-- #content -->
 
-	<?php do_action( 'gt_vision_before_footer' ); ?>
+	<?php do_action( 'gt_basic_before_footer' ); ?>
 
 	<footer id="colophon" class="site-footer">
 
 		<div id="footer-line" class="site-info">
-			<?php gt_vision_footer_text(); ?>
+			<?php gt_basic_footer_text(); ?>
 		</div><!-- .site-info -->
 
 	</footer><!-- #colophon -->

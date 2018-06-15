@@ -3,7 +3,7 @@
  *
  * Adds Javascript for Customizer Controls.
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 ( function( wp, $ ) {
@@ -12,7 +12,7 @@
 	 * The Customizer looks for wp.customizer.controlConstructor[type] functions
 	 * where type == the type member of a WP_Customize_Control
 	 */
-	wp.customize.controlConstructor.gt_vision_custom_font = wp.customize.Control.extend({
+	wp.customize.controlConstructor.gt_basic_custom_font = wp.customize.Control.extend({
 		/**
 		 * This method is called when the control is ready to run.
 		 * Do all of your setup and event binding here.

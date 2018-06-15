@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 /**
@@ -11,10 +11,10 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function gt_vision_body_classes( $classes ) {
+function gt_basic_body_classes( $classes ) {
 
 	// Get theme options from database.
-	$theme_options = gt_vision_theme_options();
+	$theme_options = gt_basic_theme_options();
 
 	// Header Image added?
 	if ( has_header_image() ) {
@@ -53,7 +53,7 @@ function gt_vision_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'gt_vision_body_classes' );
+add_filter( 'body_class', 'gt_basic_body_classes' );
 
 
 /**
@@ -61,10 +61,10 @@ add_filter( 'body_class', 'gt_vision_body_classes' );
  *
  * @return void
  */
-function gt_vision_hide_elements() {
+function gt_basic_hide_elements() {
 
 	// Get theme options from database.
-	$theme_options = gt_vision_theme_options();
+	$theme_options = gt_basic_theme_options();
 
 	$elements = array();
 
@@ -79,7 +79,7 @@ function gt_vision_hide_elements() {
 	}
 
 	// Allow plugins to add own elements.
-	$elements = apply_filters( 'gt_vision_hide_elements', $elements );
+	$elements = apply_filters( 'gt_basic_hide_elements', $elements );
 
 	// Return early if no elements are hidden.
 	if ( empty( $elements ) ) {
@@ -91,6 +91,6 @@ function gt_vision_hide_elements() {
 	$custom_css = $classes . ' { position: absolute; clip: rect(1px, 1px, 1px, 1px); width: 1px; height: 1px; overflow: hidden; }';
 
 	// Add Custom CSS.
-	wp_add_inline_style( 'gt-vision-stylesheet', $custom_css );
+	wp_add_inline_style( 'gt-basic-stylesheet', $custom_css );
 }
-add_filter( 'wp_enqueue_scripts', 'gt_vision_hide_elements', 11 );
+add_filter( 'wp_enqueue_scripts', 'gt_basic_hide_elements', 11 );

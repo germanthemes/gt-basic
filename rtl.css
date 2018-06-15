@@ -76,7 +76,7 @@ li > ol {
 	transform: rotate(-180deg);
 }
 
-.gt-vision-social-menu .social-icons-menu li a {
+.gt-basic-social-menu .social-icons-menu li a {
 	margin: 0 0 3px 3px;
 }
 
@@ -427,8 +427,8 @@ li > ol {
 	}
 }
 
-.customize-partial-edit-shortcut-gt_vision_theme_options-blog_description,
-.customize-partial-edit-shortcut-gt_vision_blog_content_partial {
+.customize-partial-edit-shortcut-gt_basic_theme_options-blog_description,
+.customize-partial-edit-shortcut-gt_basic_blog_content_partial {
 	left: auto;
 	right: -9999px;
 }

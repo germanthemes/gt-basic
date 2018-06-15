@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 get_header(); ?>
@@ -13,12 +13,12 @@ get_header(); ?>
 
 		<header class="entry-header">
 
-			<h1 class="entry-title page-title"><?php esc_html_e( '404: Page not found', 'gt-vision' ); ?></h1>
+			<h1 class="entry-title page-title"><?php esc_html_e( '404: Page not found', 'gt-basic' ); ?></h1>
 
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
-			<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search or one of the links below?', 'gt-vision' ); ?></p>
+			<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search or one of the links below?', 'gt-basic' ); ?></p>
 
 			<?php get_search_form(); ?>
 

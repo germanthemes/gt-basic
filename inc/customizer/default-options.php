@@ -4,7 +4,7 @@
  *
  * Uses sane defaults in case the user has not configured any theme options yet.
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 /**
@@ -12,10 +12,10 @@
 *
 * @return mixed
 */
-function gt_vision_get_option( $option_name = '' ) {
+function gt_basic_get_option( $option_name = '' ) {
 
 	// Get all Theme Options from Database.
-	$theme_options = gt_vision_theme_options();
+	$theme_options = gt_basic_theme_options();
 
 	// Return single option.
 	if ( isset( $theme_options[ $option_name ] ) ) {
@@ -31,10 +31,10 @@ function gt_vision_get_option( $option_name = '' ) {
  *
  * @return array
  */
-function gt_vision_theme_options() {
+function gt_basic_theme_options() {
 
 	// Merge theme options array from database with default options array.
-	$theme_options = wp_parse_args( get_option( 'gt_vision_theme_options', array() ), gt_vision_default_options() );
+	$theme_options = wp_parse_args( get_option( 'gt_basic_theme_options', array() ), gt_basic_default_options() );
 
 	// Return theme options.
 	return $theme_options;
@@ -46,7 +46,7 @@ function gt_vision_theme_options() {
  *
  * @return array
  */
-function gt_vision_default_options() {
+function gt_basic_default_options() {
 
 	$default_options = array(
 		'site_title'          => true,
@@ -55,7 +55,7 @@ function gt_vision_default_options() {
 		'excerpt_length'      => 20,
 		'meta_date'           => true,
 		'meta_author'         => true,
-		'read_more_text'      => esc_html__( 'Continue reading', 'gt-vision' ),
+		'read_more_text'      => esc_html__( 'Continue reading', 'gt-basic' ),
 		'post_image_archives' => true,
 		'post_image_single'   => true,
 		'link_color_one'      => '#ee1133',

@@ -1,4 +1,4 @@
-/* global gtVisionScreenReaderText */
+/* global gtBasicScreenReaderText */
 /**
  * Theme functions file.
  *
@@ -12,8 +12,8 @@
 
 		// Add dropdown toggle that displays child menu items.
 		var dropdownToggle = $( '<button />', { 'class': 'dropdown-toggle', 'aria-expanded': false } )
-			.append( gtVisionScreenReaderText.icon )
-			.append( $( '<span />', { 'class': 'screen-reader-text', text: gtVisionScreenReaderText.expand } ) );
+			.append( gtBasicScreenReaderText.icon )
+			.append( $( '<span />', { 'class': 'screen-reader-text', text: gtBasicScreenReaderText.expand } ) );
 
 		container.find( '.menu-item-has-children > a, .page_item_has_children > a' ).after( dropdownToggle );
 
@@ -22,7 +22,7 @@
 			.addClass( 'toggled-on' )
 			.attr( 'aria-expanded', 'true' )
 			.find( '.screen-reader-text' )
-			.text( gtVisionScreenReaderText.collapse );
+			.text( gtBasicScreenReaderText.collapse );
 
 		// Set the active submenu initial state.
 		container.find( '.current-menu-ancestor > .sub-menu' ).addClass( 'toggled-on' );
@@ -37,7 +37,7 @@
 
 			_this.attr( 'aria-expanded', _this.attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
 
-			screenReaderSpan.text( screenReaderSpan.text() === gtVisionScreenReaderText.expand ? gtVisionScreenReaderText.collapse : gtVisionScreenReaderText.expand );
+			screenReaderSpan.text( screenReaderSpan.text() === gtBasicScreenReaderText.expand ? gtBasicScreenReaderText.collapse : gtBasicScreenReaderText.expand );
 		} );
 	}
 
@@ -59,7 +59,7 @@
 		// Add an initial value for the attribute.
 		menuToggle.attr( 'aria-expanded', 'false' );
 
-		menuToggle.on( 'click.gt_vision', function() {
+		menuToggle.on( 'click.gt_basic', function() {
 			siteNavContain.toggleClass( 'toggled-on' );
 
 			$( this ).attr( 'aria-expanded', siteNavContain.hasClass( 'toggled-on' ) );
@@ -76,14 +76,14 @@
 		function toggleFocusClassTouchScreen() {
 			if ( 'none' === $( '.menu-toggle' ).css( 'display' ) ) {
 
-				$( document.body ).on( 'touchstart.gt_vision', function( e ) {
+				$( document.body ).on( 'touchstart.gt_basic', function( e ) {
 					if ( ! $( e.target ).closest( '.main-navigation li' ).length ) {
 						$( '.main-navigation li' ).removeClass( 'focus' );
 					}
 				});
 
 				siteNavigation.find( '.menu-item-has-children > a, .page_item_has_children > a' )
-					.on( 'touchstart.gt_vision', function( e ) {
+					.on( 'touchstart.gt_basic', function( e ) {
 						var el = $( this ).parent( 'li' );
 
 						if ( ! el.hasClass( 'focus' ) ) {
@@ -94,16 +94,16 @@
 					});
 
 			} else {
-				siteNavigation.find( '.menu-item-has-children > a, .page_item_has_children > a' ).unbind( 'touchstart.gt_vision' );
+				siteNavigation.find( '.menu-item-has-children > a, .page_item_has_children > a' ).unbind( 'touchstart.gt_basic' );
 			}
 		}
 
 		if ( 'ontouchstart' in window ) {
-			$( window ).on( 'resize.gt_vision', toggleFocusClassTouchScreen );
+			$( window ).on( 'resize.gt_basic', toggleFocusClassTouchScreen );
 			toggleFocusClassTouchScreen();
 		}
 
-		siteNavigation.find( 'a' ).on( 'focus.gt_vision blur.gt_vision', function() {
+		siteNavigation.find( 'a' ).on( 'focus.gt_basic blur.gt_basic', function() {
 			$( this ).parents( '.menu-item, .page_item' ).toggleClass( 'focus' );
 		});
 	})();

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: GT Vision\n"
+"Project-Id-Version: GT Basic\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
 "POT-Creation-Date: 2018-01-30 11:04+0100\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
@@ -86,7 +86,7 @@ msgid ""
 msgstr ""
 
 #: inc/customizer/controls/upgrade-control.php:32 inc/theme-info.php:116
-msgid "https://themezee.com/addons/gt-vision-pro/"
+msgid "https://themezee.com/addons/gt-basic-pro/"
 msgstr ""
 
 #: inc/customizer/controls/upgrade-control.php:33 inc/theme-info.php:117
@@ -129,7 +129,7 @@ msgid "Theme Links"
 msgstr ""
 
 #: inc/customizer/customizer.php:145 inc/theme-info.php:47
-msgid "https://themezee.com/themes/gt-vision/"
+msgid "https://themezee.com/themes/gt-basic/"
 msgstr ""
 
 #: inc/customizer/customizer.php:146 inc/theme-info.php:47
@@ -142,7 +142,7 @@ msgstr ""
 
 #: inc/customizer/customizer.php:157 inc/theme-info.php:49
 #: inc/theme-info.php:70
-msgid "https://themezee.com/docs/gt-vision-documentation/"
+msgid "https://themezee.com/docs/gt-basic-documentation/"
 msgstr ""
 
 #: inc/customizer/customizer.php:158 inc/theme-info.php:49
@@ -152,7 +152,7 @@ msgstr ""
 
 #: inc/customizer/customizer.php:163 inc/theme-info.php:50
 #: inc/theme-info.php:152
-msgid "https://wordpress.org/support/theme/gt-vision/reviews/?filter=5"
+msgid "https://wordpress.org/support/theme/gt-basic/reviews/?filter=5"
 msgstr ""
 
 #: inc/customizer/customizer.php:164 inc/theme-info.php:50
@@ -396,7 +396,7 @@ msgid "https://themezee.com/"
 msgstr ""
 
 #: inc/theme-info.php:152
-msgid "Review GT Vision"
+msgid "Review GT Basic"
 msgstr ""
 
 #: inc/theme-info.php:152

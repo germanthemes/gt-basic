@@ -2,7 +2,7 @@
 /**
  * Main Navigation
  *
- * @package GT Vision
+ * @package GT Basic
  */
 ?>
 
@@ -11,12 +11,12 @@
 
 	<div class="primary-navigation">
 
-		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'gt-vision' ); ?>">
+		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'gt-basic' ); ?>">
 			<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">
 				<?php
-				echo gt_vision_get_svg( 'menu' );
-				echo gt_vision_get_svg( 'close' );
-				esc_html_e( 'Menu', 'gt-vision' );
+				echo gt_basic_get_svg( 'menu' );
+				echo gt_basic_get_svg( 'close' );
+				esc_html_e( 'Menu', 'gt-basic' );
 				?>
 			</button>
 

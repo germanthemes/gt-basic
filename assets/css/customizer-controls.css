@@ -3,53 +3,53 @@
  *
  * Adjusts styling for theme option controls in the Customizer
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 /* Post Settings */
-#customize-control-gt_vision_theme_options-site_description {
+#customize-control-gt_basic_theme_options-site_description {
 	margin-bottom: 16px;
 }
 
-#customize-control-gt_vision_theme_options-featured_images {
+#customize-control-gt_basic_theme_options-featured_images {
 	margin-top: 16px;
 }
 
-#customize-control-gt_vision_theme_options-post_details,
-#customize-control-gt_vision_theme_options-featured_images {
+#customize-control-gt_basic_theme_options-post_details,
+#customize-control-gt_basic_theme_options-featured_images {
 	margin-bottom: 0;
 }
 
-#customize-control-gt_vision_theme_options-site_title,
-#customize-control-gt_vision_theme_options-meta_date,
-#customize-control-gt_vision_theme_options-meta_author,
-#customize-control-gt_vision_theme_options-meta_categories,
-#customize-control-gt_vision_theme_options-post_image_archives,
-#customize-control-gt_vision_theme_options-post_image_single {
+#customize-control-gt_basic_theme_options-site_title,
+#customize-control-gt_basic_theme_options-meta_date,
+#customize-control-gt_basic_theme_options-meta_author,
+#customize-control-gt_basic_theme_options-meta_categories,
+#customize-control-gt_basic_theme_options-post_image_archives,
+#customize-control-gt_basic_theme_options-post_image_single {
 	margin-bottom: 6px;
 }
 
 /* Custom Font Control */
-.customize-control-gt_vision_custom_font {
+.customize-control-gt_basic_custom_font {
 	margin-bottom: 24px;
 }
 
-.customize-control-gt_vision_custom_font .actions .button.previous {
+.customize-control-gt_basic_custom_font .actions .button.previous {
 	margin-right: 4px;
 }
 
-.customize-control-gt_vision_custom_font .actions .button.standard {
+.customize-control-gt_basic_custom_font .actions .button.standard {
 	float: right;
 }
 
-.customize-control-gt_vision_custom_font select {
+.customize-control-gt_basic_custom_font select {
 	width: 100%;
 }
 
-.customize-control-gt_vision_custom_font div:hover {
+.customize-control-gt_basic_custom_font div:hover {
 	cursor: default;
 }
 
-.customize-control-gt_vision_custom_font .actions .button:hover {
+.customize-control-gt_basic_custom_font .actions .button:hover {
 	cursor: pointer;
 }

@@ -2,7 +2,7 @@
 /**
  * Custom Font Control for the Customizer
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 /**
@@ -13,14 +13,14 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 	/**
 	 * Displays a custom Font control. Allows to switch fonts for particular elements on the theme.
 	 */
-	class GT_Vision_Customize_Font_Control extends WP_Customize_Control {
+	class GT_Basic_Customize_Font_Control extends WP_Customize_Control {
 
 		/**
 		 * Declare the control type. Critical for JS constructor.
 		 *
 		 * @var string
 		 */
-		public $type = 'gt_vision_custom_font';
+		public $type = 'gt_basic_custom_font';
 
 		/**
 		 * Localization Strings.
@@ -48,13 +48,13 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 
 			// Make Buttons translateable.
 			$this->l10n = array(
-				'previous' => esc_html__( 'Previous Font', 'gt-vision' ),
-				'next'     => esc_html__( 'Next Font', 'gt-vision' ),
-				'standard' => esc_html_x( 'Default', 'default font button', 'gt-vision' ),
+				'previous' => esc_html__( 'Previous Font', 'gt-basic' ),
+				'next'     => esc_html__( 'Next Font', 'gt-basic' ),
+				'standard' => esc_html_x( 'Default', 'default font button', 'gt-basic' ),
 			);
 
 			// Set Fonts.
-			$this->fonts = GT_Vision_Custom_Fonts::get_fonts();
+			$this->fonts = GT_Basic_Custom_Fonts::get_fonts();
 
 			parent::__construct( $manager, $id, $args );
 		}

@@ -1,12 +1,12 @@
 <?php
 /**
- * GT Vision back compat functionality
+ * GT Basic back compat functionality
  *
- * Prevents GT Vision from running on WordPress versions prior to 4.7,
+ * Prevents GT Basic from running on WordPress versions prior to 4.7,
  * since this theme is not meant to be backward compatible beyond that and
  * relies on many newer functions and markup changes introduced in 4.7.
  *
- * @package GT Vision
+ * @package GT Basic
  *
  * Original Code: Twenty Seventeen http://wordpress.org/themes/twentyseventeen
  * Original Copyright: the WordPress team and contributors.
@@ -17,29 +17,29 @@
  */
 
 /**
- * Prevent switching to GT Vision on old versions of WordPress.
+ * Prevent switching to GT Basic on old versions of WordPress.
  *
  * Switches to the default theme.
  *
- * @since GT Vision 1.0
+ * @since GT Basic 1.0
  */
-function gt_vision_switch_theme() {
+function gt_basic_switch_theme() {
 	switch_theme( WP_DEFAULT_THEME );
 	unset( $_GET['activated'] );
-	add_action( 'admin_notices', 'gt_vision_upgrade_notice' );
+	add_action( 'admin_notices', 'gt_basic_upgrade_notice' );
 }
-add_action( 'after_switch_theme', 'gt_vision_switch_theme' );
+add_action( 'after_switch_theme', 'gt_basic_switch_theme' );
 
 /**
  * Adds a message for unsuccessful theme switch.
  *
  * Prints an update nag after an unsuccessful attempt to switch to
- * GT Vision on WordPress versions prior to 4.7.
+ * GT Basic on WordPress versions prior to 4.7.
  *
  * @global string $wp_version WordPress version.
  */
-function gt_vision_upgrade_notice() {
-	$message = sprintf( esc_html__( '%1$s requires at least WordPress version %2$s. You are running version %3$s. Please upgrade and try again.', 'gt-vision' ), 'GT Vision', '4.7', $GLOBALS['wp_version'] );
+function gt_basic_upgrade_notice() {
+	$message = sprintf( esc_html__( '%1$s requires at least WordPress version %2$s. You are running version %3$s. Please upgrade and try again.', 'gt-basic' ), 'GT Basic', '4.7', $GLOBALS['wp_version'] );
 	printf( '<div class="error"><p>%s</p></div>', $message );
 }
 
@@ -48,21 +48,21 @@ function gt_vision_upgrade_notice() {
  *
  * @global string $wp_version WordPress version.
  */
-function gt_vision_customize() {
-	wp_die( sprintf( esc_html__( '%1$s requires at least WordPress version %2$s. You are running version %3$s. Please upgrade and try again.', 'gt-vision' ), 'GT Vision', '4.7', $GLOBALS['wp_version'] ), '', array(
+function gt_basic_customize() {
+	wp_die( sprintf( esc_html__( '%1$s requires at least WordPress version %2$s. You are running version %3$s. Please upgrade and try again.', 'gt-basic' ), 'GT Basic', '4.7', $GLOBALS['wp_version'] ), '', array(
 		'back_link' => true,
 	) );
 }
-add_action( 'load-customize.php', 'gt_vision_customize' );
+add_action( 'load-customize.php', 'gt_basic_customize' );
 
 /**
  * Prevents the Theme Preview from being loaded on WordPress versions prior to 4.7.
  *
  * @global string $wp_version WordPress version.
  */
-function gt_vision_preview() {
+function gt_basic_preview() {
 	if ( isset( $_GET['preview'] ) ) {
-		wp_die( sprintf( esc_html__( '%1$s requires at least WordPress version %2$s. You are running version %3$s. Please upgrade and try again.', 'gt-vision' ), 'GT Vision', '4.7', $GLOBALS['wp_version'] ) );
+		wp_die( sprintf( esc_html__( '%1$s requires at least WordPress version %2$s. You are running version %3$s. Please upgrade and try again.', 'gt-basic' ), 'GT Basic', '4.7', $GLOBALS['wp_version'] ) );
 	}
 }
-add_action( 'template_redirect', 'gt_vision_preview' );
+add_action( 'template_redirect', 'gt_basic_preview' );

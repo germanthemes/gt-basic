@@ -2,7 +2,7 @@
 /**
  * The template for displaying single posts
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 ?>
@@ -11,11 +11,11 @@
 
 	<header class="post-header entry-header">
 
-		<?php gt_vision_post_image_single(); ?>
+		<?php gt_basic_post_image_single(); ?>
 
 		<?php the_title( '<h1 class="post-title entry-title">', '</h1>' ); ?>
 
-		<?php gt_vision_entry_meta(); ?>
+		<?php gt_basic_entry_meta(); ?>
 
 	</header><!-- .entry-header -->
 

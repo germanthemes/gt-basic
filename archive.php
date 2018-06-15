@@ -4,14 +4,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 get_header();
 
 if ( have_posts() ) :
 
-	gt_vision_archive_header();
+	gt_basic_archive_header();
 
 	while ( have_posts() ) :
 		the_post();
@@ -20,7 +20,7 @@ if ( have_posts() ) :
 
 	endwhile;
 
-	gt_vision_pagination();
+	gt_basic_pagination();
 
 else :
 

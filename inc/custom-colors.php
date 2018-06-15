@@ -4,13 +4,13 @@
  *
  * Generates Custom CSS code for Color Settings
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 /**
  * Custom Colors Class
  */
-class GT_Vision_Custom_Colors {
+class GT_Basic_Custom_Colors {
 
 	/**
 	 * Actions Setup
@@ -31,10 +31,10 @@ class GT_Vision_Custom_Colors {
 	static function custom_colors_css() {
 
 		// Get theme options from database.
-		$theme_options = gt_vision_theme_options();
+		$theme_options = gt_basic_theme_options();
 
 		// Get default colors.
-		$default = gt_vision_default_options();
+		$default = gt_basic_default_options();
 
 		// Color Variables.
 		$color_variables = '';
@@ -120,7 +120,7 @@ class GT_Vision_Custom_Colors {
 		$custom_css  = preg_replace( '/\t/', '', $custom_css );
 
 		// Enqueue Custom CSS.
-		wp_add_inline_style( 'gt-vision-stylesheet', $custom_css );
+		wp_add_inline_style( 'gt-basic-stylesheet', $custom_css );
 	}
 
 	/**
@@ -161,4 +161,4 @@ class GT_Vision_Custom_Colors {
 }
 
 // Run Class.
-GT_Vision_Custom_Colors::setup();
+GT_Basic_Custom_Colors::setup();

@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package GT Vision
+ * @package GT Basic
  */
 
 get_header();
