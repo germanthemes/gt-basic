@@ -37,7 +37,7 @@ function gt_basic_theme_options() {
 	$theme_options = wp_parse_args( get_option( 'gt_basic_theme_options', array() ), gt_basic_default_options() );
 
 	// Return theme options.
-	return $theme_options;
+	return apply_filters( 'gt_basic_theme_options', $theme_options );
 }
 
 
@@ -51,11 +51,9 @@ function gt_basic_default_options() {
 	$default_options = array(
 		'site_title'          => true,
 		'site_description'    => true,
-		'blog_content'        => 'excerpt',
-		'excerpt_length'      => 20,
 		'meta_date'           => true,
 		'meta_author'         => true,
-		'read_more_text'      => esc_html__( 'Continue reading', 'gt-basic' ),
+		'meta_category'       => true,
 		'post_image_archives' => true,
 		'post_image_single'   => true,
 		'link_color_one'      => '#ee1133',
@@ -69,8 +67,7 @@ function gt_basic_default_options() {
 		'title_font'          => 'Montserrat',
 		'navi_font'           => 'Open Sans',
 		'footer_text'         => sprintf( '&copy; %1$s %2$s', date( 'Y' ), get_bloginfo( 'name' ) ),
-		'scroll_to_top'       => false,
 	);
 
-	return $default_options;
+	return apply_filters( 'gt_basic_default_options', $default_options );
 }
