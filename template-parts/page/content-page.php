@@ -2,9 +2,9 @@
 /**
  * The template used for displaying page content in page.php
  *
+ * @version 1.0
  * @package GT Basic
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

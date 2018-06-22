@@ -2,6 +2,7 @@
 /**
  * Header Main
  *
+ * @version 1.0
  * @package GT Basic
  */
 ?>

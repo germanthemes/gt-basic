@@ -2,9 +2,9 @@
 /**
  * Template part for displaying a message that posts cannot be found.
  *
+ * @version 1.0
  * @package GT Basic
  */
-
 ?>
 
 <section class="no-results not-found type-page">

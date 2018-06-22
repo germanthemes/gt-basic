@@ -4,6 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
+ * @version 1.0
  * @package GT Basic
  */
 

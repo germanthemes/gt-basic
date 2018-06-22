@@ -6,6 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
+ * @version 1.0
  * @package GT Basic
  */
 

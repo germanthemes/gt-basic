@@ -4,6 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
+ * @version 1.0
  * @package GT Basic
  */
 

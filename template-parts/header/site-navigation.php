@@ -2,10 +2,10 @@
 /**
  * Main Navigation
  *
+ * @version 1.0
  * @package GT Basic
  */
 ?>
-
 
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
 

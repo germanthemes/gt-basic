@@ -2,9 +2,9 @@
 /**
  * The template for displaying articles in the loop with full content
  *
+ * @version 1.0
  * @package GT Basic
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

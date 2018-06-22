@@ -2,6 +2,7 @@
 /**
  * Custom Markup for Search form
  *
+ * @version 1.0
  * @package GT Basic
  */
 
