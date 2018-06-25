@@ -40,10 +40,16 @@ $themeFonts: (
 	--navi-font  : $baseFont,
 );
 
-// Font Styling.
+// Font Weight.
 $fontWeight: (
 	--title-font-weight : bold,
 	--navi-font-weight  : normal,
+);
+
+// Text Transform.
+$textTransform: (
+	--title-text-transform : none,
+	--navi-text-transform  : none,
 );
 
 :root {
@@ -71,6 +77,8 @@ $fontWeight: (
 	--text-font: map-get($themeFonts, --text-font);
 	--title-font: map-get($themeFonts, --title-font);
 	--title-font-weight: map-get($fontWeight, --title-font-weight);
+	--title-text-transform: map-get($textTransform, --title-text-transform);
 	--navi-font: map-get($themeFonts, --navi-font);
 	--navi-font-weight: map-get($fontWeight, --navi-font-weight);
+	--navi-text-transform: map-get($textTransform, --navi-text-transform);
 }
