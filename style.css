@@ -67,7 +67,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--footer-border-color: rgba(255, 255, 255, 0.035);
 	--text-font: "Open Sans", Arial, Helvetica;
 	--title-font: Montserrat, Tahoma, Arial;
+	--title-font-weight: bold;
 	--navi-font: "Open Sans", Arial, Helvetica;
+	--navi-font-weight: normal;
 }
 
 /*--------------------------------------------------------------
@@ -761,6 +763,7 @@ textarea {
 	font-family: Montserrat, Tahoma, Arial;
 	font-family: var(--title-font);
 	font-weight: bold;
+	font-weight: var(--title-font-weight);
 	line-height: 1.4;
 }
 
@@ -860,6 +863,8 @@ textarea {
 	font-size: 1.0625rem;
 	font-family: "Open Sans", Arial, Helvetica;
 	font-family: var(--navi-font);
+	font-weight: normal;
+	font-weight: var(--navi-font-weight);
 }
 
 /* Hide the menu on small screens when JavaScript is available. */
@@ -927,6 +932,8 @@ textarea {
 	font-size: 1.0625rem;
 	font-family: "Open Sans", Arial, Helvetica;
 	font-family: var(--navi-font);
+	font-weight: normal;
+	font-weight: var(--navi-font-weight);
 	text-align: left;
 	width: 100%;
 }
@@ -1058,6 +1065,8 @@ textarea {
 	font-size: 1.5rem;
 	font-family: Montserrat, Tahoma, Arial;
 	font-family: var(--title-font);
+	font-weight: bold;
+	font-weight: var(--title-font-weight);
 	line-height: 1.4;
 }
 

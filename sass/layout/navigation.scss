@@ -16,6 +16,7 @@
 	list-style: none;
 	@include font-size(17);
 	@include font-family(--navi-font);
+	@include font-weight(--navi-font-weight);
 }
 
 /* Hide the menu on small screens when JavaScript is available. */
@@ -77,6 +78,7 @@
 	text-decoration: none;
 	@include font-size(17);
 	@include font-family(--navi-font);
+	@include font-weight(--navi-font-weight);
 	text-align: left;
 	width: 100%;
 }

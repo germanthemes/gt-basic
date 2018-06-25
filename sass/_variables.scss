@@ -35,9 +35,15 @@ $themeColors: (
 $baseFont: "Open Sans", Arial, Helvetica;
 $titleFont: Montserrat, Tahoma, Arial;
 $themeFonts: (
-	--text-font         : $baseFont,
-	--title-font        : $titleFont,
-	--navi-font         : $baseFont,
+	--text-font  : $baseFont,
+	--title-font : $titleFont,
+	--navi-font  : $baseFont,
+);
+
+// Font Styling.
+$fontWeight: (
+	--title-font-weight : bold,
+	--navi-font-weight  : normal,
 );
 
 :root {
@@ -64,5 +70,7 @@ $themeFonts: (
 	--footer-border-color: map-get($themeColors, --footer-border-color);
 	--text-font: map-get($themeFonts, --text-font);
 	--title-font: map-get($themeFonts, --title-font);
+	--title-font-weight: map-get($fontWeight, --title-font-weight);
 	--navi-font: map-get($themeFonts, --navi-font);
+	--navi-font-weight: map-get($fontWeight, --navi-font-weight);
 }

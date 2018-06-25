@@ -1,7 +1,13 @@
-// Fill Icon CSS Variable
+// Font Family Variable
 @mixin font-family($fontVar) {
 	font-family: map-get($themeFonts, $fontVar);
 	font-family: var($fontVar);
+}
+
+// Font Weight Variable
+@mixin font-weight($fontVar) {
+	font-weight: map-get($fontWeight, $fontVar);
+	font-weight: var($fontVar);
 }
 
 // Rem output with px fallback

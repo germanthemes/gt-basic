@@ -28,6 +28,7 @@
 	word-wrap: break-word;
 	@include font-size(24);
 	@include font-family(--title-font);
+	@include font-weight(--title-font-weight);
 	line-height: 1.4;
 }
 
