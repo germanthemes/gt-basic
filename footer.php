@@ -25,6 +25,8 @@
 
 	</footer><!-- #colophon -->
 
+	<?php do_action( 'gt_basic_after_footer' ); ?>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
