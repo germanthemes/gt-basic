@@ -19,20 +19,38 @@ class GT_Basic_Custom_Fonts {
 	 */
 	static function setup() {
 
-		// Add Custom Fonts CSS code.
-		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'custom_fonts_css' ), 12 );
+		// Add Custom Fonts CSS code to frontend.
+		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'add_custom_fonts_in_frontend' ), 12 );
+
+		// Add Custom Fonts CSS code to editor.
+		add_action( 'enqueue_block_editor_assets', array( __CLASS__, 'add_custom_fonts_in_editor' ), 12 );
 
 		// Load default fonts.
 		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'load_default_fonts' ), 1 );
+		add_action( 'enqueue_block_editor_assets', array( __CLASS__, 'load_default_fonts' ), 1 );
 
 		// Add theme support for GT Typography plugin.
 		add_action( 'after_setup_theme', array( __CLASS__, 'add_typography_theme_support' ) );
 	}
 
 	/**
-	 * Add Font Family CSS styles in the head area to override default typography
+	 * Add Font Family CSS styles in the head area of the theme.
 	 */
-	static function custom_fonts_css() {
+	static function add_custom_fonts_in_frontend() {
+		wp_add_inline_style( 'gt-basic-stylesheet', self::get_custom_fonts_css() );
+	}
+
+	/**
+	 * Add Font Family CSS styles in the head area of the Gutenberg editor.
+	 */
+	static function add_custom_fonts_in_editor() {
+		wp_add_inline_style( 'gt-basic-block-editor-styles', self::get_custom_fonts_css() );
+	}
+
+	/**
+	 * Generate Font Family CSS styles to override default typography.
+	 */
+	static function get_custom_fonts_css() {
 
 		// Get Theme Options from Database.
 		$theme_options = gt_basic_theme_options();
@@ -70,8 +88,7 @@ class GT_Basic_Custom_Fonts {
 		$custom_css = preg_replace( '/\n/', '', $custom_css );
 		$custom_css = preg_replace( '/\t/', '', $custom_css );
 
-		// Enqueue Custom CSS.
-		wp_add_inline_style( 'gt-basic-stylesheet', $custom_css );
+		return $custom_css;
 	}
 
 	/**
