@@ -44,11 +44,13 @@ class GT_Basic_Custom_Fonts {
 	 * Add Font Family CSS styles in the head area of the Gutenberg editor.
 	 */
 	static function add_custom_fonts_in_editor() {
-		wp_add_inline_style( 'gt-basic-block-editor-styles', self::get_custom_fonts_css() );
+		wp_add_inline_style( 'gt-basic-block-editor', self::get_custom_fonts_css() );
 	}
 
 	/**
 	 * Generate Font Family CSS styles to override default typography.
+	 *
+	 * @return string CSS code
 	 */
 	static function get_custom_fonts_css() {
 

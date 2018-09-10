@@ -220,6 +220,34 @@
 		} );
 	} );
 
+	/* Block Primary Color Option */
+	wp.customize( 'gt_basic_theme_options[block_primary_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--block-primary-color', newval );
+		} );
+	} );
+
+	/* Block Secondary Color Option */
+	wp.customize( 'gt_basic_theme_options[block_secondary_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--block-secondary-color', newval );
+		} );
+	} );
+
+	/* Block Accent Color Option */
+	wp.customize( 'gt_basic_theme_options[block_accent_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--block-accent-color', newval );
+		} );
+	} );
+
+	/* Block Complementary Color Option */
+	wp.customize( 'gt_basic_theme_options[block_complementary_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--block-complementary-color', newval );
+		} );
+	} );
+
 	/* Theme Fonts */
 	wp.customize( 'gt_basic_theme_options[text_font]', function( value ) {
 		value.bind( function( newval ) {

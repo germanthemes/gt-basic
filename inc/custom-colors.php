@@ -19,16 +19,33 @@ class GT_Basic_Custom_Colors {
 	 */
 	static function setup() {
 
-		// Add Custom Colors CSS code.
-		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'custom_colors_css' ), 11 );
+		// Add Custom Fonts CSS code to frontend.
+		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'add_custom_colors_in_frontend' ), 11 );
+
+		// Add Custom Fonts CSS code to editor.
+		add_action( 'enqueue_block_editor_assets', array( __CLASS__, 'add_custom_colors_in_editor' ), 11 );
 	}
 
 	/**
-	 * Adds Color CSS styles in the head area to override default colors
+	 * Add Font Family CSS styles in the head area of the theme.
+	 */
+	static function add_custom_colors_in_frontend() {
+		wp_add_inline_style( 'gt-basic-stylesheet', self::get_custom_colors_css() );
+	}
+
+	/**
+	 * Add Font Family CSS styles in the head area of the Gutenberg editor.
+	 */
+	static function add_custom_colors_in_editor() {
+		wp_add_inline_style( 'gt-basic-block-editor', self::get_custom_colors_css() );
+	}
+
+	/**
+	 * Generate Color CSS styles to override default colors.
 	 *
 	 * @return string CSS code
 	 */
-	static function custom_colors_css() {
+	static function get_custom_colors_css() {
 
 		// Get theme options from database.
 		$theme_options = gt_basic_theme_options();
@@ -107,6 +124,26 @@ class GT_Basic_Custom_Colors {
 			}
 		}
 
+		// Set Block Primary Color.
+		if ( $theme_options['block_primary_color'] !== $default['block_primary_color'] ) {
+			$color_variables .= '--block-primary-color: ' . $theme_options['block_primary_color'] . ';';
+		}
+
+		// Set Block Secondary Color.
+		if ( $theme_options['block_secondary_color'] !== $default['block_secondary_color'] ) {
+			$color_variables .= '--block-secondary-color: ' . $theme_options['block_secondary_color'] . ';';
+		}
+
+		// Set Block Accent Color.
+		if ( $theme_options['block_accent_color'] !== $default['block_accent_color'] ) {
+			$color_variables .= '--block-accent-color: ' . $theme_options['block_accent_color'] . ';';
+		}
+
+		// Set Block Complementary Color.
+		if ( $theme_options['block_complementary_color'] !== $default['block_complementary_color'] ) {
+			$color_variables .= '--block-complementary-color: ' . $theme_options['block_complementary_color'] . ';';
+		}
+
 		// Return if no color variables were defined.
 		if ( '' === $color_variables ) {
 			return;
@@ -119,8 +156,7 @@ class GT_Basic_Custom_Colors {
 		$custom_css  = preg_replace( '/\n/', '', $custom_css );
 		$custom_css  = preg_replace( '/\t/', '', $custom_css );
 
-		// Enqueue Custom CSS.
-		wp_add_inline_style( 'gt-basic-stylesheet', $custom_css );
+		return $custom_css;
 	}
 
 	/**
