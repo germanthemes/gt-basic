@@ -21,22 +21,22 @@ function gt_basic_gutenberg_support() {
 		array(
 			'name'  => esc_html_x( 'Primary', 'block color', 'gt-basic' ),
 			'slug'  => 'primary',
-			'color' => '#006699',
+			'color' => '#ee1133',
 		),
 		array(
 			'name'  => esc_html_x( 'Secondary', 'block color', 'gt-basic' ),
 			'slug'  => 'secondary',
-			'color' => '#ee9922',
+			'color' => '#D5001A',
 		),
 		array(
 			'name'  => esc_html_x( 'Accent', 'block color', 'gt-basic' ),
 			'slug'  => 'accent',
-			'color' => '#11bb55',
+			'color' => '#EFC83A',
 		),
 		array(
 			'name'  => esc_html_x( 'Complementary', 'block color', 'gt-basic' ),
 			'slug'  => 'complementary',
-			'color' => '#bb4411',
+			'color' => '#27415F',
 		),
 		array(
 			'name'  => esc_html_x( 'White', 'block color', 'gt-basic' ),

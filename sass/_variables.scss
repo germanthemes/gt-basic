@@ -29,7 +29,17 @@ $themeColors: (
 	--footer-text-color        : #fff,
 	--footer-hover-text-color  : rgba(255, 255, 255, 0.5),
 	--footer-border-color      : rgba(255, 255, 255, 0.035),
+	--block-primary-color      : #ee1133,
+	--block-secondary-color    : #D5001A,
+	--block-accent-color       : #EFC83A,
+	--block-complementary-color: #27415F,
 );
+
+// Basic Block Colors.
+$whiteColor: #ffffff;
+$lightGrayColor: #e5e5e5;
+$darkGrayColor: #555555;
+$blackColor: #242424;
 
 // Theme Fonts
 $baseFont: "Open Sans", Arial, Helvetica;
@@ -74,6 +84,10 @@ $textTransform: (
 	--footer-text-color: map-get($themeColors, --footer-text-color);
 	--footer-hover-text-color: map-get($themeColors, --footer-hover-text-color);
 	--footer-border-color: map-get($themeColors, --footer-border-color);
+	--block-primary-color: map-get($themeColors, --block-primary-color);
+	--block-secondary-color: map-get($themeColors, --block-secondary-color);
+	--block-accent-color: map-get($themeColors, --block-accent-color);
+	--block-complementary-color: map-get($themeColors, --block-complementary-color);
 	--text-font: map-get($themeFonts, --text-font);
 	--title-font: map-get($themeFonts, --title-font);
 	--title-font-weight: map-get($fontWeight, --title-font-weight);

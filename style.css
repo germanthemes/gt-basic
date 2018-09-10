@@ -65,6 +65,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--footer-text-color: #fff;
 	--footer-hover-text-color: rgba(255, 255, 255, 0.5);
 	--footer-border-color: rgba(255, 255, 255, 0.035);
+	--block-primary-color: #ee1133;
+	--block-secondary-color: #D5001A;
+	--block-accent-color: #EFC83A;
+	--block-complementary-color: #27415F;
 	--text-font: "Open Sans", Arial, Helvetica;
 	--title-font: Montserrat, Tahoma, Arial;
 	--title-font-weight: bold;
@@ -543,8 +547,8 @@ input[type="submit"] {
 	border: none;
 	color: #fff;
 	color: var(--button-text-color);
-	background: #ee1133;
-	background: var(--button-color);
+	background-color: #ee1133;
+	background-color: var(--button-color);
 	text-decoration: none;
 	font-weight: normal;
 	font-size: 15px;
@@ -565,8 +569,8 @@ input[type="reset"]:active,
 input[type="submit"]:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background: #D5001A;
-	background: var(--button-hover-color);
+	background-color: #D5001A;
+	background-color: var(--button-hover-color);
 }
 
 input[type="text"],
@@ -629,14 +633,14 @@ textarea {
 	bottom: 0;
 	padding: 0.6em 0.8em;
 	border: none;
-	background: #ee1133;
-	background: var(--button-color);
+	background-color: #ee1133;
+	background-color: var(--button-color);
 }
 
 .search-form .search-submit:hover,
 .search-form .search-submit:active {
-	background: #D5001A;
-	background: var(--button-hover-color);
+	background-color: #D5001A;
+	background-color: var(--button-hover-color);
 }
 
 .search-form .search-submit .icon-search {
@@ -847,8 +851,8 @@ textarea {
 --------------------------------------------------------------*/
 .primary-navigation {
 	position: relative;
-	background: #202020;
-	background: var(--navi-color);
+	background-color: #202020;
+	background-color: var(--navi-color);
 }
 
 .main-navigation {
@@ -1124,8 +1128,8 @@ textarea {
 	padding: 0.5em 1em;
 	color: #fff;
 	color: var(--button-text-color);
-	background: #ee1133;
-	background: var(--button-color);
+	background-color: #ee1133;
+	background-color: var(--button-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -1141,8 +1145,8 @@ textarea {
 .more-link:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background: #D5001A;
-	background: var(--button-hover-color);
+	background-color: #D5001A;
+	background-color: var(--button-hover-color);
 	text-decoration: none;
 }
 
@@ -1201,8 +1205,8 @@ body.date-hidden.author-hidden.categories-hidden .entry-meta {
 	text-decoration: none;
 	color: #fff;
 	color: var(--button-text-color);
-	background: #ee1133;
-	background: var(--button-color);
+	background-color: #ee1133;
+	background-color: var(--button-color);
 }
 
 .pagination .page-numbers.dots {
@@ -1214,8 +1218,8 @@ body.date-hidden.author-hidden.categories-hidden .entry-meta {
 .pagination a:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background: #D5001A;
-	background: var(--button-hover-color);
+	background-color: #D5001A;
+	background-color: var(--button-hover-color);
 }
 
 /*--------------------------------------------------------------
@@ -1231,8 +1235,8 @@ body.date-hidden.author-hidden.categories-hidden .entry-meta {
 	font-family: var(--navi-font);
 	color: rgba(255, 255, 255, 0.5);
 	color: var(--footer-hover-text-color);
-	background: #202020;
-	background: var(--footer-color);
+	background-color: #202020;
+	background-color: var(--footer-color);
 }
 
 .site-footer a:link,
@@ -1404,8 +1408,8 @@ object {
 	padding: 0.4rem 1rem;
 	color: #fff;
 	color: var(--button-text-color);
-	background: #ee1133;
-	background: var(--button-color);
+	background-color: #ee1133;
+	background-color: var(--button-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	border-radius: 0.5rem;
@@ -1422,8 +1426,8 @@ object {
 .is-style-gt-button a:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background: #D5001A;
-	background: var(--button-hover-color);
+	background-color: #D5001A;
+	background-color: var(--button-hover-color);
 	text-decoration: none;
 }
 
@@ -1436,19 +1440,23 @@ h2.is-style-gt-heading-large {
 
 /* Block Text Colors */
 .has-primary-color {
-	color: #006699;
+	color: #ee1133;
+	color: var(--block-primary-color);
 }
 
 .has-secondary-color {
-	color: #ee9922;
+	color: #D5001A;
+	color: var(--block-secondary-color);
 }
 
 .has-accent-color {
-	color: #11bb55;
+	color: #EFC83A;
+	color: var(--block-accent-color);
 }
 
 .has-complementary-color {
-	color: #bb4411;
+	color: #27415F;
+	color: var(--block-complementary-color);
 }
 
 .has-white-color {
@@ -1469,19 +1477,23 @@ h2.is-style-gt-heading-large {
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #006699;
+	background-color: #ee1133;
+	background-color: var(--block-primary-color);
 }
 
 .has-secondary-background-color {
-	background-color: #ee9922;
+	background-color: #D5001A;
+	background-color: var(--block-secondary-color);
 }
 
 .has-accent-background-color {
-	background-color: #11bb55;
+	background-color: #EFC83A;
+	background-color: var(--block-accent-color);
 }
 
 .has-complementary-background-color {
-	background-color: #bb4411;
+	background-color: #27415F;
+	background-color: var(--block-complementary-color);
 }
 
 .has-white-background-color {
@@ -1707,8 +1719,8 @@ h2.is-style-gt-heading-large {
 		border: 1px solid rgba(255, 255, 255, 0.075);
 		border: 1px solid var(--submenu-border-color);
 		border-top: none;
-		background: #ee1133;
-		background: var(--submenu-color);
+		background-color: #ee1133;
+		background-color: var(--submenu-color);
 	}
 
 	.main-navigation ul ul li:hover > ul,
@@ -1791,8 +1803,8 @@ h2.is-style-gt-heading-large {
 
 	/* Extra Styling for top menu items with dropdowns */
 	.main-navigation ul li.menu-item-has-children:hover a {
-		background: #ee1133;
-		background: var(--submenu-color);
+		background-color: #ee1133;
+		background-color: var(--submenu-color);
 	}
 
 	.main-navigation ul li.menu-item-has-children:hover a:link,

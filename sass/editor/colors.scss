@@ -1,65 +1,65 @@
 /* Block Text Colors */
 .has-primary-color {
-	color: #006699;
+	@include color(--block-primary-color);
 }
 
 .has-secondary-color {
-	color: #ee9922;
+	@include color(--block-secondary-color);
 }
 
 .has-accent-color {
-	color: #11bb55;
+	@include color(--block-accent-color);
 }
 
 .has-complementary-color {
-	color: #bb4411;
+	@include color(--block-complementary-color);
 }
 
 .has-white-color {
-	color: #ffffff;
+	color: $whiteColor;
 }
 
 .has-light-gray-color {
-	color: #e5e5e5;
+	color: $lightGrayColor;
 }
 
 .has-dark-gray-color {
-	color: #555555;
+	color: $darkGrayColor;
 }
 
 .has-black-color {
-	color: #242424;
+	color: $blackColor;
 }
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #006699;
+	@include background(--block-primary-color);
 }
 
 .has-secondary-background-color {
-	background-color: #ee9922;
+	@include background(--block-secondary-color);
 }
 
 .has-accent-background-color {
-	background-color: #11bb55;
+	@include background(--block-accent-color);
 }
 
 .has-complementary-background-color {
-	background-color: #bb4411;
+	@include background(--block-complementary-color);
 }
 
 .has-white-background-color {
-	background-color: #ffffff;
+	background-color: $whiteColor;
 }
 
 .has-light-gray-background-color {
-	background-color: #e5e5e5;
+	background-color: $lightGrayColor;
 }
 
 .has-dark-gray-background-color {
-	background-color: #555555;
+	background-color: $darkGrayColor;
 }
 
 .has-black-background-color {
-	background-color: #242424;
+	background-color: $blackColor;
 }

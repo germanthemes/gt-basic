@@ -30,8 +30,8 @@
 
 // Background CSS Variable
 @mixin background($colorVar) {
-	background: map-get($themeColors, $colorVar);
-	background: var($colorVar);
+	background-color: map-get($themeColors, $colorVar);
+	background-color: var($colorVar);
 }
 
 // Fill Icon CSS Variable
