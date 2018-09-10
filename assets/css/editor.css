@@ -3,45 +3,79 @@
  *
  * @package GT Basic
  */
+:root {
+	--link-color: #ee1133;
+	--link-hover-color: #D5001A;
+	--button-color: #ee1133;
+	--button-text-color: #fff;
+	--button-hover-color: #D5001A;
+	--button-hover-text-color: #fff;
+	--site-title-color: #fff;
+	--title-color: #202020;
+	--title-hover-color: #ee1133;
+	--navi-color: #202020;
+	--navi-text-color: #fff;
+	--navi-hover-text-color: rgba(255, 255, 255, 0.5);
+	--navi-border-color: rgba(255, 255, 255, 0.05);
+	--submenu-color: #ee1133;
+	--submenu-text-color: #fff;
+	--submenu-hover-text-color: rgba(255, 255, 255, 0.5);
+	--submenu-border-color: rgba(255, 255, 255, 0.075);
+	--footer-color: #202020;
+	--footer-text-color: #fff;
+	--footer-hover-text-color: rgba(255, 255, 255, 0.5);
+	--footer-border-color: rgba(255, 255, 255, 0.035);
+	--text-font: "Open Sans", Arial, Helvetica;
+	--title-font: Montserrat, Tahoma, Arial;
+	--title-font-weight: bold;
+	--title-text-transform: none;
+	--navi-font: "Open Sans", Arial, Helvetica;
+	--navi-font-weight: normal;
+	--navi-text-transform: none;
+}
 
 /* Editor Styles */
 body.gutenberg-editor-page {
-    color: #202020;
+	color: #202020;
 }
 
 body.gutenberg-editor-page .edit-post-visual-editor,
-body.gutenberg-editor-page .edit-post-visual-editor p,
-body.gutenberg-editor-page .editor-rich-text__tinymce.mce-content-body {
-	font-family: Arial;
-	font-size: 19px;
-	font-size: 1.1875rem;
-    line-height: 1.75;
+body.gutenberg-editor-page .edit-post-visual-editor p {
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-family: "Open Sans", Arial, Helvetica;
+	font-family: var(--text-font);
+	line-height: 1.75;
 }
 
-body.gutenberg-editor-page .editor-post-title .editor-post-title__input {
-	font-family: Arial;
+body.gutenberg-editor-page .editor-post-title__block .editor-post-title__input {
 	font-size: 40px;
 	font-size: 2.5rem;
-	font-weight: normal;
-    line-height: 1.4;
+	font-family: Montserrat, Tahoma, Arial;
+	font-family: var(--title-font);
+	font-weight: bold;
+	font-weight: var(--title-font-weight);
+	text-transform: none;
+	text-transform: var(--title-text-transform);
+	line-height: 1.4;
 }
 
 /* Editor Width */
-body.gutenberg-editor-page .editor-post-title,
+body.gutenberg-editor-page .edit-post-visual-editor .editor-post-title__block,
 body.gutenberg-editor-page .editor-default-block-appender,
 body.gutenberg-editor-page .editor-block-list__block {
-    max-width: 988px;
+	max-width: 750px;
 }
 
 body.gutenberg-editor-page .editor-block-list__block[data-align="wide"] {
-    max-width: 1468px;
+	max-width: 1240px;
 }
 
 body.gutenberg-editor-page .editor-block-list__block[data-align="full"] {
-    max-width: none;
+	max-width: none;
 }
 
-/* Headings */
+/* Headings
 body.gutenberg-editor-page .edit-post-visual-editor h1.editor-rich-text__tinymce.mce-content-body,
 body.gutenberg-editor-page .edit-post-visual-editor h2.editor-rich-text__tinymce.mce-content-body,
 body.gutenberg-editor-page .edit-post-visual-editor h3.editor-rich-text__tinymce.mce-content-body,
@@ -82,18 +116,59 @@ body.gutenberg-editor-page .edit-post-visual-editor h6.editor-rich-text__tinymce
 	font-size: 18px;
 	font-size: 1.125rem;
 }
+*/
 
-/* Colors */
+/* GT Buttons */
+.is-style-gt-button a {
+	display: inline-block;
+	padding: 0.4rem 1rem;
+	color: #fff;
+	color: var(--button-text-color);
+	background: #ee1133;
+	background: var(--button-color);
+	font-size: 15px;
+	font-size: 0.9375rem;
+	border-radius: 0.5rem;
+}
+
+.is-style-gt-button a:link,
+.is-style-gt-button a:visited {
+	color: #fff;
+	color: var(--button-text-color);
+	text-decoration: none;
+}
+
+.is-style-gt-button a:hover,
+.is-style-gt-button a:active {
+	color: #fff;
+	color: var(--button-hover-text-color);
+	background: #D5001A;
+	background: var(--button-hover-color);
+	text-decoration: none;
+}
+
+/* GT Headings */
+h2.is-style-gt-heading-large {
+	font-size: 40px;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+
+/* Block Text Colors */
 .has-primary-color {
-	color: #0c557a;
+	color: #006699;
 }
 
 .has-secondary-color {
-	color: #ff6600;
+	color: #ee9922;
 }
 
 .has-accent-color {
-	color: #a156b4;
+	color: #11bb55;
+}
+
+.has-complementary-color {
+	color: #bb4411;
 }
 
 .has-white-color {
@@ -105,24 +180,28 @@ body.gutenberg-editor-page .edit-post-visual-editor h6.editor-rich-text__tinymce
 }
 
 .has-dark-gray-color {
-	color: #444444;
+	color: #555555;
 }
 
 .has-black-color {
-	color: #151515;
+	color: #242424;
 }
 
-/* Background Colors */
+/* Block Background Colors */
 .has-primary-background-color {
-	background-color: #0c557a;
+	background-color: #006699;
 }
 
 .has-secondary-background-color {
-	background-color: #ff6600;
+	background-color: #ee9922;
 }
 
 .has-accent-background-color {
-	background-color: #a156b4;
+	background-color: #11bb55;
+}
+
+.has-complementary-background-color {
+	background-color: #bb4411;
 }
 
 .has-white-background-color {
@@ -134,9 +213,26 @@ body.gutenberg-editor-page .edit-post-visual-editor h6.editor-rich-text__tinymce
 }
 
 .has-dark-gray-background-color {
-	background-color: #444444;
+	background-color: #555555;
 }
 
 .has-black-background-color {
-	background-color: #151515;
+	background-color: #242424;
+}
+
+/* Block Font Sizes */
+.has-small-font-size {
+	font-size: 16px;
+}
+
+.has-medium-font-size {
+	font-size: 20px;
+}
+
+.has-large-font-size {
+	font-size: 24px;
+}
+
+.has-extra-large-font-size {
+	font-size: 36px;
 }

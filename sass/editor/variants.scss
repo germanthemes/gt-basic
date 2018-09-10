@@ -1,0 +1,28 @@
+/* GT Buttons */
+.is-style-gt-button a {
+	display: inline-block;
+	padding: 0.4rem 1rem;
+	@include color(--button-text-color);
+	@include background(--button-color);
+	@include font-size(15);
+	border-radius: 0.5rem;
+}
+
+.is-style-gt-button a:link,
+.is-style-gt-button a:visited  {
+	@include color(--button-text-color);
+	text-decoration: none;
+}
+
+.is-style-gt-button a:hover,
+.is-style-gt-button a:active {
+	@include color(--button-hover-text-color);
+	@include background(--button-hover-color);
+	text-decoration: none;
+}
+
+/* GT Headings */
+h2.is-style-gt-heading-large {
+    @include font-size(40);
+    text-transform: uppercase;
+}

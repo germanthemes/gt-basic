@@ -111,7 +111,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # - Blocks
 --------------------------------------------------------------*/
-@import 'content/blocks';
+@import 'editor/frontend';
+@import 'editor/variants';
+@import 'editor/colors';
+@import 'editor/font-sizes';
 
 /*--------------------------------------------------------------
 # - Media Queries

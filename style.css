@@ -1392,17 +1392,63 @@ object {
 # - Blocks
 --------------------------------------------------------------*/
 
-/* Block Colors */
+/* Cover Image Block */
+.wp-block-cover-image.alignwide,
+.wp-block-cover-image.alignfull {
+	width: auto;
+}
+
+/* GT Buttons */
+.is-style-gt-button a {
+	display: inline-block;
+	padding: 0.4rem 1rem;
+	color: #fff;
+	color: var(--button-text-color);
+	background: #ee1133;
+	background: var(--button-color);
+	font-size: 15px;
+	font-size: 0.9375rem;
+	border-radius: 0.5rem;
+}
+
+.is-style-gt-button a:link,
+.is-style-gt-button a:visited {
+	color: #fff;
+	color: var(--button-text-color);
+	text-decoration: none;
+}
+
+.is-style-gt-button a:hover,
+.is-style-gt-button a:active {
+	color: #fff;
+	color: var(--button-hover-text-color);
+	background: #D5001A;
+	background: var(--button-hover-color);
+	text-decoration: none;
+}
+
+/* GT Headings */
+h2.is-style-gt-heading-large {
+	font-size: 40px;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+
+/* Block Text Colors */
 .has-primary-color {
-	color: #0c557a;
+	color: #006699;
 }
 
 .has-secondary-color {
-	color: #ff6600;
+	color: #ee9922;
 }
 
 .has-accent-color {
-	color: #a156b4;
+	color: #11bb55;
+}
+
+.has-complementary-color {
+	color: #bb4411;
 }
 
 .has-white-color {
@@ -1414,24 +1460,28 @@ object {
 }
 
 .has-dark-gray-color {
-	color: #444444;
+	color: #555555;
 }
 
 .has-black-color {
-	color: #151515;
+	color: #242424;
 }
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #0c557a;
+	background-color: #006699;
 }
 
 .has-secondary-background-color {
-	background-color: #ff6600;
+	background-color: #ee9922;
 }
 
 .has-accent-background-color {
-	background-color: #a156b4;
+	background-color: #11bb55;
+}
+
+.has-complementary-background-color {
+	background-color: #bb4411;
 }
 
 .has-white-background-color {
@@ -1443,11 +1493,28 @@ object {
 }
 
 .has-dark-gray-background-color {
-	background-color: #444444;
+	background-color: #555555;
 }
 
 .has-black-background-color {
-	background-color: #151515;
+	background-color: #242424;
+}
+
+/* Block Font Sizes */
+.has-small-font-size {
+	font-size: 16px;
+}
+
+.has-medium-font-size {
+	font-size: 20px;
+}
+
+.has-large-font-size {
+	font-size: 24px;
+}
+
+.has-extra-large-font-size {
+	font-size: 36px;
 }
 
 /*--------------------------------------------------------------
@@ -1718,6 +1785,36 @@ object {
 
 	.main-navigation ul ul .menu-item-has-children > a:hover > .icon,
 	.main-navigation ul ul .page_item_has_children > a:hover > .icon {
+		fill: rgba(255, 255, 255, 0.5);
+		fill: var(--submenu-hover-text-color);
+	}
+
+	/* Extra Styling for top menu items with dropdowns */
+	.main-navigation ul li.menu-item-has-children:hover a {
+		background: #ee1133;
+		background: var(--submenu-color);
+	}
+
+	.main-navigation ul li.menu-item-has-children:hover a:link,
+	.main-navigation ul li.menu-item-has-children:hover a:visited {
+		color: #fff;
+		color: var(--submenu-text-color);
+	}
+
+	.main-navigation ul li.menu-item-has-children:hover a:hover,
+	.main-navigation ul li.menu-item-has-children:hover a:active {
+		color: rgba(255, 255, 255, 0.5);
+		color: var(--submenu-hover-text-color);
+	}
+
+	.main-navigation ul li.menu-item-has-children:hover a > .icon,
+	.main-navigation ul li.page_item_has_children:hover a > .icon {
+		fill: #fff;
+		fill: var(--submenu-text-color);
+	}
+
+	.main-navigation ul li.menu-item-has-children:hover a:hover > .icon,
+	.main-navigation ul li.page_item_has_children:hover a:hover > .icon {
 		fill: rgba(255, 255, 255, 0.5);
 		fill: var(--submenu-hover-text-color);
 	}

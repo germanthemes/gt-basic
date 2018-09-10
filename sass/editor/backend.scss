@@ -1,0 +1,77 @@
+/* Editor Styles */
+body.gutenberg-editor-page {
+    color: $textColor;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor,
+body.gutenberg-editor-page .edit-post-visual-editor p {
+    @include font-size(18);
+	@include font-family(--text-font);
+    line-height: 1.75;
+}
+
+body.gutenberg-editor-page .editor-post-title__block .editor-post-title__input {
+    @include font-size(40);
+    @include font-family(--title-font);
+    @include font-weight(--title-font-weight);
+    @include text-transform(--title-text-transform);
+    line-height: 1.4;
+}
+
+/* Editor Width */
+body.gutenberg-editor-page .edit-post-visual-editor .editor-post-title__block,
+body.gutenberg-editor-page .editor-default-block-appender,
+body.gutenberg-editor-page .editor-block-list__block {
+    max-width: 750px;
+}
+
+body.gutenberg-editor-page .editor-block-list__block[data-align="wide"] {
+    max-width: 1240px;
+}
+
+body.gutenberg-editor-page .editor-block-list__block[data-align="full"] {
+    max-width: none;
+}
+
+/* Headings
+body.gutenberg-editor-page .edit-post-visual-editor h1.editor-rich-text__tinymce.mce-content-body,
+body.gutenberg-editor-page .edit-post-visual-editor h2.editor-rich-text__tinymce.mce-content-body,
+body.gutenberg-editor-page .edit-post-visual-editor h3.editor-rich-text__tinymce.mce-content-body,
+body.gutenberg-editor-page .edit-post-visual-editor h4.editor-rich-text__tinymce.mce-content-body,
+body.gutenberg-editor-page .edit-post-visual-editor h5.editor-rich-text__tinymce.mce-content-body,
+body.gutenberg-editor-page .edit-post-visual-editor h6.editor-rich-text__tinymce.mce-content-body {
+	clear: both;
+	margin: 1em 0 0.75em;
+	line-height: 1.4;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor h1.editor-rich-text__tinymce.mce-content-body {
+	font-size: 32px;
+	font-size: 2rem;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor h2.editor-rich-text__tinymce.mce-content-body {
+	font-size: 26px;
+	font-size: 1.625rem;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor h3.editor-rich-text__tinymce.mce-content-body {
+	font-size: 22px;
+	font-size: 1.375rem;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor h4.editor-rich-text__tinymce.mce-content-body {
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor h5.editor-rich-text__tinymce.mce-content-body {
+	font-size: 19px;
+	font-size: 1.1875rem;
+}
+
+body.gutenberg-editor-page .edit-post-visual-editor h6.editor-rich-text__tinymce.mce-content-body {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+*/

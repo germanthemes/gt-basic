@@ -1,0 +1,13 @@
+/*
+ * Block Editor Styles
+ *
+ * @package GT Basic
+ */
+
+ @import '_mixins';
+ @import '_variables';
+
+@import 'editor/backend';
+@import 'editor/variants';
+@import 'editor/colors';
+@import 'editor/font-sizes';
