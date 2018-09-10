@@ -37,11 +37,11 @@ if ( ! function_exists( 'gt_basic_site_description' ) ) :
 		$description = get_bloginfo( 'description', 'display' ); /* WPCS: xss ok. */
 
 		if ( $description || is_customize_preview() ) :
-		?>
+			?>
 
 			<p class="site-description"><?php echo $description; ?></p>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -54,7 +54,7 @@ if ( ! function_exists( 'gt_basic_header_image' ) ) :
 	function gt_basic_header_image() {
 
 		if ( has_header_image() ) :
-		?>
+			?>
 
 			<div id="headimg" class="header-image">
 
@@ -62,7 +62,7 @@ if ( ! function_exists( 'gt_basic_header_image' ) ) :
 
 			</div>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -114,7 +114,7 @@ if ( ! function_exists( 'gt_basic_post_image_archives' ) ) :
 
 		// Display Post Thumbnail if activated.
 		if ( true === gt_basic_get_option( 'post_image_archives' ) && has_post_thumbnail() ) :
-		?>
+			?>
 
 			<div class="post-image">
 				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
@@ -122,7 +122,7 @@ if ( ! function_exists( 'gt_basic_post_image_archives' ) ) :
 				</a>
 			</div>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -136,13 +136,13 @@ if ( ! function_exists( 'gt_basic_post_image_single' ) ) :
 
 		// Display Post Thumbnail if activated.
 		if ( true === gt_basic_get_option( 'post_image_single' ) ) :
-		?>
+			?>
 
 			<div class="post-image">
 				<?php the_post_thumbnail(); ?>
 			</div>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;

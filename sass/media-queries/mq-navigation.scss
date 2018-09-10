@@ -105,4 +105,29 @@
 	.main-navigation ul ul .page_item_has_children > a:hover > .icon {
 		@include fill(--submenu-hover-text-color);
 	}
+
+	/* Extra Styling for top menu items with dropdowns */
+	.main-navigation ul li.menu-item-has-children:hover a {
+		@include background(--submenu-color);
+	}
+
+	.main-navigation ul li.menu-item-has-children:hover a:link,
+	.main-navigation ul li.menu-item-has-children:hover a:visited {
+		@include color(--submenu-text-color);
+	}
+
+	.main-navigation ul li.menu-item-has-children:hover a:hover,
+	.main-navigation ul li.menu-item-has-children:hover a:active {
+		@include color(--submenu-hover-text-color);
+	}
+
+	.main-navigation ul li.menu-item-has-children:hover a > .icon,
+	.main-navigation ul li.page_item_has_children:hover a > .icon {
+		@include fill(--submenu-text-color);
+	}
+
+	.main-navigation ul li.menu-item-has-children:hover a:hover > .icon,
+	.main-navigation ul li.page_item_has_children:hover a:hover > .icon {
+		@include fill(--submenu-hover-text-color);
+	}
 }
