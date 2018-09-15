@@ -42,6 +42,6 @@
 
 		<?php do_action( 'gt_basic_after_header' ); ?>
 
-		<div id="content" class="site-content container">
+		<div id="content" class="site-content">
 
 			<main id="main" class="site-main" role="main">

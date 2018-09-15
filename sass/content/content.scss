@@ -1,13 +1,3 @@
-.site-content {
-	display: grid;
-	grid-template-columns: 1fr minmax(0, $containerWidth) 1fr;
-	grid-column-gap: 1.5rem;
-}
-
-.site-main {
-	grid-column: 2 / -2;
-}
-
 .type-post,
 .type-page,
 .type-attachment {

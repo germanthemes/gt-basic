@@ -720,22 +720,41 @@ textarea {
 	overflow: hidden;
 }
 
+.header-main,
+.main-navigation,
+.footer-main,
+.site-main {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header-main,
+.footer-main,
+.site-main {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.header-main,
+.main-navigation,
+.footer-main {
+	max-width: 1280px;
+}
+
+.site-main {
+	max-width: 800px;
+}
+
 /*--------------------------------------------------------------
 # - Header
 --------------------------------------------------------------*/
 .header-main {
-	display: grid;
-	grid-template-columns: 1fr minmax(0, 60rem) 1fr;
-	grid-column-gap: 1.5rem;
-	background: #fff;
-	align-items: center;
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
 }
 
 /* Site Branding */
 .site-branding {
-	grid-column: 2 / -2;
 	margin: 0;
 	padding: 0;
 	max-width: 100%;
@@ -853,12 +872,6 @@ textarea {
 	position: relative;
 	background-color: #202020;
 	background-color: var(--navi-color);
-}
-
-.main-navigation {
-	display: block;
-	margin: 0 auto;
-	max-width: 63rem;
 }
 
 .main-navigation ul {
@@ -1044,16 +1057,6 @@ textarea {
 /*--------------------------------------------------------------
 # - Posts and pages
 --------------------------------------------------------------*/
-.site-content {
-	display: grid;
-	grid-template-columns: 1fr minmax(0, 60rem) 1fr;
-	grid-column-gap: 1.5rem;
-}
-
-.site-main {
-	grid-column: 2 / -2;
-}
-
 .type-post,
 .type-page,
 .type-attachment {
@@ -1226,9 +1229,6 @@ body.date-hidden.author-hidden.categories-hidden .entry-meta {
 # - Footer
 --------------------------------------------------------------*/
 .site-footer {
-	display: grid;
-	grid-template-columns: 1fr minmax(0, 60rem) 1fr;
-	grid-column-gap: 1.5rem;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Open Sans", Arial, Helvetica;
@@ -1251,9 +1251,9 @@ body.date-hidden.author-hidden.categories-hidden .entry-meta {
 	text-decoration: underline;
 }
 
-.site-footer .site-info {
-	grid-column: 2 / -2;
-	padding: 1.5rem 0;
+.site-footer .footer-main {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 	text-align: center;
 }
 
@@ -1655,7 +1655,7 @@ h2.is-style-gt-heading-large {
 		padding-bottom: 2rem;
 	}
 
-	.site-footer .site-info {
+	.site-footer .footer-main {
 		text-align: left;
 	}
 }

@@ -1,16 +1,10 @@
 .header-main {
-	display: grid;
-	grid-template-columns: 1fr minmax(0, $containerWidth) 1fr;
-	grid-column-gap: 1.5rem;
-	background: #fff;
-	align-items: center;
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
 }
 
 /* Site Branding */
 .site-branding {
-	grid-column: 2 / -2;
 	margin: 0;
 	padding: 0;
 	max-width: 100%;

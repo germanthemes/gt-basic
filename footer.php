@@ -19,9 +19,9 @@
 
 	<footer id="colophon" class="site-footer">
 
-		<div id="footer-line" class="site-info">
+		<div id="footer-line" class="footer-main">
 			<?php gt_basic_footer_text(); ?>
-		</div><!-- .site-info -->
+		</div><!-- .footer-main -->
 
 	</footer><!-- #colophon -->
 

@@ -3,12 +3,6 @@
 	@include background(--navi-color);
 }
 
-.main-navigation {
-	display: block;
-	margin: 0 auto;
-	max-width: $containerWidth + 3rem;
-}
-
 .main-navigation ul {
 	margin: 0;
 	padding: 0;
