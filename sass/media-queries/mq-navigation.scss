@@ -1,4 +1,4 @@
-@media only screen and (min-width: 55em) {
+@media only screen and (min-width: 880px) {
 	.menu-toggle,
 	.dropdown-toggle {
 		display: none;
@@ -75,7 +75,7 @@
 	.main-navigation .menu-item-has-children > a > .icon,
 	.main-navigation .page_item_has_children > a > .icon {
 		position: relative;
-		display: inline;
+		display: inline-block;
 		left: 0.5rem;
 		top: 0.15rem;
 		width: 15px;

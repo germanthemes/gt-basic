@@ -1,4 +1,4 @@
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 800px) {
     .entry-header {
         margin: 2rem 0 1.5rem;
     }
@@ -9,7 +9,7 @@
 }
 
 
-@media only screen and (min-width: 55em) {
+@media only screen and (min-width: 880px) {
     .header-main {
     	padding-top: 2rem;
         padding-bottom: 2rem;
@@ -20,14 +20,14 @@
 	}
 }
 
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 1040px) {
     .header-image-added .header-main {
     	grid-column-gap: 1rem;
     }
 }
 
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 1120px) {
     .header-main {
     	padding-top: 2.5rem;
         padding-bottom: 2.5rem;
