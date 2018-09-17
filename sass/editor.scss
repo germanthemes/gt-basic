@@ -4,8 +4,9 @@
  * @package GT Basic
  */
 
- @import '_mixins';
- @import '_variables';
+@import '_mixins';
+@import '_variables';
+@import '_root';
 
 @import 'editor/backend';
 @import 'editor/variants';
