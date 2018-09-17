@@ -55,18 +55,18 @@ body.gutenberg-editor-page .editor-post-title__block .editor-post-title__input {
 body.gt-wide-page-layout.gutenberg-editor-page .editor-post-title__block,
 body.gt-wide-page-layout.gutenberg-editor-page .editor-default-block-appender,
 body.gt-wide-page-layout.gutenberg-editor-page .editor-block-list__block {
-	max-width: calc( 1040px + 30px);
+	max-width: calc( 1120px + 30px);
 }
 
 body.gt-fullwidth-page-layout.gutenberg-editor-page .editor-post-title__block,
 body.gt-fullwidth-page-layout.gutenberg-editor-page .editor-default-block-appender,
 body.gt-fullwidth-page-layout.gutenberg-editor-page .editor-block-list__block {
-	max-width: calc( 960px + 30px);
+	max-width: calc( 880px + 30px);
 }
 
 /* Wide and Fullwidth Blocks */
 body.gutenberg-editor-page .editor-block-list__block[data-align="wide"] {
-	max-width: calc( 1040px + 30px);
+	max-width: calc( 1120px + 30px);
 }
 
 body.gutenberg-editor-page .editor-block-list__block[data-align="full"] {

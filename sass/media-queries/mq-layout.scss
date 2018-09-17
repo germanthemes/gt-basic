@@ -39,5 +39,11 @@
 
     .pagination {
         margin: 2.5rem 0;
-    }
+	}
+	
+	.entry-content > .alignwide {
+		margin-left: -120px;
+		margin-right: -120px;
+		max-width: $wideWidth;
+	}
 }

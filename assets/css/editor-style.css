@@ -4,7 +4,7 @@
  * @package GT Basic
  */
 .wp-block {
-	width: calc( 960px + 30px - 3rem);
+	width: calc( 880px + 30px - 3rem);
 }
 
 body {
