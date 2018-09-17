@@ -17,7 +17,7 @@ body.gt-wide-page-layout.gutenberg-editor-page .editor-block-list__block {
 body.gt-fullwidth-page-layout.gutenberg-editor-page .editor-post-title__block,
 body.gt-fullwidth-page-layout.gutenberg-editor-page .editor-default-block-appender,
 body.gt-fullwidth-page-layout.gutenberg-editor-page .editor-block-list__block {
-	max-width: calc( #{$themeWidth} + 30px );
+	max-width: calc( #{$fullWidth} + 30px );
 }
 
 /* Wide and Fullwidth Blocks */
