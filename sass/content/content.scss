@@ -35,8 +35,8 @@
 }
 
 /* Entry Content */
-.entry-content > p:first-child {
-	margin-top: 0;
+.entry-content {
+	@include font-size(18);
 }
 
 .entry-content > .alignwide {

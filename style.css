@@ -306,8 +306,8 @@ input,
 select,
 textarea {
 	color: #202020;
-	font-size: 15px;
-	font-size: 0.9375rem;
+	font-size: 16px;
+	font-size: 1rem;
 	font-family: "Open Sans", Arial, Helvetica;
 	font-family: var(--text-font);
 	line-height: 1.75;
@@ -738,11 +738,11 @@ textarea {
 .header-main,
 .main-navigation,
 .footer-main {
-	max-width: 1280px;
+	max-width: 960px;
 }
 
 .site-main {
-	max-width: 800px;
+	max-width: 960px;
 }
 
 /*--------------------------------------------------------------
@@ -1101,8 +1101,9 @@ textarea {
 }
 
 /* Entry Content */
-.entry-content > p:first-child {
-	margin-top: 0;
+.entry-content {
+	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 .entry-content > .alignwide {
@@ -1536,17 +1537,6 @@ h2.is-style-gt-heading-large {
 /*--------------------------------------------------------------
 ## - Media Queries for Typography
 --------------------------------------------------------------*/
-@media only screen and (min-width: 320px) {
-	body,
-	button,
-	input,
-	select,
-	textarea {
-		font-size: 16px;
-		font-size: 1rem;
-	}
-}
-
 @media only screen and (min-width: 480px) {
 	.site-title {
 		font-size: 36px;
@@ -1560,15 +1550,6 @@ h2.is-style-gt-heading-large {
 }
 
 @media only screen and (min-width: 640px) {
-	body,
-	button,
-	input,
-	select,
-	textarea {
-		font-size: 17px;
-		font-size: 1.0625rem;
-	}
-
 	.site-title {
 		font-size: 40px;
 		font-size: 2.5rem;
@@ -1628,11 +1609,6 @@ h2.is-style-gt-heading-large {
 	.pagination {
 		font-size: 17px;
 		font-size: 1.0625rem;
-	}
-
-	.entry-content {
-		font-size: 19px;
-		font-size: 1.1875rem;
 	}
 }
 
