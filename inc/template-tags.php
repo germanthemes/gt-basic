@@ -112,8 +112,8 @@ if ( ! function_exists( 'gt_basic_post_image_archives' ) ) :
 	 */
 	function gt_basic_post_image_archives() {
 
-		// Display Post Thumbnail if activated.
-		if ( true === gt_basic_get_option( 'post_image_archives' ) && has_post_thumbnail() ) :
+		// Display Post Thumbnail.
+		if ( has_post_thumbnail() ) :
 			?>
 
 			<div class="post-image">
@@ -134,8 +134,8 @@ if ( ! function_exists( 'gt_basic_post_image_single' ) ) :
 	 */
 	function gt_basic_post_image_single() {
 
-		// Display Post Thumbnail if activated.
-		if ( true === gt_basic_get_option( 'post_image_single' ) ) :
+		// Display Post Thumbnail.
+		if ( has_post_thumbnail() ) :
 			?>
 
 			<div class="post-image">
@@ -261,10 +261,10 @@ function gt_basic_footer_text() {
 	$footer_text = gt_basic_get_option( 'footer_text' );
 
 	if ( '' !== $footer_text || is_customize_preview() ) :
-	?>
+		?>
 
 		<span class="footer-text"><?php echo wp_kses_post( $footer_text ); ?></span>
 
-	<?php
+		<?php
 	endif;
 }

@@ -44,68 +44,6 @@
 		} );
 	} );
 
-	// Post Date checkbox.
-	wp.customize( 'gt_basic_theme_options[meta_date]', function( value ) {
-		value.bind( function( newval ) {
-			if ( false === newval ) {
-				$( 'body' ).addClass( 'date-hidden' );
-			} else {
-				$( 'body' ).removeClass( 'date-hidden' );
-			}
-		} );
-	} );
-
-	// Post Author checkbox.
-	wp.customize( 'gt_basic_theme_options[meta_author]', function( value ) {
-		value.bind( function( newval ) {
-			if ( false === newval ) {
-				$( 'body' ).addClass( 'author-hidden' );
-			} else {
-				$( 'body' ).removeClass( 'author-hidden' );
-			}
-		} );
-	} );
-
-	// Post Category checkbox.
-	wp.customize( 'gt_basic_theme_options[meta_category]', function( value ) {
-		value.bind( function( newval ) {
-			if ( false === newval ) {
-				$( 'body' ).addClass( 'categories-hidden' );
-			} else {
-				$( 'body' ).removeClass( 'categories-hidden' );
-			}
-		} );
-	} );
-
-	// Post Thumbnails checkbox.
-	wp.customize( 'gt_basic_theme_options[post_image_archives]', function( value ) {
-		value.bind( function( newval ) {
-			if ( false === newval ) {
-				$( 'body' ).addClass( 'post-images-hidden' );
-			} else {
-				$( 'body' ).removeClass( 'post-images-hidden' );
-			}
-		} );
-	} );
-
-	// Single Post Thumbnail checkbox.
-	wp.customize( 'gt_basic_theme_options[post_image_single]', function( value ) {
-		value.bind( function( newval ) {
-			if ( false === newval ) {
-				$( 'body' ).addClass( 'post-image-hidden' );
-			} else {
-				$( 'body' ).removeClass( 'post-image-hidden' );
-			}
-		} );
-	} );
-
-	// Footer text.
-	wp.customize( 'gt_basic_theme_options[footer_text]', function( value ) {
-		value.bind( function( to ) {
-			$( '.site-info .footer-text' ).html( to );
-		} );
-	} );
-
 	/* Primary Link Color Option */
 	wp.customize( 'gt_basic_theme_options[link_color_one]', function( value ) {
 		value.bind( function( newval ) {

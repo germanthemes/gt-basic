@@ -6,15 +6,6 @@
  */
 
 /**
- * GT Basic only works in WordPress 5.0 or later.
- */
-if ( version_compare( $GLOBALS['wp_version'], '5.0-alpha', '<' ) ) {
-	require get_template_directory() . '/inc/back-compat.php';
-	return;
-}
-
-
-/**
  * Sets up theme defaults and registers support for various WordPress features.
  *
  * Note that this function is hooked into the after_setup_theme hook, which

@@ -6,26 +6,12 @@
  * @package GT Basic
  */
 
-/* Post Settings */
+/* Settings */
 #customize-control-gt_basic_theme_options-site_description {
 	margin-bottom: 16px;
 }
 
-#customize-control-gt_basic_theme_options-featured_images {
-	margin-top: 16px;
-}
-
-#customize-control-gt_basic_theme_options-post_details,
-#customize-control-gt_basic_theme_options-featured_images {
-	margin-bottom: 0;
-}
-
-#customize-control-gt_basic_theme_options-site_title,
-#customize-control-gt_basic_theme_options-meta_date,
-#customize-control-gt_basic_theme_options-meta_author,
-#customize-control-gt_basic_theme_options-meta_categories,
-#customize-control-gt_basic_theme_options-post_image_archives,
-#customize-control-gt_basic_theme_options-post_image_single {
+#customize-control-gt_basic_theme_options-site_title {
 	margin-bottom: 6px;
 }
 

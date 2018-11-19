@@ -21,31 +21,6 @@ function gt_basic_body_classes( $classes ) {
 		$classes[] = 'header-image-added';
 	}
 
-	// Hide Date?
-	if ( false === $theme_options['meta_date'] ) {
-		$classes[] = 'date-hidden';
-	}
-
-	// Hide Author?
-	if ( false === $theme_options['meta_author'] ) {
-		$classes[] = 'author-hidden';
-	}
-
-	// Hide Category?
-	if ( false === $theme_options['meta_category'] ) {
-		$classes[] = 'categories-hidden';
-	}
-
-	// Featured Images?
-	if ( false === $theme_options['post_image_archives'] ) {
-		$classes[] = 'post-images-hidden';
-	}
-
-	// Single Featured Image?
-	if ( false === $theme_options['post_image_single'] && is_single() ) {
-		$classes[] = 'post-image-hidden';
-	}
-
 	// Wide Page Layout?
 	if ( is_page() && 'wide' === get_post_meta( get_the_ID(), 'gt_page_layout', true ) ) {
 		$classes[] = 'wide-page-layout';

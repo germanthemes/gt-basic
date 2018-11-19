@@ -51,11 +51,6 @@ function gt_basic_default_options() {
 	$default_options = array(
 		'site_title'                => true,
 		'site_description'          => true,
-		'meta_date'                 => true,
-		'meta_author'               => true,
-		'meta_category'             => true,
-		'post_image_archives'       => true,
-		'post_image_single'         => true,
 		'link_color_one'            => '#ee1133',
 		'link_color_two'            => '#D5001A',
 		'navi_color_one'            => '#202020',
