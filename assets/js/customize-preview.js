@@ -44,25 +44,35 @@
 		} );
 	} );
 
-	/* Primary Link Color Option */
-	wp.customize( 'gt_basic_theme_options[link_color_one]', function( value ) {
+	/* Primary Color Option */
+	wp.customize( 'gt_basic_theme_options[primary_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color;
+			var text_color, text_hover_color, border_color;
 
 			if( isColorLight( newval ) ) {
 				text_color = '#202020';
+				text_hover_color = 'rgba(0, 0, 0, 0.5)';
+				border_color = 'rgba(0, 0, 0, 0.1)';
 			} else {
 				text_color = '#ffffff';
+				text_hover_color = 'rgba(255, 255, 255, 0.5)';
+				border_color = 'rgba(255, 255, 255, 0.075)';
 			}
 
+			document.documentElement.style.setProperty( '--primary-color', newval );
 			document.documentElement.style.setProperty( '--link-color', newval );
 			document.documentElement.style.setProperty( '--button-color', newval );
 			document.documentElement.style.setProperty( '--button-text-color', text_color );
+
+			document.documentElement.style.setProperty( '--submenu-color', newval );
+			document.documentElement.style.setProperty( '--submenu-text-color', text_color );
+			document.documentElement.style.setProperty( '--submenu-hover-text-color', text_hover_color );
+			document.documentElement.style.setProperty( '--submenu-border-color', border_color );
 		} );
 	} );
 
-	/* Secondary Link Color Option */
-	wp.customize( 'gt_basic_theme_options[link_color_two]', function( value ) {
+	/* Secondary Color Option */
+	wp.customize( 'gt_basic_theme_options[secondary_color]', function( value ) {
 		value.bind( function( newval ) {
 			var text_color;
 
@@ -72,6 +82,7 @@
 				text_color = '#ffffff';
 			}
 
+			document.documentElement.style.setProperty( '--secondary-color', newval );
 			document.documentElement.style.setProperty( '--link-hover-color', newval );
 			document.documentElement.style.setProperty( '--button-hover-color', newval );
 			document.documentElement.style.setProperty( '--button-hover-text-color', text_color );
@@ -79,7 +90,7 @@
 	} );
 
 	/* Navi Color Option */
-	wp.customize( 'gt_basic_theme_options[navi_color_one]', function( value ) {
+	wp.customize( 'gt_basic_theme_options[navi_color]', function( value ) {
 		value.bind( function( newval ) {
 			var text_color, text_hover_color, border_color;
 
@@ -100,39 +111,10 @@
 		} );
 	} );
 
-	/* Submenu Color Option */
-	wp.customize( 'gt_basic_theme_options[navi_color_two]', function( value ) {
-		value.bind( function( newval ) {
-			var text_color, text_hover_color, border_color;
-
-			if( isColorLight( newval ) ) {
-				text_color = '#202020';
-				text_hover_color = 'rgba(0, 0, 0, 0.5)';
-				border_color = 'rgba(0, 0, 0, 0.1)';
-			} else {
-				text_color = '#ffffff';
-				text_hover_color = 'rgba(255, 255, 255, 0.5)';
-				border_color = 'rgba(255, 255, 255, 0.075)';
-			}
-
-			document.documentElement.style.setProperty( '--submenu-color', newval );
-			document.documentElement.style.setProperty( '--submenu-text-color', text_color );
-			document.documentElement.style.setProperty( '--submenu-hover-text-color', text_hover_color );
-			document.documentElement.style.setProperty( '--submenu-border-color', border_color );
-		} );
-	} );
-
 	/* Title Color Option */
 	wp.customize( 'gt_basic_theme_options[title_color]', function( value ) {
 		value.bind( function( newval ) {
 			document.documentElement.style.setProperty( '--title-color', newval );
-		} );
-	} );
-
-	/* Widget Title Color Option */
-	wp.customize( 'gt_basic_theme_options[widget_title_color]', function( value ) {
-		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--widget-title-color', newval );
 		} );
 	} );
 
@@ -155,34 +137,6 @@
 			document.documentElement.style.setProperty( '--footer-text-color', text_color );
 			document.documentElement.style.setProperty( '--footer-hover-text-color', text_hover_color );
 			document.documentElement.style.setProperty( '--footer-border-color', border_color );
-		} );
-	} );
-
-	/* Block Primary Color Option */
-	wp.customize( 'gt_basic_theme_options[block_primary_color]', function( value ) {
-		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--block-primary-color', newval );
-		} );
-	} );
-
-	/* Block Secondary Color Option */
-	wp.customize( 'gt_basic_theme_options[block_secondary_color]', function( value ) {
-		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--block-secondary-color', newval );
-		} );
-	} );
-
-	/* Block Accent Color Option */
-	wp.customize( 'gt_basic_theme_options[block_accent_color]', function( value ) {
-		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--block-accent-color', newval );
-		} );
-	} );
-
-	/* Block Complementary Color Option */
-	wp.customize( 'gt_basic_theme_options[block_complementary_color]', function( value ) {
-		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--block-complementary-color', newval );
 		} );
 	} );
 

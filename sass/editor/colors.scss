@@ -1,18 +1,10 @@
 /* Block Text Colors */
 .has-primary-color {
-	@include color(--block-primary-color);
+	@include color(--primary-color);
 }
 
 .has-secondary-color {
-	@include color(--block-secondary-color);
-}
-
-.has-accent-color {
-	@include color(--block-accent-color);
-}
-
-.has-complementary-color {
-	@include color(--block-complementary-color);
+	@include color(--secondary-color);
 }
 
 .has-white-color {
@@ -33,19 +25,11 @@
 
 /* Block Background Colors */
 .has-primary-background-color {
-	@include background(--block-primary-color);
+	@include background(--primary-color);
 }
 
 .has-secondary-background-color {
-	@include background(--block-secondary-color);
-}
-
-.has-accent-background-color {
-	@include background(--block-accent-color);
-}
-
-.has-complementary-background-color {
-	@include background(--block-complementary-color);
+	@include background(--secondary-color);
 }
 
 .has-white-background-color {

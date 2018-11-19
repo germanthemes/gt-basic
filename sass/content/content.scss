@@ -31,7 +31,7 @@
 
 .entry-title a:hover,
 .entry-title a:active {
-	@include color(--title-hover-color);
+	text-decoration: underline;
 }
 
 /* Entry Content */

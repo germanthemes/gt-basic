@@ -44,15 +44,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
+	--primary-color: #ee1133;
+	--secondary-color: #d5001a;
 	--link-color: #ee1133;
 	--link-hover-color: #D5001A;
 	--button-color: #ee1133;
 	--button-text-color: #fff;
 	--button-hover-color: #D5001A;
 	--button-hover-text-color: #fff;
-	--site-title-color: #fff;
 	--title-color: #202020;
-	--title-hover-color: #ee1133;
 	--navi-color: #202020;
 	--navi-text-color: #fff;
 	--navi-hover-text-color: rgba(255, 255, 255, 0.5);
@@ -65,10 +65,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--footer-text-color: #fff;
 	--footer-hover-text-color: rgba(255, 255, 255, 0.5);
 	--footer-border-color: rgba(255, 255, 255, 0.035);
-	--block-primary-color: #ee1133;
-	--block-secondary-color: #d5001a;
-	--block-accent-color: #efc83a;
-	--block-complementary-color: #27415f;
 	--text-font: "Open Sans", Arial, Helvetica;
 	--title-font: Montserrat, Tahoma, Arial;
 	--title-font-weight: bold;
@@ -1096,8 +1092,7 @@ textarea {
 
 .entry-title a:hover,
 .entry-title a:active {
-	color: #ee1133;
-	color: var(--title-hover-color);
+	text-decoration: underline;
 }
 
 /* Entry Content */
@@ -1171,18 +1166,6 @@ textarea {
 
 .entry-meta .updated:not(.published) {
 	display: none;
-}
-
-/* Hide post meta if they are deactivated in settings */
-body.date-hidden .type-post .entry-meta .posted-on,
-body.author-hidden .type-post .entry-meta .posted-by,
-body.categories-hidden .type-post .entry-meta .posted-in,
-body.date-hidden.author-hidden.categories-hidden .entry-meta {
-	position: absolute;
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
-	width: 1px;
-	height: 1px;
 }
 
 /* Theme Pagination */
@@ -1456,22 +1439,12 @@ h2.is-style-gt-heading-large {
 /* Block Text Colors */
 .has-primary-color {
 	color: #ee1133;
-	color: var(--block-primary-color);
+	color: var(--primary-color);
 }
 
 .has-secondary-color {
 	color: #d5001a;
-	color: var(--block-secondary-color);
-}
-
-.has-accent-color {
-	color: #efc83a;
-	color: var(--block-accent-color);
-}
-
-.has-complementary-color {
-	color: #27415f;
-	color: var(--block-complementary-color);
+	color: var(--secondary-color);
 }
 
 .has-white-color {
@@ -1493,22 +1466,12 @@ h2.is-style-gt-heading-large {
 /* Block Background Colors */
 .has-primary-background-color {
 	background-color: #ee1133;
-	background-color: var(--block-primary-color);
+	background-color: var(--primary-color);
 }
 
 .has-secondary-background-color {
 	background-color: #d5001a;
-	background-color: var(--block-secondary-color);
-}
-
-.has-accent-background-color {
-	background-color: #efc83a;
-	background-color: var(--block-accent-color);
-}
-
-.has-complementary-background-color {
-	background-color: #27415f;
-	background-color: var(--block-complementary-color);
+	background-color: var(--secondary-color);
 }
 
 .has-white-background-color {
