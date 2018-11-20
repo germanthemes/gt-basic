@@ -9,7 +9,7 @@
 
 body {
 	color: #202020;
-	font-family: "Open Sans", Arial, Helvetica;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--text-font);
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -30,7 +30,7 @@ h5,
 h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
-	font-family: Montserrat, Tahoma, Arial;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--title-font);
 	line-height: 1.4;
 }

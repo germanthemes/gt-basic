@@ -54,7 +54,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 			);
 
 			// Set Fonts.
-			$this->fonts = GT_Basic_Custom_Fonts::get_fonts();
+			$this->fonts = GT_Basic_Custom_Fonts::get_available_fonts();
 
 			parent::__construct( $manager, $id, $args );
 		}
@@ -86,7 +86,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 					<div class="actions"></div>
 				</label>
 
-			<?php
+				<?php
 			endif;
 		}
 	}

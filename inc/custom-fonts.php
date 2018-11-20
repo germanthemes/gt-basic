@@ -25,10 +25,6 @@ class GT_Basic_Custom_Fonts {
 		// Add Custom Fonts CSS code to editor.
 		add_action( 'enqueue_block_editor_assets', array( __CLASS__, 'add_custom_fonts_in_editor' ), 12 );
 
-		// Load default fonts.
-		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'load_default_fonts' ), 1 );
-		add_action( 'enqueue_block_editor_assets', array( __CLASS__, 'load_default_fonts' ), 1 );
-
 		// Add theme support for GT Typography plugin.
 		add_action( 'after_setup_theme', array( __CLASS__, 'add_typography_theme_support' ) );
 	}
@@ -109,28 +105,9 @@ class GT_Basic_Custom_Fonts {
 	}
 
 	/**
-	 * Enqueue default fonts.
+	 * Register support for GT Typography plugin.
 	 */
-	static function load_default_fonts() {
-
-		// Get selected fonts.
-		$fonts = self::get_selected_fonts();
-
-		if ( in_array( 'Open Sans', $fonts, true ) ) {
-			wp_enqueue_style( 'gt-basic-open-sans-font', get_theme_file_uri( '/assets/css/open-sans.css' ), array(), '15.0' );
-		}
-
-		if ( in_array( 'Montserrat', $fonts, true ) ) {
-			wp_enqueue_style( 'gt-basic-montserrat-font', get_theme_file_uri( '/assets/css/montserrat.css' ), array(), '12.0' );
-		}
-	}
-
-	/**
-	 * Get selected fonts in Customizer.
-	 *
-	 * @return array List of selected fonts.
-	 */
-	static function get_selected_fonts() {
+	static function add_typography_theme_support() {
 
 		// Get theme options from database.
 		$theme_options = gt_basic_theme_options();
@@ -142,31 +119,17 @@ class GT_Basic_Custom_Fonts {
 			$theme_options['navi_font'],
 		);
 
-		return $selected_fonts;
-	}
-
-	/**
-	 * Register support for GT Typography plugin.
-	 */
-	static function add_typography_theme_support() {
-
-		// Get selected fonts.
-		$selected_fonts = self::get_selected_fonts();
-
-		// Remove default fonts.
-		$selected_fonts = array_diff( $selected_fonts, array( 'Montserrat', 'Open Sans' ) );
-
 		add_theme_support( 'gt-typography', array(
 			'selected_fonts' => $selected_fonts,
 		) );
 	}
 
 	/**
-	 * Get fonts
+	 * Get available fonts
 	 *
 	 * @return array List of fonts.
 	 */
-	static function get_fonts() {
+	static function get_available_fonts() {
 
 		$fonts = array(
 			'Arial'                       => 'Arial',
@@ -183,21 +146,7 @@ class GT_Basic_Custom_Fonts {
 			'Verdana'                     => 'Verdana',
 		);
 
-		// Get Default Fonts from settings.
-		$default_options = gt_basic_default_options();
-
-		// Add default fonts to local fonts.
-		if ( isset( $default_options['text_font'] ) and ! array_key_exists( $default_options['text_font'], $fonts ) ) :
-			$fonts[ trim( $default_options['text_font'] ) ] = esc_attr( trim( $default_options['text_font'] ) );
-		endif;
-		if ( isset( $default_options['title_font'] ) and ! array_key_exists( $default_options['title_font'], $fonts ) ) :
-			$fonts[ trim( $default_options['title_font'] ) ] = esc_attr( trim( $default_options['title_font'] ) );
-		endif;
-		if ( isset( $default_options['navi_font'] ) and ! array_key_exists( $default_options['navi_font'], $fonts ) ) :
-			$fonts[ trim( $default_options['navi_font'] ) ] = esc_attr( trim( $default_options['navi_font'] ) );
-		endif;
-
-		// Allow other plugins to add fonts.
+		// Allow plugins to add fonts.
 		$fonts = apply_filters( 'gt_typography_fonts', $fonts );
 
 		// Sort fonts alphabetically.

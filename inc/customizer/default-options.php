@@ -56,9 +56,9 @@ function gt_basic_default_options() {
 		'navi_color'       => '#202020',
 		'title_color'      => '#202020',
 		'footer_color'     => '#202020',
-		'text_font'        => 'Open Sans',
-		'title_font'       => 'Montserrat',
-		'navi_font'        => 'Open Sans',
+		'text_font'        => 'SystemFontStack',
+		'title_font'       => 'SystemFontStack',
+		'navi_font'        => 'SystemFontStack',
 		'footer_text'      => sprintf( '&copy; %1$s %2$s', date( 'Y' ), get_bloginfo( 'name' ) ),
 	);
 
