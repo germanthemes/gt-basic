@@ -56,6 +56,11 @@ function gt_basic_setup() {
 		'flex-height' => true,
 	) ) );
 
+	// Set up the WordPress core custom background feature.
+	add_theme_support( 'custom-background', apply_filters( 'gt_basic_custom_background_args', array(
+		'default-color' => 'ffffff',
+	) ) );
+
 	// Add Theme Support for Selective Refresh in Customizer.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 }
