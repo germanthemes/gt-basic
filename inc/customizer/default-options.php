@@ -59,7 +59,6 @@ function gt_basic_default_options() {
 		'text_font'        => 'SystemFontStack',
 		'title_font'       => 'SystemFontStack',
 		'navi_font'        => 'SystemFontStack',
-		'footer_text'      => sprintf( '&copy; %1$s %2$s', date( 'Y' ), get_bloginfo( 'name' ) ),
 	);
 
 	return apply_filters( 'gt_basic_default_options', $default_options );

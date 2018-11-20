@@ -19,11 +19,12 @@
 
 	<footer id="colophon" class="site-footer">
 
-		<div id="footer-line" class="footer-main">
-			<?php gt_basic_footer_text(); ?>
-		</div><!-- .footer-main -->
+		<?php
+			get_template_part( 'template-parts/footer/footer', 'widgets' );
+			get_template_part( 'template-parts/footer/footer', 'copyright' );
+		?>
 
-	</footer><!-- #colophon -->
+	</footer>
 
 	<?php do_action( 'gt_basic_after_footer' ); ?>
 

@@ -1,23 +1,62 @@
 .site-footer {
-	@include font-size(15);
-	@include font-family(--navi-font);
-	@include color(--footer-hover-text-color);
-	@include background(--footer-color);
+	padding-top: 1.5rem;
+	padding-bottom: 0.5rem;
+	@include color(--footer-text-color);
+	@include background(--footer-background-color);
 }
 
 .site-footer a:link,
 .site-footer a:visited {
-	@include color(--footer-text-color);
-	text-decoration: none;
+	@include color(--footer-link-color);
 }
 
 .site-footer a:hover,
 .site-footer a:active {
-	text-decoration: underline;
+	@include color(--footer-link-hover-color);
 }
 
-.site-footer .footer-main {
+.site-footer input[type="text"],
+.site-footer input[type="email"],
+.site-footer input[type="url"],
+.site-footer input[type="password"],
+.site-footer input[type="search"],
+.site-footer input[type="submit"],
+.site-footer textarea {
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border: 1px solid var(--footer-border-color);
+	@include color(--footer-link-hover-color);
+}
+
+.site-footer input[type="text"]:focus,
+.site-footer input[type="email"]:focus,
+.site-footer input[type="url"]:focus,
+.site-footer input[type="password"]:focus,
+.site-footer input[type="search"]:focus,
+.site-footer textarea:focus {
+	@include color(--footer-text-color);
+}
+
+/* Footer Widgets */
+.footer-widgets .widget {
+	margin-bottom: 1.5rem;
+}
+
+.footer-widgets .widget-title {
+	margin-top: 0;
+}
+
+/* Footer Copyright */
+.footer-copyright {
+	@include font-size(15);
 	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-	text-align: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid var(--footer-border-color);
+}
+
+.footer-copyright .widget {
+	margin: 0;
+}
+
+.footer-copyright .widget-title {
+	margin-top: 0;
 }

@@ -61,9 +61,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--submenu-text-color: #fff;
 	--submenu-hover-text-color: rgba(255, 255, 255, 0.5);
 	--submenu-border-color: rgba(255, 255, 255, 0.075);
-	--footer-color: #202020;
+	--footer-background-color: #202020;
 	--footer-text-color: #fff;
-	--footer-hover-text-color: rgba(255, 255, 255, 0.5);
+	--footer-link-color: rgba(255, 255, 255, 0.75);
+	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
 	--footer-border-color: rgba(255, 255, 255, 0.035);
 	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--title-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -1227,32 +1228,73 @@ body.fullwidth-page-layout .entry-content > .alignwide {
 # - Footer
 --------------------------------------------------------------*/
 .site-footer {
-	font-size: 15px;
-	font-size: 0.9375rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-family: var(--navi-font);
-	color: rgba(255, 255, 255, 0.5);
-	color: var(--footer-hover-text-color);
+	padding-top: 1.5rem;
+	padding-bottom: 0.5rem;
+	color: #fff;
+	color: var(--footer-text-color);
 	background-color: #202020;
-	background-color: var(--footer-color);
+	background-color: var(--footer-background-color);
 }
 
 .site-footer a:link,
 .site-footer a:visited {
-	color: #fff;
-	color: var(--footer-text-color);
-	text-decoration: none;
+	color: rgba(255, 255, 255, 0.75);
+	color: var(--footer-link-color);
 }
 
 .site-footer a:hover,
 .site-footer a:active {
-	text-decoration: underline;
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--footer-link-hover-color);
 }
 
-.site-footer .footer-main {
+.site-footer input[type="text"],
+.site-footer input[type="email"],
+.site-footer input[type="url"],
+.site-footer input[type="password"],
+.site-footer input[type="search"],
+.site-footer input[type="submit"],
+.site-footer textarea {
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border: 1px solid var(--footer-border-color);
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--footer-link-hover-color);
+}
+
+.site-footer input[type="text"]:focus,
+.site-footer input[type="email"]:focus,
+.site-footer input[type="url"]:focus,
+.site-footer input[type="password"]:focus,
+.site-footer input[type="search"]:focus,
+.site-footer textarea:focus {
+	color: #fff;
+	color: var(--footer-text-color);
+}
+
+/* Footer Widgets */
+.footer-widgets .widget {
+	margin-bottom: 1.5rem;
+}
+
+.footer-widgets .widget-title {
+	margin-top: 0;
+}
+
+/* Footer Copyright */
+.footer-copyright {
+	font-size: 15px;
+	font-size: 0.9375rem;
 	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-	text-align: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid var(--footer-border-color);
+}
+
+.footer-copyright .widget {
+	margin: 0;
+}
+
+.footer-copyright .widget-title {
+	margin-top: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1592,6 +1634,35 @@ h2.is-style-gt-heading-large {
 /*--------------------------------------------------------------
 ## - Media Queries for Layout
 --------------------------------------------------------------*/
+@media only screen and (min-width: 560px) {
+	/* Footer Widgets */
+	.footer-widgets-columns {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: -1.5rem;
+	}
+
+	.footer-widget-column {
+		display: flex;
+		flex-grow: 1;
+		box-sizing: border-box;
+		padding-right: 1.5rem;
+		width: 50%;
+		flex-direction: column;
+	}
+
+	.footer-widget-column .widget:last-child {
+		flex-grow: 1;
+	}
+
+	/* Three Column Footer Widgets */
+	.footer-widget-column:nth-child(1):nth-last-child(3),
+	.footer-widget-column:nth-child(2):nth-last-child(2),
+	.footer-widget-column:nth-child(3):nth-last-child(1) {
+		width: 100%;
+	}
+}
+
 @media only screen and (min-width: 800px) {
 	.entry-header {
 		margin: 2rem 0 1.5rem;
@@ -1599,6 +1670,13 @@ h2.is-style-gt-heading-large {
 
 	.pagination {
 		margin: 2rem 0;
+	}
+
+	/* Three Column Footer Widgets */
+	.footer-widget-column:nth-child(1):nth-last-child(3),
+	.footer-widget-column:nth-child(2):nth-last-child(2),
+	.footer-widget-column:nth-child(3):nth-last-child(1) {
+		width: 33.3333333333333%;
 	}
 }
 
@@ -1614,8 +1692,12 @@ h2.is-style-gt-heading-large {
 }
 
 @media only screen and (min-width: 1040px) {
-	.header-image-added .header-main {
-		grid-column-gap: 1rem;
+	/* Four Column Footer Widgets */
+	.footer-widget-column:nth-child(1):nth-last-child(4),
+	.footer-widget-column:nth-child(2):nth-last-child(3),
+	.footer-widget-column:nth-child(3):nth-last-child(2),
+	.footer-widget-column:nth-child(4):nth-last-child(1) {
+		width: 25%;
 	}
 }
 

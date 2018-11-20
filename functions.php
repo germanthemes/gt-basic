@@ -108,6 +108,71 @@ add_action( 'wp_enqueue_scripts', 'gt_basic_scripts' );
 
 
 /**
+ * Register widget areas and custom widgets.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_sidebar
+ */
+function gt_basic_widgets_init() {
+
+	// Register Footer Column 1 widget area.
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Column 1', 'gt-basic' ),
+		'id'            => 'footer-column-1',
+		'description'   => esc_html_x( 'Appears in the first column in footer.', 'widget area description', 'gt-basic' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class = "widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
+	// Register Footer Column 2 widget area.
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Column 2', 'gt-basic' ),
+		'id'            => 'footer-column-2',
+		'description'   => esc_html_x( 'Appears in the second column in footer.', 'widget area description', 'gt-basic' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class = "widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
+	// Register Footer Column 3 widget area.
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Column 3', 'gt-basic' ),
+		'id'            => 'footer-column-3',
+		'description'   => esc_html_x( 'Appears in the third column in footer.', 'widget area description', 'gt-basic' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class = "widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
+	// Register Footer Column 4 widget area.
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Column 4', 'gt-basic' ),
+		'id'            => 'footer-column-4',
+		'description'   => esc_html_x( 'Appears in the fourth column in footer.', 'widget area description', 'gt-basic' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class = "widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
+	// Register Footer Copyright widget area.
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Copyright', 'gt-basic' ),
+		'id'            => 'footer-copyright',
+		'description'   => esc_html_x( 'Appears in the bottom footer line.', 'widget area description', 'gt-basic' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class = "widget-title">',
+		'after_title'   => '</h4>',
+	) );
+}
+add_action( 'widgets_init', 'gt_basic_widgets_init' );
+
+
+/**
  * Include Files
  */
 

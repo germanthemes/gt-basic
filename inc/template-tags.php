@@ -250,21 +250,3 @@ if ( ! function_exists( 'gt_basic_pagination' ) ) :
 		) );
 	}
 endif;
-
-
-/**
- * Displays credit link on footer line
- */
-function gt_basic_footer_text() {
-
-	// Get Footer Text.
-	$footer_text = gt_basic_get_option( 'footer_text' );
-
-	if ( '' !== $footer_text || is_customize_preview() ) :
-		?>
-
-		<span class="footer-text"><?php echo wp_kses_post( $footer_text ); ?></span>
-
-		<?php
-	endif;
-}
