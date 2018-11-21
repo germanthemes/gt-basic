@@ -59,6 +59,8 @@ function gt_basic_default_options() {
 		'text_font'        => 'SystemFontStack',
 		'title_font'       => 'SystemFontStack',
 		'navi_font'        => 'SystemFontStack',
+		'license_key'      => '',
+		'license_status'   => 'inactive',
 	);
 
 	return apply_filters( 'gt_basic_default_options', $default_options );

@@ -11,11 +11,13 @@ require( get_template_directory() . '/inc/customizer/sanitize-functions.php' );
 // Load Custom Controls.
 require( get_template_directory() . '/inc/customizer/controls/font-control.php' );
 require( get_template_directory() . '/inc/customizer/controls/headline-control.php' );
+require( get_template_directory() . '/inc/customizer/controls/license-control.php' );
 
 // Load Customizer Sections.
 require( get_template_directory() . '/inc/customizer/sections/website-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/color-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/typography-settings.php' );
+require( get_template_directory() . '/inc/customizer/sections/license-settings.php' );
 
 /**
  * Registers Theme Options panel and sets up some WordPress core settings
@@ -43,7 +45,7 @@ add_action( 'customize_register', 'gt_basic_customize_register_options' );
  * Embed JS file to make Theme Customizer preview reload changes asynchronously.
  */
 function gt_basic_customize_preview_js() {
-	wp_enqueue_script( 'gt-basic-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20181105', true );
+	wp_enqueue_script( 'gt-basic-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20181120', true );
 }
 add_action( 'customize_preview_init', 'gt_basic_customize_preview_js' );
 
@@ -52,7 +54,7 @@ add_action( 'customize_preview_init', 'gt_basic_customize_preview_js' );
  * Embed JS for Customizer Controls.
  */
 function gt_basic_customizer_controls_js() {
-	wp_enqueue_script( 'gt-basic-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array(), '20181105', true );
+	wp_enqueue_script( 'gt-basic-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array(), '20181120', true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'gt_basic_customizer_controls_js' );
 
@@ -61,6 +63,6 @@ add_action( 'customize_controls_enqueue_scripts', 'gt_basic_customizer_controls_
  * Embed CSS styles Customizer Controls.
  */
 function gt_basic_customizer_controls_css() {
-	wp_enqueue_style( 'gt-basic-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20181105' );
+	wp_enqueue_style( 'gt-basic-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20181120' );
 }
 add_action( 'customize_controls_print_styles', 'gt_basic_customizer_controls_css' );

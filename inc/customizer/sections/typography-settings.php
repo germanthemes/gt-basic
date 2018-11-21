@@ -17,7 +17,7 @@ function gt_basic_customize_register_typography_settings( $wp_customize ) {
 	// Add Section for Theme Fonts.
 	$wp_customize->add_section( 'gt_basic_section_typography', array(
 		'title'    => esc_html__( 'Typography', 'gt-basic' ),
-		'priority' => 40,
+		'priority' => 20,
 		'panel'    => 'gt_basic_options_panel',
 	) );
 
