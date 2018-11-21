@@ -92,8 +92,22 @@ add_action( 'after_setup_theme', 'gt_basic_gutenberg_support' );
  * Enqueue block styles and scripts for Gutenberg Editor.
  */
 function gt_basic_block_editor_assets() {
-	#wp_enqueue_script( 'gt-basic-block-editor', get_theme_file_uri( '/assets/js/editor.js' ), array( 'wp-editor' ), '20180529' );
+
+	// Enqueue Editor Styling.
 	wp_enqueue_style( 'gt-basic-block-editor', get_theme_file_uri( '/assets/css/editor.css' ), array(), '20180910', 'all' );
+
+	// Enqueue Theme Settings Sidebar plugin.
+	wp_enqueue_script( 'gt-basic-editor-theme-settings', get_theme_file_uri( '/assets/js/editor-theme-settings.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), '20181121' );
+
+	$theme_settings_l10n = array(
+		'plugin_title'   => esc_html__( 'Theme Settings', 'gt-basic' ),
+		'page_options'   => esc_html__( 'Page Options', 'gt-basic' ),
+		'page_layout'    => esc_html__( 'Page Layout', 'gt-basic' ),
+		'default_layout' => esc_html__( 'Default', 'gt-basic' ),
+		'full_layout'    => esc_html__( 'Full-width', 'gt-basic' ),
+		'hide_title'     => esc_html__( 'Hide Title', 'gt-basic' ),
+	);
+	wp_localize_script( 'gt-basic-editor-theme-settings', 'gtThemeSettingsL10n', $theme_settings_l10n );
 }
 add_action( 'enqueue_block_editor_assets', 'gt_basic_block_editor_assets' );
 
@@ -132,11 +146,6 @@ function gt_basic_gutenberg_add_admin_body_class( $classes ) {
 	// Return early if we are not in the Gutenberg Editor.
 	if ( ! is_gutenberg_page() ) {
 		return $classes;
-	}
-
-	// Wide Page Layout?
-	if ( get_post_type( $post->ID ) && 'wide' === get_post_meta( $post->ID, 'gt_page_layout', true ) ) {
-		$classes .= ' gt-wide-page-layout ';
 	}
 
 	// Fullwidth Page Layout?

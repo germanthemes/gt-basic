@@ -7,13 +7,7 @@ body.gutenberg-editor-page .editor-post-title__block .editor-post-title__input {
     line-height: 1.4;
 }
 
-/* Page Layouts */
-body.gt-wide-page-layout.gutenberg-editor-page .editor-post-title__block,
-body.gt-wide-page-layout.gutenberg-editor-page .editor-default-block-appender,
-body.gt-wide-page-layout.gutenberg-editor-page .editor-block-list__block {
-	max-width: calc( #{$wideWidth} + 30px );
-}
-
+/* Fullwidth Page Layout */
 body.gt-fullwidth-page-layout.gutenberg-editor-page .editor-post-title__block,
 body.gt-fullwidth-page-layout.gutenberg-editor-page .editor-default-block-appender,
 body.gt-fullwidth-page-layout.gutenberg-editor-page .editor-block-list__block {

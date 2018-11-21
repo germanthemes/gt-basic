@@ -1207,18 +1207,12 @@ textarea {
 # - Page Layouts
 --------------------------------------------------------------*/
 
-/* Wide Page Layout */
-body.wide-page-layout .site-content .site-main {
-	max-width: 1120px;
-}
-
 /* Fullwidth Page Layout */
 body.fullwidth-page-layout .site-content .site-main {
 	max-width: 1360px;
 }
 
 /* Disable Wide Blocks on Page Layouts */
-body.wide-page-layout .entry-content > .alignwide,
 body.fullwidth-page-layout .entry-content > .alignwide {
 	margin: 0;
 	max-width: 100%;
