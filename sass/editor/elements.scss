@@ -1,0 +1,74 @@
+/* Typography */
+body.block-editor-page .editor-styles-wrapper {
+	@include font-family(--text-font);
+	@include font-size(18);
+    line-height: 1.75;
+	color: $textColor;
+}
+
+body.block-editor-page .editor-styles-wrapper p {
+	@include font-size(18);
+	line-height: 1.75;
+	margin-bottom: 1.5em;
+}
+
+body.block-editor-page .editor-styles-wrapper .mce-content-body {
+	line-height: 1.75;
+}
+
+/* Lists */
+body.block-editor-page .editor-styles-wrapper ul,
+body.block-editor-page .editor-styles-wrapper ol {
+	margin: 0;
+	padding: 0;
+}
+
+body.block-editor-page .editor-styles-wrapper ul {
+	list-style-type: disc;
+}
+
+body.block-editor-page .editor-styles-wrapper ol {
+	list-style-type: decimal;
+}
+
+body.block-editor-page .editor-styles-wrapper ul ul,
+body.block-editor-page .editor-styles-wrapper ol ul {
+	list-style-type: circle;
+}
+
+/* Headings */
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+	clear: both;
+	margin: 1em 0 0.75em;
+	@include font-family(--title-font);
+	line-height: 1.4;
+}
+
+.editor-styles-wrapper h1 {
+	@include font-size(32);
+}
+
+.editor-styles-wrapper h2 {
+	@include font-size(26);
+}
+
+.editor-styles-wrapper h3 {
+	@include font-size(22);
+}
+
+.editor-styles-wrapper h4 {
+	@include font-size(20);
+}
+
+.editor-styles-wrapper h5 {
+	@include font-size(19);
+}
+
+.editor-styles-wrapper h6 {
+	@include font-size(18);
+}

@@ -29,7 +29,7 @@ function gt_basic_customize_register_typography_settings( $wp_customize ) {
 		'default'           => $default['text_font'],
 		'type'              => 'option',
 		'transport'         => 'postMessage',
-		'sanitize_callback' => 'esc_attr',
+		'sanitize_callback' => 'sanitize_text_field',
 	) );
 
 	$wp_customize->add_control( new GT_Basic_Customize_Font_Control(
@@ -46,7 +46,7 @@ function gt_basic_customize_register_typography_settings( $wp_customize ) {
 		'default'           => $default['title_font'],
 		'type'              => 'option',
 		'transport'         => 'postMessage',
-		'sanitize_callback' => 'esc_attr',
+		'sanitize_callback' => 'sanitize_text_field',
 	) );
 
 	$wp_customize->add_control( new GT_Basic_Customize_Font_Control(
@@ -63,7 +63,7 @@ function gt_basic_customize_register_typography_settings( $wp_customize ) {
 		'default'           => $default['navi_font'],
 		'type'              => 'option',
 		'transport'         => 'postMessage',
-		'sanitize_callback' => 'esc_attr',
+		'sanitize_callback' => 'sanitize_text_field',
 	) );
 
 	$wp_customize->add_control( new GT_Basic_Customize_Font_Control(

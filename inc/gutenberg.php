@@ -80,10 +80,6 @@ function gt_basic_gutenberg_support() {
 			'slug'      => 'extra-large',
 		),
 	) );
-
-	// Add Editor Styles.
-	add_editor_style( 'assets/css/editor-style.css' );
-	add_theme_support( 'editor-styles' );
 }
 add_action( 'after_setup_theme', 'gt_basic_gutenberg_support' );
 
@@ -94,7 +90,7 @@ add_action( 'after_setup_theme', 'gt_basic_gutenberg_support' );
 function gt_basic_block_editor_assets() {
 
 	// Enqueue Editor Styling.
-	wp_enqueue_style( 'gt-basic-block-editor', get_theme_file_uri( '/assets/css/editor.css' ), array(), '20180910', 'all' );
+	wp_enqueue_style( 'gt-basic-editor-styles', get_theme_file_uri( '/assets/css/editor-styles.css' ), array(), '20181122', 'all' );
 
 	// Enqueue Theme Settings Sidebar plugin.
 	wp_enqueue_script( 'gt-basic-editor-theme-settings', get_theme_file_uri( '/assets/js/editor-theme-settings.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), '20181121' );
@@ -137,16 +133,6 @@ add_action( 'init', 'gt_basic_register_post_meta' );
  */
 function gt_basic_gutenberg_add_admin_body_class( $classes ) {
 	global $post;
-
-	// Return early if Gutenberg is not installed.
-	if ( ! function_exists( 'is_gutenberg_page' ) ) {
-		return $classes;
-	}
-
-	// Return early if we are not in the Gutenberg Editor.
-	if ( ! is_gutenberg_page() ) {
-		return $classes;
-	}
 
 	// Fullwidth Page Layout?
 	if ( get_post_type( $post->ID ) && 'fullwidth' === get_post_meta( $post->ID, 'gt_page_layout', true ) ) {

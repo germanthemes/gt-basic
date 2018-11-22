@@ -37,7 +37,7 @@ class GT_Basic_Custom_Colors {
 	 * Add Font Family CSS styles in the head area of the Gutenberg editor.
 	 */
 	static function add_custom_colors_in_editor() {
-		wp_add_inline_style( 'gt-basic-block-editor', self::get_custom_colors_css() );
+		wp_add_inline_style( 'gt-basic-editor-styles', self::get_custom_colors_css() );
 	}
 
 	/**
