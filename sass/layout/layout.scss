@@ -7,6 +7,11 @@
 	overflow: hidden;
 }
 
+.site-content {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
 .header-main,
 .main-navigation,
 .footer-main,
@@ -16,8 +21,7 @@
 }
 
 .header-main,
-.footer-main,
-.site-main {
+.footer-main {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }

@@ -14,37 +14,31 @@ body {
 
 blockquote {
 	margin: 0 0 1.5em;
-	padding-left: 1.25em;
+	padding-left: 1.5em;
 	border-left: 4px solid $textColor;
-	color: #777;
-	font-size: 18px;
-	font-size: 1.125rem;
+	color: rgba(0,0,0,0.5);
+	@include font-size(18);
 }
 
-blockquote cite,
-blockquote small {
+blockquote p {
+	margin-bottom: 0.75em;
+}
+
+blockquote cite {
 	display: block;
-	margin-top: 1em;
 	color: $textColor;
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.75;
+	@include font-size(16);
 }
 
-blockquote cite:before,
-blockquote small:before {
+blockquote cite:before {
 	content: "\2014\00a0";
-}
-
-blockquote > :last-child {
-	margin-bottom: 0.5em;
 }
 
 hr {
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: #ccc;
+	background-color: rgba(0,0,0,0.15);
 }
 
 ul,
@@ -63,8 +57,14 @@ ol {
 
 li > ul,
 li > ol {
-	margin-bottom: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 	margin-left: 1.5em;
+}
+
+ul ul,
+ol ul {
+	list-style-type: circle;
 }
 
 dt {
@@ -89,13 +89,11 @@ table {
 
 th,
 td {
-	padding: 0.3em 0.6em;
-	border: 1px solid rgba(0,0,0,0.075);
+	padding: 0.4em 0.6em;
+	border: 1px solid rgba(0,0,0,0.15);
 }
 
-a,
-a:link,
-a:visited {
+a {
 	@include color(--link-color);
 	text-decoration: underline;
 }

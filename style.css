@@ -354,7 +354,7 @@ h6 {
 }
 
 p {
-	margin-bottom: 1.25em;
+	margin: 0 0 1.5em;
 }
 
 dfn,
@@ -364,24 +364,21 @@ i {
 	font-style: italic;
 }
 
-blockquote {
-	margin: 0 1.5em;
-}
-
 address {
 	margin: 0 0 1.5em;
 }
 
 pre {
 	overflow: auto;
-	margin-bottom: 1.6em;
-	padding: 1.6em;
+	margin-bottom: 1.5em;
+	padding: 1.5em;
 	max-width: 100%;
-	border: 1px solid rgba(0, 0, 0, 0.075);
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background: rgba(0, 0, 0, 0.025);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
-	line-height: 1.6;
+	line-height: 1.5;
 }
 
 code,
@@ -428,37 +425,33 @@ body {
 
 blockquote {
 	margin: 0 0 1.5em;
-	padding-left: 1.25em;
+	padding-left: 1.5em;
 	border-left: 4px solid #202020;
-	color: #777;
+	color: rgba(0, 0, 0, 0.5);
 	font-size: 18px;
 	font-size: 1.125rem;
 }
 
-blockquote cite,
-blockquote small {
+blockquote p {
+	margin-bottom: 0.75em;
+}
+
+blockquote cite {
 	display: block;
-	margin-top: 1em;
 	color: #202020;
 	font-size: 16px;
 	font-size: 1rem;
-	line-height: 1.75;
 }
 
-blockquote cite:before,
-blockquote small:before {
+blockquote cite:before {
 	content: "\2014\00a0";
-}
-
-blockquote > :last-child {
-	margin-bottom: 0.5em;
 }
 
 hr {
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: #ccc;
+	background-color: rgba(0, 0, 0, 0.15);
 }
 
 ul,
@@ -477,8 +470,14 @@ ol {
 
 li > ul,
 li > ol {
-	margin-bottom: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 	margin-left: 1.5em;
+}
+
+ul ul,
+ol ul {
+	list-style-type: circle;
 }
 
 dt {
@@ -503,13 +502,11 @@ table {
 
 th,
 td {
-	padding: 0.3em 0.6em;
-	border: 1px solid rgba(0, 0, 0, 0.075);
+	padding: 0.4em 0.6em;
+	border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-a,
-a:link,
-a:visited {
+a {
 	color: #ee1133;
 	color: var(--link-color);
 	text-decoration: underline;
@@ -696,7 +693,6 @@ textarea {
 .alignright,
 .aligncenter {
 	display: block;
-	margin: 0.5em 0;
 }
 
 .aligncenter {
@@ -717,6 +713,11 @@ textarea {
 	overflow: hidden;
 }
 
+.site-content {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
 .header-main,
 .main-navigation,
 .footer-main,
@@ -726,8 +727,7 @@ textarea {
 }
 
 .header-main,
-.footer-main,
-.site-main {
+.footer-main {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }
@@ -735,11 +735,11 @@ textarea {
 .header-main,
 .main-navigation,
 .footer-main {
-	max-width: 1020px;
+	max-width: 1120px;
 }
 
 .site-main {
-	max-width: 880px;
+	max-width: 800px;
 }
 
 /*--------------------------------------------------------------
@@ -1104,8 +1104,8 @@ textarea {
 
 .entry-content > .alignwide,
 .entry-content > .alignfull {
-	margin-left: calc( -100vw / 2 + 100% / 2);
-	margin-right: calc( -100vw / 2 + 100% / 2);
+	margin-left: calc( -100vw / 2 + 100% / 2 + 8px);
+	margin-right: calc( -100vw / 2 + 100% / 2 + 8px);
 	max-width: 100vw;
 }
 
@@ -1209,13 +1209,24 @@ textarea {
 
 /* Fullwidth Page Layout */
 body.fullwidth-page-layout .site-content .site-main {
-	max-width: 1360px;
+	max-width: 1120px;
 }
 
-/* Disable Wide Blocks on Page Layouts */
-body.fullwidth-page-layout .entry-content > .alignwide {
-	margin: 0;
-	max-width: 100%;
+/* Adjust Wide Blocks */
+@media only screen and (min-width: 1040px) {
+	body.fullwidth-page-layout .entry-content > .alignwide {
+		margin-left: calc( -100vw / 2 + 100% / 2 + 8px);
+		margin-right: calc( -100vw / 2 + 100% / 2 + 8px);
+		max-width: 100vw;
+	}
+}
+
+@media only screen and (min-width: 1360px) {
+	body.fullwidth-page-layout .entry-content > .alignwide {
+		margin-left: -120px;
+		margin-right: -120px;
+		max-width: 1360px;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -1430,10 +1441,112 @@ object {
 # - Blocks
 --------------------------------------------------------------*/
 
-/* Cover Image Block */
-.wp-block-cover-image.alignwide,
-.wp-block-cover-image.alignfull {
+/* Button Block */
+.wp-block-button__link:link,
+.wp-block-button__link:visited {
+	text-decoration: none;
+}
+
+.wp-block-button__link:hover,
+.wp-block-button__link:active {
+	text-decoration: underline;
+}
+
+/* Cover Block */
+.wp-block-cover {
+	display: flex;
+}
+
+.wp-block-cover-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 32px;
+	font-size: 2rem;
+}
+
+.wp-block-cover.alignwide,
+.wp-block-cover.alignfull {
 	width: auto;
+}
+
+/* Separator Block */
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+	max-width: 120px;
+	height: 4px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Video Embed Block */
+.wp-block-embed-vimeo.alignfull iframe {
+	width: 100%;
+}
+
+/* Quote Block */
+.wp-block-quote.is-style-large {
+	border: none;
+	margin: 0 0 1.5em;
+	padding: 0;
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: italic;
+}
+
+.wp-block-quote.is-style-large p {
+	font-size: inherit;
+	font-style: inherit;
+	line-height: inherit;
+}
+
+.wp-block-quote.is-style-large cite {
+	text-align: inherit;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: var(--text-font);
+}
+
+/* Pullquote Block */
+.wp-block-pullquote {
+	margin-bottom: 1.5em;
+	padding: 1.5em 0;
+	border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+	border-top: 4px solid rgba(0, 0, 0, 0.15);
+}
+
+.wp-block-pullquote blockquote {
+	border: none;
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: italic;
+}
+
+.wp-block-pullquote p {
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.wp-block-pullquote blockquote cite {
+	color: #202020;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: var(--text-font);
+	font-style: normal;
+}
+
+.wp-block-pullquote.is-style-solid-color blockquote {
+	max-width: 100%;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.wp-block-pullquote.is-style-solid-color blockquote p {
+	margin-bottom: 0.75em;
+	font-size: inherit;
+}
+
+.wp-block-pullquote.is-style-solid-color blockquote cite {
+	color: inherit;
 }
 
 /* Block Text Colors */
@@ -1650,6 +1763,12 @@ object {
 }
 
 @media only screen and (min-width: 1040px) {
+	.entry-content > .alignwide {
+		margin-left: -120px;
+		margin-right: -120px;
+		max-width: 1040px;
+	}
+
 	/* Four Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(4),
 	.footer-widget-column:nth-child(2):nth-last-child(3),
@@ -1671,12 +1790,6 @@ object {
 
 	.pagination {
 		margin: 2.5rem 0;
-	}
-
-	.entry-content > .alignwide {
-		margin-left: -120px;
-		margin-right: -120px;
-		max-width: 1120px;
 	}
 }
 

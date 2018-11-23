@@ -57,6 +57,11 @@
 }
 
 @media only screen and (min-width: 1040px) {
+	.entry-content > .alignwide {
+		margin-left: -120px;
+		margin-right: -120px;
+		max-width: $wideBlockWidth;
+	}
 	
 	/* Four Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(4),
@@ -80,11 +85,5 @@
 
     .pagination {
         margin: 2.5rem 0;
-	}
-	
-	.entry-content > .alignwide {
-		margin-left: -120px;
-		margin-right: -120px;
-		max-width: $wideWidth;
 	}
 }

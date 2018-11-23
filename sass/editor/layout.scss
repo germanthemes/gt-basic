@@ -1,11 +1,26 @@
 .editor-styles-wrapper .wp-block {
-	width: calc( #{$contentWidth} + 30px );
-	max-width: 100%;
+	max-width: calc( #{$contentWidth} + 30px );
+}
+
+.editor-styles-wrapper .wp-block[data-align=wide] {
+	max-width: calc( #{$wideBlockWidth} + 30px );
+}
+
+.editor-styles-wrapper .wp-block[data-align=full] {
+	max-width: none;
 }
 
 /* Fullwidth Template */
 .gt-fullwidth-page-layout .editor-styles-wrapper .wp-block {
-	width: calc( #{$themeWidth} + 30px );
+	max-width: calc( #{$contentFullwidth} + 30px );
+}
+
+.gt-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align=wide] {
+	max-width: calc( #{$wideBlockFullwidth} + 30px );
+}
+
+.gt-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align=full] {
+	max-width: none;
 }
 
 /* Post and Page Title */
