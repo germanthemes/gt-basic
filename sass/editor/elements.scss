@@ -1,18 +1,18 @@
 /* Typography */
-body.block-editor-page .editor-styles-wrapper {
+.editor-styles-wrapper {
 	@include font-family(--text-font);
 	@include font-size(18);
     line-height: 1.75;
 	color: $textColor;
 }
 
-body.block-editor-page .editor-styles-wrapper p {
+.editor-styles-wrapper p {
 	font-size: inherit;
 	line-height: 1.75;
 	margin-bottom: 1.5em;
 }
 
-body.block-editor-page .editor-styles-wrapper .mce-content-body {
+.editor-styles-wrapper .mce-content-body {
 	line-height: 1.75;
 }
 
@@ -83,7 +83,7 @@ body.block-editor-page .editor-styles-wrapper .mce-content-body {
 	@include font-size(18);
 }
 
-body.block-editor-page .editor-styles-wrapper blockquote p {
+.editor-styles-wrapper blockquote p {
 	margin-bottom: 0.75em;
 }
 
@@ -110,6 +110,19 @@ body.block-editor-page .editor-styles-wrapper blockquote p {
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 	margin-left: 1.5em;
+}
+
+.editor-styles-wrapper ul {
+	list-style: disc;
+}
+
+.editor-styles-wrapper ol {
+	list-style: decimal;
+}
+
+.editor-styles-wrapper ul ul,
+.editor-styles-wrapper ol ul {
+	list-style-type: circle;
 }
 
 /* Tables */
