@@ -49,7 +49,7 @@ function gt_basic_gutenberg_support() {
 		array(
 			'name'  => esc_html_x( 'Black', 'block color', 'gt-basic' ),
 			'slug'  => 'black',
-			'color' => '#242424',
+			'color' => '#353535',
 		),
 	) );
 

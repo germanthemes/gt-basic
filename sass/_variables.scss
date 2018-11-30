@@ -10,25 +10,26 @@ $contentFullwidth: 1200px;
 $wideBlockFullwidth: 1280px;
 
 // Text Color
-$textColor: #202020;
+$textColor: #353535;
 
 // Theme Colors
 $themeColors: (
 	--primary-color          : #ee1133,
 	--secondary-color        : #d5001a,
 	--link-color             : #ee1133,
-	--link-hover-color       : #D5001A,
+	--link-hover-color       : #353535,
 	--button-color           : #ee1133,
 	--button-text-color      : #fff,
-	--button-hover-color     : #D5001A,
+	--button-hover-color     : #353535,
 	--button-hover-text-color: #fff,
-	--title-color            : #202020,
-	--navi-color             : #202020,
+	--title-color            : #353535,
+	--title-hover-color      : #ee1133,
+	--navi-color             : #353535,
 	--navi-text-color        : #fff,
 	--navi-hover-color       : rgba(255, 255, 255, 0.06),
 	--navi-border-color      : rgba(255, 255, 255, 0.08),
 	--navi-active-color      : #ee1133,
-	--footer-background-color: #202020,
+	--footer-background-color: #353535,
 	--footer-text-color      : #fff,
 	--footer-link-color      : rgba(255, 255, 255, 0.75),
 	--footer-link-hover-color: rgba(255, 255, 255, 0.5),
@@ -39,7 +40,7 @@ $themeColors: (
 $whiteColor: #ffffff;
 $lightGrayColor: #e5e5e5;
 $darkGrayColor: #555555;
-$blackColor: #242424;
+$blackColor: #353535;
 
 // Theme Fonts
 $baseFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;

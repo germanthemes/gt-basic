@@ -1,0 +1,26 @@
+/* Read More Button */
+.more-link {
+	display: inline-block;
+	padding: 0.5em 1em;
+	@include color(--button-text-color);
+	@include background(--button-color);
+	@include font-size(15);
+}
+
+.more-link:link,
+.more-link:visited  {
+	@include color(--button-text-color);
+	text-decoration: none;
+}
+
+.more-link:hover,
+.more-link:active {
+	@include color(--button-hover-text-color);
+	@include background(--button-hover-color);
+	text-decoration: none;
+}
+
+/* Search & Archive Header */
+.search-header .search-form {
+	margin-top: 1rem;
+}

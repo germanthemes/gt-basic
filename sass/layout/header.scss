@@ -1,6 +1,6 @@
 .header-main {
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 /* Site Branding */
@@ -46,7 +46,7 @@
 
 .site-title a:hover,
 .site-title a:active {
-	text-decoration: underline;
+	@include color(--title-hover-color);
 }
 
 .site-description {

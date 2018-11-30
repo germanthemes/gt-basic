@@ -6,12 +6,12 @@
 
 .entry-meta a:link,
 .entry-meta a:visited {
-	text-decoration: none;
+	color: rgba(0,0,0,0.5);
 }
 
 .entry-meta a:hover,
 .entry-meta a:active {
-	text-decoration: underline;
+	color: $textColor;
 }
 
 .entry-meta .updated:not(.published) {
