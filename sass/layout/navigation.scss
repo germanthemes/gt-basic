@@ -36,7 +36,7 @@
 	display: block;
 	margin: 0;
 	padding: 1rem 1.5rem;
-	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
 	border-top: 1px solid var(--navi-border-color);
 	text-decoration: none;
 }
@@ -49,7 +49,11 @@
 
 .main-navigation ul a:hover,
 .main-navigation ul a:active {
-	@include color(--navi-hover-text-color);
+	@include background(--navi-hover-color);
+}
+
+.main-navigation ul li.current-menu-item > a {
+	text-decoration: underline;
 }
 
 /* Submenus */
@@ -87,8 +91,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:active {
-	@include color(--navi-hover-text-color);
-	background: none;
+	@include background(--navi-hover-color);
 	cursor: pointer;
 }
 
@@ -98,11 +101,6 @@
 	height: 22px;
 	vertical-align: top;
 	@include fill(--navi-text-color);
-}
-
-.menu-toggle:hover .icon,
-.menu-toggle:active .icon {
-	@include fill(--navi-hover-text-color);
 }
 
 .toggled-on .menu-toggle .icon-menu,
@@ -120,8 +118,9 @@
 	display: block;
 	top: 0;
 	right: 0;
-	padding: 1rem 1.5rem;
+	padding: calc( 1rem + 1px ) 1.5rem;
 	background: none;
+	@include font-size(17);
 }
 
 .dropdown-toggle:focus {
@@ -132,20 +131,15 @@
 
 .dropdown-toggle:hover,
 .dropdown-toggle:active {
-	background: none;
+	@include background(--navi-hover-color);
 }
 
 .dropdown-toggle .icon {
-	margin: 0.3em 0 0;
+	margin: 0.35em 0 0;
 	width: 20px;
 	height: 20px;
 	vertical-align: top;
 	@include fill(--navi-text-color);
-}
-
-.dropdown-toggle:hover .icon,
-.dropdown-toggle:active .icon {
-	@include fill(--navi-hover-text-color);
 }
 
 .dropdown-toggle.toggled-on .icon {
@@ -155,7 +149,7 @@
 }
 
 .main-navigation ul ul .dropdown-toggle {
-	padding: 0.9rem 1.4rem;
+	@include font-size(15);
 }
 
 .main-navigation ul ul .dropdown-toggle .icon {

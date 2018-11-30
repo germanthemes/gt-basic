@@ -55,12 +55,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--title-color: #202020;
 	--navi-color: #202020;
 	--navi-text-color: #fff;
-	--navi-hover-text-color: rgba(255, 255, 255, 0.5);
-	--navi-border-color: rgba(255, 255, 255, 0.05);
-	--submenu-color: #ee1133;
-	--submenu-text-color: #fff;
-	--submenu-hover-text-color: rgba(255, 255, 255, 0.5);
-	--submenu-border-color: rgba(255, 255, 255, 0.075);
+	--navi-hover-color: rgba(255, 255, 255, 0.06);
+	--navi-active-color: #ee1133;
+	--navi-border-color: rgba(255, 255, 255, 0.08);
 	--footer-background-color: #202020;
 	--footer-text-color: #fff;
 	--footer-link-color: rgba(255, 255, 255, 0.75);
@@ -909,7 +906,7 @@ textarea {
 	display: block;
 	margin: 0;
 	padding: 1rem 1.5rem;
-	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
 	border-top: 1px solid var(--navi-border-color);
 	text-decoration: none;
 }
@@ -923,8 +920,12 @@ textarea {
 
 .main-navigation ul a:hover,
 .main-navigation ul a:active {
-	color: rgba(255, 255, 255, 0.5);
-	color: var(--navi-hover-text-color);
+	background-color: rgba(255, 255, 255, 0.06);
+	background-color: var(--navi-hover-color);
+}
+
+.main-navigation ul li.current-menu-item > a {
+	text-decoration: underline;
 }
 
 /* Submenus */
@@ -969,9 +970,8 @@ textarea {
 
 .menu-toggle:hover,
 .menu-toggle:active {
-	color: rgba(255, 255, 255, 0.5);
-	color: var(--navi-hover-text-color);
-	background: none;
+	background-color: rgba(255, 255, 255, 0.06);
+	background-color: var(--navi-hover-color);
 	cursor: pointer;
 }
 
@@ -982,12 +982,6 @@ textarea {
 	vertical-align: top;
 	fill: #fff;
 	fill: var(--navi-text-color);
-}
-
-.menu-toggle:hover .icon,
-.menu-toggle:active .icon {
-	fill: rgba(255, 255, 255, 0.5);
-	fill: var(--navi-hover-text-color);
 }
 
 .toggled-on .menu-toggle .icon-menu,
@@ -1005,8 +999,10 @@ textarea {
 	display: block;
 	top: 0;
 	right: 0;
-	padding: 1rem 1.5rem;
+	padding: calc( 1rem + 1px) 1.5rem;
 	background: none;
+	font-size: 17px;
+	font-size: 1.0625rem;
 }
 
 .dropdown-toggle:focus {
@@ -1018,22 +1014,17 @@ textarea {
 
 .dropdown-toggle:hover,
 .dropdown-toggle:active {
-	background: none;
+	background-color: rgba(255, 255, 255, 0.06);
+	background-color: var(--navi-hover-color);
 }
 
 .dropdown-toggle .icon {
-	margin: 0.3em 0 0;
+	margin: 0.35em 0 0;
 	width: 20px;
 	height: 20px;
 	vertical-align: top;
 	fill: #fff;
 	fill: var(--navi-text-color);
-}
-
-.dropdown-toggle:hover .icon,
-.dropdown-toggle:active .icon {
-	fill: rgba(255, 255, 255, 0.5);
-	fill: var(--navi-hover-text-color);
 }
 
 .dropdown-toggle.toggled-on .icon {
@@ -1043,7 +1034,8 @@ textarea {
 }
 
 .main-navigation ul ul .dropdown-toggle {
-	padding: 0.9rem 1.4rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .main-navigation ul ul .dropdown-toggle .icon {
@@ -1821,6 +1813,12 @@ object {
 		border: none;
 	}
 
+	.main-navigation ul li.current-menu-item > a {
+		text-decoration: none;
+		background-color: #ee1133;
+		background-color: var(--navi-active-color);
+	}
+
 	/* Dropdown Menus */
 	.main-navigation ul ul {
 		position: absolute;
@@ -1828,11 +1826,12 @@ object {
 		padding: 0;
 		top: 100%;
 		z-index: 99999;
-		border: 1px solid rgba(255, 255, 255, 0.075);
-		border: 1px solid var(--submenu-border-color);
-		border-top: none;
-		background-color: #ee1133;
-		background-color: var(--submenu-color);
+		border-top: 1px solid transparent;
+	}
+
+	.main-navigation ul ul li {
+		background-color: #202020;
+		background-color: var(--navi-color);
 	}
 
 	.main-navigation ul ul li:hover > ul,
@@ -1844,20 +1843,8 @@ object {
 	.main-navigation ul ul a {
 		width: 16rem;
 		padding: 1rem;
-		border-top: 1px solid rgba(255, 255, 255, 0.075);
-		border-top: 1px solid var(--submenu-border-color);
-	}
-
-	.main-navigation ul ul a:link,
-	.main-navigation ul ul a:visited {
-		color: #fff;
-		color: var(--submenu-text-color);
-	}
-
-	.main-navigation ul ul a:hover,
-	.main-navigation ul ul a:active {
-		color: rgba(255, 255, 255, 0.5);
-		color: var(--submenu-hover-text-color);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+		border-bottom: 1px solid var(--navi-border-color);
 	}
 
 	.main-navigation ul li:hover > ul,
@@ -1870,6 +1857,7 @@ object {
 		left: -999em;
 		margin-top: 0;
 		top: 0;
+		border: none;
 	}
 
 	/* Dropdown Icons */
@@ -1885,12 +1873,6 @@ object {
 		fill: var(--navi-text-color);
 	}
 
-	.main-navigation ul .menu-item-has-children > a:hover > .icon,
-	.main-navigation ul .page_item_has_children > a:hover > .icon {
-		fill: rgba(255, 255, 255, 0.5);
-		fill: var(--navi-hover-text-color);
-	}
-
 	.main-navigation ul ul .menu-item-has-children > a > .icon,
 	.main-navigation ul ul .page_item_has_children > a > .icon {
 		position: absolute;
@@ -1904,43 +1886,7 @@ object {
 		/* IE 9 */
 		transform: rotate(-90deg);
 		fill: #fff;
-		fill: var(--submenu-text-color);
-	}
-
-	.main-navigation ul ul .menu-item-has-children > a:hover > .icon,
-	.main-navigation ul ul .page_item_has_children > a:hover > .icon {
-		fill: rgba(255, 255, 255, 0.5);
-		fill: var(--submenu-hover-text-color);
-	}
-
-	/* Extra Styling for top menu items with dropdowns */
-	.main-navigation ul li.menu-item-has-children:hover a {
-		background-color: #ee1133;
-		background-color: var(--submenu-color);
-	}
-
-	.main-navigation ul li.menu-item-has-children:hover a:link,
-	.main-navigation ul li.menu-item-has-children:hover a:visited {
-		color: #fff;
-		color: var(--submenu-text-color);
-	}
-
-	.main-navigation ul li.menu-item-has-children:hover a:hover,
-	.main-navigation ul li.menu-item-has-children:hover a:active {
-		color: rgba(255, 255, 255, 0.5);
-		color: var(--submenu-hover-text-color);
-	}
-
-	.main-navigation ul li.menu-item-has-children:hover a > .icon,
-	.main-navigation ul li.page_item_has_children:hover a > .icon {
-		fill: #fff;
-		fill: var(--submenu-text-color);
-	}
-
-	.main-navigation ul li.menu-item-has-children:hover a:hover > .icon,
-	.main-navigation ul li.page_item_has_children:hover a:hover > .icon {
-		fill: rgba(255, 255, 255, 0.5);
-		fill: var(--submenu-hover-text-color);
+		fill: var(--navi-text-color);
 	}
 }
 

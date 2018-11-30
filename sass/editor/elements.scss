@@ -16,6 +16,10 @@
 	line-height: 1.75;
 }
 
+.editor-styles-wrapper a {
+	@include color(--link-color);
+}
+
 .editor-styles-wrapper hr {
 	margin-bottom: 1.5em;
 	height: 1px;

@@ -19,12 +19,9 @@
 	--title-color: #202020;
 	--navi-color: #202020;
 	--navi-text-color: #fff;
-	--navi-hover-text-color: rgba(255, 255, 255, 0.5);
-	--navi-border-color: rgba(255, 255, 255, 0.05);
-	--submenu-color: #ee1133;
-	--submenu-text-color: #fff;
-	--submenu-hover-text-color: rgba(255, 255, 255, 0.5);
-	--submenu-border-color: rgba(255, 255, 255, 0.075);
+	--navi-hover-color: rgba(255, 255, 255, 0.06);
+	--navi-active-color: #ee1133;
+	--navi-border-color: rgba(255, 255, 255, 0.08);
 	--footer-background-color: #202020;
 	--footer-text-color: #fff;
 	--footer-link-color: rgba(255, 255, 255, 0.75);
@@ -110,6 +107,11 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 .editor-styles-wrapper .mce-content-body {
 	line-height: 1.75;
+}
+
+.editor-styles-wrapper a {
+	color: #ee1133;
+	color: var(--link-color);
 }
 
 .editor-styles-wrapper hr {

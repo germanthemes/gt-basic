@@ -23,6 +23,11 @@
 		border: none;
 	}
 
+	.main-navigation ul li.current-menu-item > a {
+		text-decoration: none;
+		@include background(--navi-active-color);
+	}
+
 	/* Dropdown Menus */
 	.main-navigation ul ul {
 		position: absolute;
@@ -30,10 +35,11 @@
 		padding: 0;
 		top: 100%;
 		z-index: 99999;
-		border: 1px solid rgba(255, 255, 255, 0.075);
-		border: 1px solid var(--submenu-border-color);
-		border-top: none;
-		@include background(--submenu-color);
+		border-top: 1px solid transparent;
+	}
+
+	.main-navigation ul ul li {
+		@include background(--navi-color);
 	}
 
 	.main-navigation ul ul li:hover > ul,
@@ -45,18 +51,8 @@
 	.main-navigation ul ul a {
 		width: 16rem;
 		padding: 1rem;
-		border-top: 1px solid rgba(255, 255, 255, 0.075);
-		border-top: 1px solid var(--submenu-border-color);
-	}
-
-	.main-navigation ul ul a:link,
-	.main-navigation ul ul a:visited {
-		@include color(--submenu-text-color);
-	}
-
-	.main-navigation ul ul a:hover,
-	.main-navigation ul ul a:active {
-		@include color(--submenu-hover-text-color);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+		border-bottom: 1px solid var(--navi-border-color);
 	}
 
 	.main-navigation ul li:hover > ul,
@@ -69,6 +65,7 @@
 		left: -999em;
 		margin-top: 0;
 		top: 0;
+		border: none;
 	}
 
 	/* Dropdown Icons */
@@ -83,11 +80,6 @@
 		@include fill(--navi-text-color);
 	}
 
-	.main-navigation ul .menu-item-has-children > a:hover > .icon,
-	.main-navigation ul .page_item_has_children > a:hover > .icon {
-		@include fill(--navi-hover-text-color);
-	}
-
 	.main-navigation ul ul .menu-item-has-children > a > .icon,
 	.main-navigation ul ul .page_item_has_children > a > .icon {
 		position: absolute;
@@ -98,36 +90,6 @@
 		-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
 		-ms-transform: rotate(-90deg); /* IE 9 */
 		transform: rotate(-90deg);
-		@include fill(--submenu-text-color);
-	}
-
-	.main-navigation ul ul .menu-item-has-children > a:hover > .icon,
-	.main-navigation ul ul .page_item_has_children > a:hover > .icon {
-		@include fill(--submenu-hover-text-color);
-	}
-
-	/* Extra Styling for top menu items with dropdowns */
-	.main-navigation ul li.menu-item-has-children:hover a {
-		@include background(--submenu-color);
-	}
-
-	.main-navigation ul li.menu-item-has-children:hover a:link,
-	.main-navigation ul li.menu-item-has-children:hover a:visited {
-		@include color(--submenu-text-color);
-	}
-
-	.main-navigation ul li.menu-item-has-children:hover a:hover,
-	.main-navigation ul li.menu-item-has-children:hover a:active {
-		@include color(--submenu-hover-text-color);
-	}
-
-	.main-navigation ul li.menu-item-has-children:hover a > .icon,
-	.main-navigation ul li.page_item_has_children:hover a > .icon {
-		@include fill(--submenu-text-color);
-	}
-
-	.main-navigation ul li.menu-item-has-children:hover a:hover > .icon,
-	.main-navigation ul li.page_item_has_children:hover a:hover > .icon {
-		@include fill(--submenu-hover-text-color);
+		@include fill(--navi-text-color);
 	}
 }
