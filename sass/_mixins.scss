@@ -1,41 +1,50 @@
-// Font Family Variable
+// Font Family Variable.
 @mixin font-family($fontVar) {
 	font-family: map-get($themeFonts, $fontVar);
 	font-family: var($fontVar);
 }
 
-// Rem output with px fallback
+// Rem output with px fallback.
 @mixin font-size($sizeValue: 1) {
 	font-size: $sizeValue * 1px;
 	font-size: ($sizeValue / 16) * 1rem;
 }
 
-// Font Weight Variable
+// Font Weight Variable.
 @mixin font-weight($fontVar) {
 	font-weight: map-get($fontWeight, $fontVar);
 	font-weight: var($fontVar);
 }
 
-// Text Transform Variable
+// Text Transform Variable.
 @mixin text-transform($textVar) {
 	text-transform: map-get($textTransform, $textVar);
 	text-transform: var($textVar);
 }
 
-// Color CSS Variable
+// Color CSS Variable.
 @mixin color($colorVar) {
 	color: map-get($themeColors, $colorVar);
 	color: var($colorVar);
 }
 
-// Background CSS Variable
+// Background CSS Variable.
 @mixin background($colorVar) {
 	background-color: map-get($themeColors, $colorVar);
 	background-color: var($colorVar);
 }
 
-// Fill Icon CSS Variable
+// Fill Icon CSS Variable.
 @mixin fill($colorVar) {
 	fill: map-get($themeColors, $colorVar);
 	fill: var($colorVar);
+}
+
+// Hide Element.
+@mixin hideElement() {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
 }

@@ -9,9 +9,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<header class="post-header entry-header">
+	<?php gt_basic_post_image(); ?>
 
-		<?php gt_basic_post_image_single(); ?>
+	<header class="post-header entry-header">
 
 		<?php the_title( '<h1 class="post-title entry-title">', '</h1>' ); ?>
 

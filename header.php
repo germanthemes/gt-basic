@@ -28,9 +28,9 @@
 
 		<header id="masthead" class="site-header" role="banner">
 
-			<div class="header-main">
+			<?php gt_basic_header_image(); ?>
 
-				<?php gt_basic_header_image(); ?>
+			<div class="header-main">
 
 				<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 

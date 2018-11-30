@@ -26,9 +26,9 @@
 	wp.customize( 'gt_basic_theme_options[site_title]', function( value ) {
 		value.bind( function( newval ) {
 			if ( false === newval ) {
-				hideElement( '.site-title' );
+				$( 'body' ).addClass( 'site-title-hidden' );
 			} else {
-				showElement( '.site-title' );
+				$( 'body' ).removeClass( 'site-title-hidden' );
 			}
 		} );
 	} );
@@ -37,9 +37,9 @@
 	wp.customize( 'gt_basic_theme_options[site_description]', function( value ) {
 		value.bind( function( newval ) {
 			if ( false === newval ) {
-				hideElement( '.site-description' );
+				$( 'body' ).addClass( 'site-description-hidden' );
 			} else {
-				showElement( '.site-description' );
+				$( 'body' ).removeClass( 'site-description-hidden' );
 			}
 		} );
 	} );
@@ -209,26 +209,6 @@
 			document.documentElement.style.setProperty( '--navi-font', newFont );
 		} );
 	} );
-
-	function hideElement( element ) {
-		$( element ).css({
-			clip: 'rect(1px, 1px, 1px, 1px)',
-			position: 'absolute',
-			width: '1px',
-			height: '1px',
-			overflow: 'hidden'
-		});
-	}
-
-	function showElement( element ) {
-		$( element ).css({
-			clip: 'auto',
-			position: 'relative',
-			width: 'auto',
-			height: 'auto',
-			overflow: 'visible'
-		});
-	}
 
 	function hexdec( hexString ) {
 		hexString = ( hexString + '' ).replace( /[^a-f0-9]/gi, '' );

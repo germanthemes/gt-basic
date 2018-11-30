@@ -9,7 +9,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php the_post_thumbnail(); ?>
+	<?php gt_basic_post_image(); ?>
 
 	<header class="page-header entry-header">
 

@@ -27,7 +27,7 @@ function gt_basic_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Set detfault Post Thumbnail size.
-	set_post_thumbnail_size( 1040, 585, true );
+	set_post_thumbnail_size( 1280, 400, true );
 
 	// Register Navigation Menus.
 	register_nav_menus( array(
@@ -51,14 +51,14 @@ function gt_basic_setup() {
 	// Set up the WordPress core custom header feature.
 	add_theme_support( 'custom-header', apply_filters( 'gt_basic_custom_header_args', array(
 		'header-text' => false,
-		'width'       => 1920,
-		'height'      => 300,
+		'width'       => 1280,
+		'height'      => 260,
 		'flex-height' => true,
 	) ) );
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'gt_basic_custom_background_args', array(
-		'default-color' => 'ffffff',
+		'default-color' => 'cecece',
 	) ) );
 
 	// Add Theme Support for Selective Refresh in Customizer.
@@ -69,14 +69,24 @@ add_action( 'after_setup_theme', 'gt_basic_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
+ *
  * Priority 0 to make it available to lower priority callbacks.
  *
  * @global int $content_width
  */
 function gt_basic_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'gt_basic_content_width', 1040 );
+
+	// Default content width.
+	$content_width = 720;
+
+	// Change content width on Fullwidth Page Layout.
+	if ( is_page() && 'fullwidth' === get_post_meta( get_the_ID(), 'gt_page_layout', true ) ) {
+		$content_width = 1200;
+	}
+
+	$GLOBALS['content_width'] = apply_filters( 'gt_basic_content_width', $content_width );
 }
-add_action( 'after_setup_theme', 'gt_basic_content_width', 0 );
+add_action( 'template_redirect', 'gt_basic_content_width', 0 );
 
 
 /**

@@ -16,9 +16,14 @@ function gt_basic_body_classes( $classes ) {
 	// Get theme options from database.
 	$theme_options = gt_basic_theme_options();
 
-	// Header Image added?
-	if ( has_header_image() ) {
-		$classes[] = 'header-image-added';
+	// Hide Site Title?
+	if ( false === $theme_options['site_title'] ) {
+		$classes[] = 'site-title-hidden';
+	}
+
+	// Hide Site Description?
+	if ( false === $theme_options['site_description'] ) {
+		$classes[] = 'site-description-hidden';
 	}
 
 	// Fullwidth Page Layout?
@@ -47,16 +52,6 @@ function gt_basic_hide_elements() {
 	$theme_options = gt_basic_theme_options();
 
 	$elements = array();
-
-	// Hide Site Title?
-	if ( false === $theme_options['site_title'] ) {
-		$elements[] = '.site-title';
-	}
-
-	// Hide Site Description?
-	if ( false === $theme_options['site_description'] ) {
-		$elements[] = '.site-description';
-	}
 
 	// Hide Page Title?
 	if ( is_page() && get_post_meta( get_the_ID(), 'gt_hide_page_title', true ) ) {

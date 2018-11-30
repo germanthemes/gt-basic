@@ -40,11 +40,11 @@
 # - Layout
 --------------------------------------------------------------*/
 .editor-styles-wrapper .wp-block {
-	max-width: calc( 800px + 30px);
+	max-width: calc( 720px + 30px);
 }
 
 .editor-styles-wrapper .wp-block[data-align=wide] {
-	max-width: calc( 1040px + 30px);
+	max-width: calc( 960px + 30px);
 }
 
 .editor-styles-wrapper .wp-block[data-align=full] {
@@ -53,11 +53,11 @@
 
 /* Fullwidth Template */
 .gt-fullwidth-page-layout .editor-styles-wrapper .wp-block {
-	max-width: calc( 1120px + 30px);
+	max-width: calc( 1200px + 30px);
 }
 
 .gt-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align=wide] {
-	max-width: calc( 1360px + 30px);
+	max-width: calc( 1280px + 30px);
 }
 
 .gt-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align=full] {
