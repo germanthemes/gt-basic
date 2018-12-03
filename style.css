@@ -1082,6 +1082,7 @@ textarea {
 .entry-meta a:link,
 .entry-meta a:visited {
 	color: rgba(0, 0, 0, 0.5);
+	text-decoration: none;
 }
 
 .entry-meta a:hover,
@@ -1091,6 +1092,25 @@ textarea {
 
 .entry-meta .updated:not(.published) {
 	display: none;
+}
+
+.entry-meta .posted-on,
+.entry-meta .posted-by,
+.entry-meta .posted-in {
+	display: inline-block;
+}
+
+.entry-meta .posted-on,
+.entry-meta .posted-by {
+	margin-right: 1rem;
+}
+
+.entry-meta span .icon {
+	margin: 0.2em 0.3em 0 0;
+	width: 20px;
+	height: 20px;
+	vertical-align: top;
+	fill: rgba(0, 0, 0, 0.25);
 }
 
 /* Read More Button */
@@ -1138,7 +1158,7 @@ textarea {
 .pagination .current {
 	display: inline-block;
 	margin: 0 1px 0 0;
-	padding: 0.35em 1em;
+	padding: 0.5em 1em;
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
@@ -1589,6 +1609,11 @@ object {
 		font-size: 16px;
 		font-size: 1rem;
 	}
+
+	.entry-meta span .icon {
+		width: 21px;
+		height: 21px;
+	}
 }
 
 @media only screen and (min-width: 640px) {
@@ -1625,6 +1650,11 @@ object {
 		font-size: 17px;
 		font-size: 1.0625rem;
 	}
+
+	.entry-meta span .icon {
+		width: 22px;
+		height: 22px;
+	}
 }
 
 @media only screen and (min-width: 960px) {
@@ -1648,6 +1678,11 @@ object {
 	.pagination {
 		font-size: 18px;
 		font-size: 1.125rem;
+	}
+
+	.entry-meta span .icon {
+		width: 23px;
+		height: 23px;
 	}
 }
 

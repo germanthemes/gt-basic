@@ -171,13 +171,12 @@ if ( ! function_exists( 'gt_basic_entry_date' ) ) :
 			esc_html( get_the_modified_date() )
 		);
 
-		$posted_on = sprintf(
-			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'gt-basic' ),
-			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		$posted_on = sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
+			esc_url( get_permalink() ),
+			$time_string
 		);
 
-		return '<span class="posted-on">' . $posted_on . '</span>';
+		return '<span class="posted-on">' . gt_basic_get_svg( 'time' ) . $posted_on . '</span>';
 	}
 endif;
 
@@ -194,11 +193,7 @@ if ( ! function_exists( 'gt_basic_entry_author' ) ) :
 			esc_html( get_the_author() )
 		);
 
-		$posted_by = sprintf(
-			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'gt-basic' ),
-			$author_string
-		);
+		$posted_by = gt_basic_get_svg( 'user' ) . $author_string;
 
 		return '<span class="posted-by"> ' . $posted_by . '</span>';
 	}
@@ -216,11 +211,7 @@ if ( ! function_exists( 'gt_basic_entry_categories' ) ) :
 			return;
 		}
 
-		$posted_in = sprintf(
-			/* translators: %s: post category. */
-			esc_html_x( 'in %s', 'post category', 'gt-basic' ),
-			get_the_category_list( ', ' )
-		);
+		$posted_in = gt_basic_get_svg( 'category' ) . get_the_category_list( ', ' );
 
 		return '<span class="posted-in"> ' . $posted_in . '</span>';
 	}

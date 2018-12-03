@@ -7,6 +7,7 @@
 .entry-meta a:link,
 .entry-meta a:visited {
 	color: rgba(0,0,0,0.5);
+	text-decoration: none;
 }
 
 .entry-meta a:hover,
@@ -16,4 +17,23 @@
 
 .entry-meta .updated:not(.published) {
 	display: none;
+}
+
+.entry-meta .posted-on,
+.entry-meta .posted-by,
+.entry-meta .posted-in {
+	display: inline-block;
+}
+
+.entry-meta .posted-on,
+.entry-meta .posted-by {
+	margin-right: 1rem;
+}
+
+.entry-meta span .icon {
+	margin: 0.2em 0.3em 0 0;
+	width: 20px;
+	height: 20px;
+	vertical-align: top;
+	fill: rgba(0,0,0,0.25);
 }
