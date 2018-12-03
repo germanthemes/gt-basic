@@ -25,9 +25,9 @@
 	--navi-border-color: rgba(255, 255, 255, 0.08);
 	--footer-background-color: #353535;
 	--footer-text-color: #fff;
-	--footer-link-color: rgba(255, 255, 255, 0.75);
-	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
-	--footer-border-color: rgba(255, 255, 255, 0.035);
+	--footer-link-color: rgba(255, 255, 255, 0.5);
+	--footer-link-hover-color: #fff;
+	--footer-border-color: rgba(255, 255, 255, 0.1);
 	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--title-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--title-font-weight: bold;

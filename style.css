@@ -61,9 +61,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--navi-border-color: rgba(255, 255, 255, 0.08);
 	--footer-background-color: #353535;
 	--footer-text-color: #fff;
-	--footer-link-color: rgba(255, 255, 255, 0.75);
-	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
-	--footer-border-color: rgba(255, 255, 255, 0.035);
+	--footer-link-color: rgba(255, 255, 255, 0.5);
+	--footer-link-hover-color: #fff;
+	--footer-border-color: rgba(255, 255, 255, 0.1);
 	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--title-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--title-font-weight: bold;
@@ -1194,7 +1194,7 @@ body.fullwidth-page-layout .site-content .site-main {
 --------------------------------------------------------------*/
 .site-footer {
 	padding-top: 1.5rem;
-	padding-bottom: 0.5rem;
+	padding-bottom: 1px;
 	color: #fff;
 	color: var(--footer-text-color);
 	background-color: #353535;
@@ -1203,13 +1203,13 @@ body.fullwidth-page-layout .site-content .site-main {
 
 .site-footer a:link,
 .site-footer a:visited {
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.5);
 	color: var(--footer-link-color);
 }
 
 .site-footer a:hover,
 .site-footer a:active {
-	color: rgba(255, 255, 255, 0.5);
+	color: #fff;
 	color: var(--footer-link-hover-color);
 }
 
@@ -1222,7 +1222,7 @@ body.fullwidth-page-layout .site-content .site-main {
 .site-footer textarea {
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	border: 1px solid var(--footer-border-color);
-	color: rgba(255, 255, 255, 0.5);
+	color: #fff;
 	color: var(--footer-link-hover-color);
 }
 
@@ -1243,15 +1243,23 @@ body.fullwidth-page-layout .site-content .site-main {
 
 .footer-widgets .widget-title {
 	margin-top: 0;
+	margin-bottom: 1em;
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+.footer-widgets .widget ul li a {
+	text-decoration: none;
 }
 
 /* Footer Copyright */
 .footer-copyright {
-	font-size: 15px;
-	font-size: 0.9375rem;
+	margin-bottom: 1.5rem;
 	padding-top: 1.5rem;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	border-top: 1px solid var(--footer-border-color);
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .footer-copyright .widget {
@@ -1706,10 +1714,6 @@ object {
 		flex-direction: column;
 	}
 
-	.footer-widget-column .widget:last-child {
-		flex-grow: 1;
-	}
-
 	/* Three Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(3),
 	.footer-widget-column:nth-child(2):nth-last-child(2),
@@ -1740,6 +1744,28 @@ object {
 
 	.entry-header {
 		margin: 2rem 0 1.5rem;
+	}
+
+	/* Footer */
+	.site-footer {
+		padding-top: 2rem;
+	}
+
+	.footer-widgets-columns {
+		margin-right: -2rem;
+	}
+
+	.footer-widget-column {
+		padding-right: 2rem;
+	}
+
+	.footer-widgets .widget {
+		margin-bottom: 2rem;
+	}
+
+	.footer-copyright {
+		padding-top: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	/* Three Column Footer Widgets */
@@ -1812,6 +1838,28 @@ object {
 	body.fullwidth-page-layout .entry-content > .alignwide {
 		margin-left: calc( -100vw / 2 + 100% / 2 + 1.5rem);
 		margin-right: calc( -100vw / 2 + 100% / 2 + 1.5rem);
+	}
+
+	/* Footer */
+	.site-footer {
+		padding-top: 2.5rem;
+	}
+
+	.footer-widgets-columns {
+		margin-right: -2.5rem;
+	}
+
+	.footer-widget-column {
+		padding-right: 2.5rem;
+	}
+
+	.footer-widgets .widget {
+		margin-bottom: 2.5rem;
+	}
+
+	.footer-copyright {
+		padding-top: 2.5rem;
+		margin-bottom: 2.5rem;
 	}
 }
 

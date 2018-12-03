@@ -1,6 +1,6 @@
 .site-footer {
 	padding-top: 1.5rem;
-	padding-bottom: 0.5rem;
+	padding-bottom: 1px;
 	@include color(--footer-text-color);
 	@include background(--footer-background-color);
 }
@@ -43,14 +43,21 @@
 
 .footer-widgets .widget-title {
 	margin-top: 0;
+	margin-bottom: 1em;
+	@include font-size(18);
+}
+
+.footer-widgets .widget ul li a {
+	text-decoration: none;
 }
 
 /* Footer Copyright */
 .footer-copyright {
-	@include font-size(15);
+	margin-bottom: 1.5rem;
 	padding-top: 1.5rem;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	border-top: 1px solid var(--footer-border-color);
+	@include font-size(15);
 }
 
 .footer-copyright .widget {
