@@ -149,6 +149,15 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	line-height: 1.4;
 }
 
+.editor-styles-wrapper h1.mce-content-body,
+.editor-styles-wrapper h2.mce-content-body,
+.editor-styles-wrapper h3.mce-content-body,
+.editor-styles-wrapper h4.mce-content-body,
+.editor-styles-wrapper h5.mce-content-body,
+.editor-styles-wrapper h6.mce-content-body {
+	line-height: 1.4;
+}
+
 .editor-styles-wrapper h1 {
 	font-size: 32px;
 	font-size: 2rem;
@@ -359,6 +368,19 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	color: inherit;
 }
 
+/* GT Section Block */
+.gt-background-section .gt-section-content.gt-default-width {
+	max-width: 720px;
+}
+
+.gt-background-section .gt-section-content.gt-wide-width {
+	max-width: 960px;
+}
+
+.gt-background-section .gt-section-content.gt-full-width {
+	max-width: 1280px;
+}
+
 /* Cover Block */
 body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	margin-top: 0;
@@ -422,6 +444,19 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 .wp-block-pullquote.is-style-solid-color .wp-block-pullquote__citation {
 	color: inherit;
+}
+
+/* GT Section Block */
+.gt-background-section .gt-section-content.gt-default-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
+	max-width: calc( 720px + 30px);
+}
+
+.gt-background-section .gt-section-content.gt-wide-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
+	max-width: calc( 960px + 30px);
+}
+
+.gt-background-section .gt-section-content.gt-full-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
+	max-width: calc( 1280px + 30px);
 }
 
 /*--------------------------------------------------------------

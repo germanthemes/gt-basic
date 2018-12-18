@@ -60,3 +60,18 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 .wp-block-pullquote.is-style-solid-color .wp-block-pullquote__citation {
 	color: inherit;
 }
+
+/* GT Section Block */
+.gt-background-section .gt-section-content {
+	&.gt-default-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
+		max-width: calc( #{$contentWidth} + 30px );
+	}
+
+	&.gt-wide-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
+		max-width: calc( #{$wideBlockWidth} + 30px );
+	}
+
+	&.gt-full-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
+		max-width: calc( #{$themeWidth} + 30px );
+	}
+}
