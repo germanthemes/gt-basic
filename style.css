@@ -1647,6 +1647,11 @@ object {
 		font-size: 32px;
 		font-size: 2rem;
 	}
+
+	.entry-content {
+		font-size: 19px;
+		font-size: 1.1875rem;
+	}
 }
 
 @media only screen and (min-width: 800px) {
@@ -1661,8 +1666,8 @@ object {
 	}
 
 	.entry-content {
-		font-size: 19px;
-		font-size: 1.1875rem;
+		font-size: 20px;
+		font-size: 1.25rem;
 	}
 
 	.entry-meta,
@@ -1690,8 +1695,8 @@ object {
 	}
 
 	.entry-content {
-		font-size: 20px;
-		font-size: 1.25rem;
+		font-size: 21px;
+		font-size: 1.3125rem;
 	}
 
 	.entry-meta,
