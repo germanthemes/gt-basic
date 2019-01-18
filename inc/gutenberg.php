@@ -56,28 +56,24 @@ function gt_basic_gutenberg_support() {
 	// Add theme support for font sizes.
 	add_theme_support( 'editor-font-sizes', array(
 		array(
-			'name'      => esc_html_x( 'Small', 'block font size', 'gt-basic' ),
-			'shortName' => esc_html_x( 'S', 'block font size', 'gt-basic' ),
-			'size'      => 16,
-			'slug'      => 'small',
+			'name' => esc_html_x( 'Small', 'block font size', 'gt-basic' ),
+			'size' => 16,
+			'slug' => 'small',
 		),
 		array(
-			'name'      => esc_html_x( 'Medium', 'block font size', 'gt-basic' ),
-			'shortName' => esc_html_x( 'M', 'block font size', 'gt-basic' ),
-			'size'      => 20,
-			'slug'      => 'medium',
+			'name' => esc_html_x( 'Medium', 'block font size', 'gt-basic' ),
+			'size' => 20,
+			'slug' => 'medium',
 		),
 		array(
-			'name'      => esc_html_x( 'Large', 'block font size', 'gt-basic' ),
-			'shortName' => esc_html_x( 'L', 'block font size', 'gt-basic' ),
-			'size'      => 24,
-			'slug'      => 'large',
+			'name' => esc_html_x( 'Large', 'block font size', 'gt-basic' ),
+			'size' => 24,
+			'slug' => 'large',
 		),
 		array(
-			'name'      => esc_html_x( 'Extra Large', 'block font size', 'gt-basic' ),
-			'shortName' => esc_html_x( 'XL', 'block font size', 'gt-basic' ),
-			'size'      => 36,
-			'slug'      => 'extra-large',
+			'name' => esc_html_x( 'Extra Large', 'block font size', 'gt-basic' ),
+			'size' => 36,
+			'slug' => 'extra-large',
 		),
 	) );
 }
@@ -133,6 +129,12 @@ add_action( 'init', 'gt_basic_register_post_meta' );
  */
 function gt_basic_gutenberg_add_admin_body_class( $classes ) {
 	global $post;
+	$current_screen = get_current_screen();
+
+	// Return early if we are not in the Gutenberg Editor.
+	if ( ! ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() ) ) {
+		return $classes;
+	}
 
 	// Fullwidth Page Layout?
 	if ( get_post_type( $post->ID ) && 'fullwidth' === get_post_meta( $post->ID, 'gt_page_layout', true ) ) {
