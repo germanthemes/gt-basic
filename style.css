@@ -46,6 +46,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 :root {
 	--primary-color: #ee1133;
 	--secondary-color: #d5001a;
+	--accent-color: #11a2ee;
 	--link-color: #ee1133;
 	--link-hover-color: #353535;
 	--button-color: #ee1133;
@@ -1541,6 +1542,11 @@ object {
 	color: var(--secondary-color);
 }
 
+.has-accent-color {
+	color: #11a2ee;
+	color: var(--accent-color);
+}
+
 .has-white-color {
 	color: #ffffff;
 }
@@ -1566,6 +1572,11 @@ object {
 .has-secondary-background-color {
 	background-color: #d5001a;
 	background-color: var(--secondary-color);
+}
+
+.has-accent-background-color {
+	background-color: #11a2ee;
+	background-color: var(--accent-color);
 }
 
 .has-white-background-color {

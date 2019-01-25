@@ -89,6 +89,13 @@
 		} );
 	} );
 
+	/* Accent Color Option */
+	wp.customize( 'gt_basic_theme_options[accent_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--accent-color', newval );
+		} );
+	} );
+
 	/* Navi Color Option */
 	wp.customize( 'gt_basic_theme_options[navi_color]', function( value ) {
 		value.bind( function( newval ) {

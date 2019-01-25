@@ -84,6 +84,11 @@ class GT_Basic_Custom_Colors {
 			}
 		}
 
+		// Set Accent Color.
+		if ( $theme_options['accent_color'] !== $default['accent_color'] ) {
+			$color_variables .= '--accent-color: ' . $theme_options['accent_color'] . ';';
+		}
+
 		// Set Navigation Color.
 		if ( $theme_options['navi_color'] !== $default['navi_color'] ) {
 			$color_variables .= '--navi-color: ' . $theme_options['navi_color'] . ';';

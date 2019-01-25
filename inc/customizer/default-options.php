@@ -53,6 +53,7 @@ function gt_basic_default_options() {
 		'site_description' => true,
 		'primary_color'    => '#ee1133',
 		'secondary_color'  => '#d5001a',
+		'accent_color'     => '#11a2ee',
 		'navi_color'       => '#202020',
 		'title_color'      => '#202020',
 		'footer_color'     => '#202020',

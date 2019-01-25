@@ -1,6 +1,7 @@
 :root {
 	--primary-color: map-get($themeColors, --primary-color);
 	--secondary-color: map-get($themeColors, --secondary-color);
+	--accent-color: map-get($themeColors, --accent-color);
 	--link-color: map-get($themeColors, --link-color);
 	--link-hover-color: map-get($themeColors, --link-hover-color);
 	--button-color: map-get($themeColors, --button-color);

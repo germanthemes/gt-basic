@@ -32,6 +32,11 @@ function gt_basic_gutenberg_support() {
 			'color' => esc_html( $theme_options['secondary_color'] ),
 		),
 		array(
+			'name'  => esc_html_x( 'Accent', 'block color', 'gt-basic' ),
+			'slug'  => 'accent',
+			'color' => esc_html( $theme_options['accent_color'] ),
+		),
+		array(
 			'name'  => esc_html_x( 'White', 'block color', 'gt-basic' ),
 			'slug'  => 'white',
 			'color' => '#ffffff',

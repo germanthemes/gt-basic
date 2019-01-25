@@ -7,6 +7,10 @@
 	@include color(--secondary-color);
 }
 
+.has-accent-color {
+	@include color(--accent-color);
+}
+
 .has-white-color {
 	color: $whiteColor;
 }
@@ -30,6 +34,10 @@
 
 .has-secondary-background-color {
 	@include background(--secondary-color);
+}
+
+.has-accent-background-color {
+	@include background(--accent-color);
 }
 
 .has-white-background-color {
