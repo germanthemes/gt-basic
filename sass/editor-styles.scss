@@ -24,15 +24,16 @@
 /*--------------------------------------------------------------
 # - Blocks
 --------------------------------------------------------------*/
-@import 'content/blocks';
-@import 'editor/blocks';
+@import 'blocks/core-blocks';
+@import 'blocks/gt-blocks';
+@import 'editor/editor-blocks';
 
 /*--------------------------------------------------------------
 # - Colors
 --------------------------------------------------------------*/
-@import 'editor/colors';
+@import 'blocks/colors';
 
 /*--------------------------------------------------------------
 # - Font Sizes
 --------------------------------------------------------------*/
-@import 'editor/font-sizes';
+@import 'blocks/font-sizes';
