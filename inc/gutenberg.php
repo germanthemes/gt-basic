@@ -20,7 +20,7 @@ function gt_basic_gutenberg_support() {
 	add_theme_support( 'align-wide' );
 
 	// Add theme support for block color palette.
-	add_theme_support( 'editor-color-palette', array(
+	add_theme_support( 'editor-color-palette', apply_filters( 'gt_basic_editor_color_palette_args', array(
 		array(
 			'name'  => esc_html_x( 'Primary', 'block color', 'gt-basic' ),
 			'slug'  => 'primary',
@@ -51,10 +51,10 @@ function gt_basic_gutenberg_support() {
 			'slug'  => 'black',
 			'color' => '#353535',
 		),
-	) );
+	) ) );
 
 	// Add theme support for font sizes.
-	add_theme_support( 'editor-font-sizes', array(
+	add_theme_support( 'editor-font-sizes', apply_filters( 'gt_basic_editor_font_sizes_args', array(
 		array(
 			'name' => esc_html_x( 'Small', 'block font size', 'gt-basic' ),
 			'size' => 16,
@@ -75,7 +75,7 @@ function gt_basic_gutenberg_support() {
 			'size' => 36,
 			'slug' => 'extra-large',
 		),
-	) );
+	) ) );
 }
 add_action( 'after_setup_theme', 'gt_basic_gutenberg_support' );
 
@@ -85,11 +85,14 @@ add_action( 'after_setup_theme', 'gt_basic_gutenberg_support' );
  */
 function gt_basic_block_editor_assets() {
 
+	// Get Theme Version.
+	$theme_version = wp_get_theme()->get( 'Version' );
+
 	// Enqueue Editor Styling.
-	wp_enqueue_style( 'gt-basic-editor-styles', get_theme_file_uri( '/assets/css/editor-styles.css' ), array(), '20181122', 'all' );
+	wp_enqueue_style( 'gt-basic-editor-styles', get_theme_file_uri( '/assets/css/editor-styles.css' ), array(), $theme_version, 'all' );
 
 	// Enqueue Theme Settings Sidebar plugin.
-	wp_enqueue_script( 'gt-basic-editor-theme-settings', get_theme_file_uri( '/assets/js/editor-theme-settings.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), '20181121' );
+	wp_enqueue_script( 'gt-basic-editor-theme-settings', get_theme_file_uri( '/assets/js/editor-theme-settings.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), $theme_version );
 
 	$theme_settings_l10n = array(
 		'plugin_title'   => esc_html__( 'Theme Settings', 'gt-basic' ),
