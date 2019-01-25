@@ -18,6 +18,8 @@ h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
 	@include font-family(--title-font);
+	@include font-weight(--title-font-weight);
+	@include text-transform(--title-text-transform);
 	line-height: 1.4;
 }
 

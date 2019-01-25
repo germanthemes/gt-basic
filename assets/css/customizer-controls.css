@@ -17,7 +17,11 @@
 
 /* Custom Font Control */
 .customize-control-gt_basic_custom_font {
-	margin-bottom: 24px;
+	margin-top: 24px;
+}
+
+#customize-control-text_font {
+	margin-top: 0;
 }
 
 .customize-control-gt_basic_custom_font .actions .button.previous {
@@ -38,6 +42,11 @@
 
 .customize-control-gt_basic_custom_font .actions .button:hover {
 	cursor: pointer;
+}
+
+/* Typography Checkbox Controls */
+#sub-accordion-section-gt_basic_section_typography .customize-control-checkbox {
+	margin-bottom: 0;
 }
 
 /* License Control */

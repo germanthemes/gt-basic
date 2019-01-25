@@ -69,9 +69,29 @@ class GT_Basic_Custom_Fonts {
 			$font_variables .= '--title-font: ' . self::get_font_family( $theme_options['title_font'] );
 		}
 
+		// Set Title Font Weight.
+		if ( $theme_options['title_is_bold'] !== $default_options['title_is_bold'] ) {
+			$font_variables .= '--title-font-weight: ' . ( $theme_options['title_is_bold'] ? 'bold' : 'normal' ) . '; ';
+		}
+
+		// Set Title Text Transform.
+		if ( $theme_options['title_is_uppercase'] !== $default_options['title_is_uppercase'] ) {
+			$font_variables .= '--title-text-transform: ' . ( $theme_options['title_is_uppercase'] ? 'uppercase' : 'none' ) . '; ';
+		}
+
 		// Set Navi Font.
 		if ( $theme_options['navi_font'] !== $default_options['navi_font'] ) {
 			$font_variables .= '--navi-font: ' . self::get_font_family( $theme_options['navi_font'] );
+		}
+
+		// Set Navi Font Weight.
+		if ( $theme_options['navi_is_bold'] !== $default_options['navi_is_bold'] ) {
+			$font_variables .= '--navi-font-weight: ' . ( $theme_options['navi_is_bold'] ? 'bold' : 'normal' ) . '; ';
+		}
+
+		// Set Navi Text Transform.
+		if ( $theme_options['navi_is_uppercase'] !== $default_options['navi_is_uppercase'] ) {
+			$font_variables .= '--navi-text-transform: ' . ( $theme_options['navi_is_uppercase'] ? 'uppercase' : 'none' ) . '; ';
 		}
 
 		// Return if no font variables were defined.
@@ -80,7 +100,7 @@ class GT_Basic_Custom_Fonts {
 		}
 
 		// Sanitize CSS Code.
-		$custom_css = ':root {' . $font_variables . '}';
+		$custom_css = ':root { ' . $font_variables . '}';
 		$custom_css = wp_kses( $custom_css, array( '\'', '\"' ) );
 		$custom_css = str_replace( '&gt;', '>', $custom_css );
 		$custom_css = preg_replace( '/\n/', '', $custom_css );
@@ -101,7 +121,7 @@ class GT_Basic_Custom_Fonts {
 		$system_fonts = '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; ';
 
 		// Return Font Family string.
-		return 'SystemFontStack' === $font ? $system_fonts : '"' . esc_attr( $font ) . '", Arial, Helvetica, sans-serif; ';
+		return 'SystemFontStack' === $font ? $system_fonts : '"' . esc_html( $font ) . '", Arial, Helvetica, sans-serif; ';
 	}
 
 	/**
