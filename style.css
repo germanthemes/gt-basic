@@ -806,21 +806,6 @@ textarea {
 	vertical-align: top;
 }
 
-/* Theme Options */
-.site-title-hidden .site-title,
-.site-description-hidden .site-description {
-	position: absolute;
-	clip: rect(1px, 1px, 1px, 1px);
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-}
-
-.site-title-hidden.site-description-hidden .header-main {
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
 /*--------------------------------------------------------------
 # - Navigation
 --------------------------------------------------------------*/
@@ -2079,4 +2064,19 @@ object {
 	.gallery-columns-9 {
 		grid-template-columns: repeat(9, 1fr);
 	}
+}
+
+/*--------------------------------------------------------------
+# - Theme Options
+--------------------------------------------------------------*/
+
+/* Fullwidth Page Layout */
+body.fullwidth-page-layout .site-content .site-main {
+	max-width: 1200px;
+}
+
+/* Hide Page Title */
+.page-title-hidden .type-page > .page-header,
+.page-title-hidden .type-page .featured-image-container .page-header-container {
+	display: none;
 }

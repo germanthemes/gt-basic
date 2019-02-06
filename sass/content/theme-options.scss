@@ -2,3 +2,8 @@
 body.fullwidth-page-layout .site-content .site-main {
 	max-width: $contentFullwidth;
 }
+
+/* Hide Page Title */
+.page-title-hidden .type-page .page-header {
+	display: none;
+}

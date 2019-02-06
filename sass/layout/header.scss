@@ -61,14 +61,3 @@
 .header-image img {
 	vertical-align: top;
 }
-
-/* Theme Options */
-.site-title-hidden .site-title,
-.site-description-hidden .site-description {
-	@include hideElement();
-}
-
-.site-title-hidden.site-description-hidden .header-main {
-	padding-top: 0;
-	padding-bottom: 0;
-}

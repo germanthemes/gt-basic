@@ -16,19 +16,14 @@ function gt_basic_body_classes( $classes ) {
 	// Get theme options from database.
 	$theme_options = gt_basic_theme_options();
 
-	// Hide Site Title?
-	if ( false === $theme_options['site_title'] ) {
-		$classes[] = 'site-title-hidden';
-	}
-
-	// Hide Site Description?
-	if ( false === $theme_options['site_description'] ) {
-		$classes[] = 'site-description-hidden';
-	}
-
 	// Fullwidth Page Layout?
 	if ( is_page() && 'fullwidth' === get_post_meta( get_the_ID(), 'gt_page_layout', true ) ) {
 		$classes[] = 'fullwidth-page-layout';
+	}
+
+	// Hide Page Title?
+	if ( is_page() && get_post_meta( get_the_ID(), 'gt_hide_page_title', true ) ) {
+		$classes[] = 'page-title-hidden';
 	}
 
 	// Adds a class of hfeed to non-singular pages.
@@ -53,9 +48,14 @@ function gt_basic_hide_elements() {
 
 	$elements = array();
 
-	// Hide Page Title?
-	if ( is_page() && get_post_meta( get_the_ID(), 'gt_hide_page_title', true ) ) {
-		$elements[] = '.type-page .page-header';
+	// Hide Site Title?
+	if ( false === $theme_options['site_title'] ) {
+		$elements[] = '.site-title';
+	}
+
+	// Hide Site Description?
+	if ( false === $theme_options['site_description'] ) {
+		$elements[] = '.site-description';
 	}
 
 	// Allow plugins to add own elements.
