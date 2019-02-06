@@ -1171,15 +1171,6 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-# - Page Layouts
---------------------------------------------------------------*/
-
-/* Fullwidth Page Layout */
-body.fullwidth-page-layout .site-content .site-main {
-	max-width: 1200px;
-}
-
-/*--------------------------------------------------------------
 # - Footer
 --------------------------------------------------------------*/
 .site-footer {
@@ -1408,6 +1399,20 @@ object {
 .wp-block-button__link:hover,
 .wp-block-button__link:active {
 	text-decoration: underline;
+}
+
+/* Image Block */
+.wp-block-image {
+	margin-bottom: 1.5em;
+}
+
+.wp-block-image img {
+	vertical-align: top;
+}
+
+/* Media Text Block */
+.wp-block-media-text {
+	margin-bottom: 1.5em;
 }
 
 /* Cover Block */
@@ -2076,7 +2081,6 @@ body.fullwidth-page-layout .site-content .site-main {
 }
 
 /* Hide Page Title */
-.page-title-hidden .type-page > .page-header,
-.page-title-hidden .type-page .featured-image-container .page-header-container {
+.page-title-hidden .type-page .page-header {
 	display: none;
 }
