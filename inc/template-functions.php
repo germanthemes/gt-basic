@@ -26,6 +26,11 @@ function gt_basic_body_classes( $classes ) {
 		$classes[] = 'page-title-hidden';
 	}
 
+	// Remove bottom margin of page?
+	if ( is_page() && get_post_meta( get_the_ID(), 'gt_remove_bottom_margin', true ) ) {
+		$classes[] = 'page-bottom-margin-removed';
+	}
+
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
