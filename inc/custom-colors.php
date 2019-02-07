@@ -61,27 +61,17 @@ class GT_Basic_Custom_Colors {
 			$color_variables .= '--primary-color: ' . $theme_options['primary_color'] . ';';
 			$color_variables .= '--link-color: ' . $theme_options['primary_color'] . ';';
 			$color_variables .= '--button-color: ' . $theme_options['primary_color'] . ';';
-			$color_variables .= '--submenu-color: ' . $theme_options['primary_color'] . ';';
+			$color_variables .= '--title-hover-color: ' . $theme_options['primary_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['primary_color'] ) ) {
-				$color_variables .= '--button-text-color: #202020;';
-				$color_variables .= '--submenu-text-color: #202020;';
-				$color_variables .= '--submenu-hover-text-color: rgba(0, 0, 0, 0.5);';
-				$color_variables .= '--submenu-border-color: rgba(0, 0, 0, 0.1);';
+				$color_variables .= '--button-text-color: #252525;';
 			}
 		}
 
 		// Set Secondary Color.
 		if ( $theme_options['secondary_color'] !== $default['secondary_color'] ) {
 			$color_variables .= '--secondary-color: ' . $theme_options['secondary_color'] . ';';
-			$color_variables .= '--link-hover-color: ' . $theme_options['secondary_color'] . ';';
-			$color_variables .= '--button-hover-color: ' . $theme_options['secondary_color'] . ';';
-
-			// Check if a light background color was chosen.
-			if ( self::is_color_light( $theme_options['secondary_color'] ) ) {
-				$color_variables .= '--button-hover-text-color: #202020;';
-			}
 		}
 
 		// Set Accent Color.
@@ -95,9 +85,9 @@ class GT_Basic_Custom_Colors {
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['navi_color'] ) ) {
-				$color_variables .= '--navi-text-color: #202020;';
-				$color_variables .= '--navi-hover-text-color: rgba(0, 0, 0, 0.5);';
-				$color_variables .= '--navi-border-color: rgba(0, 0, 0, 0.075);';
+				$color_variables .= '--navi-text-color: #252525;';
+				$color_variables .= '--navi-hover-color: rgba(0, 0, 0, 0.06);';
+				$color_variables .= '--navi-border-color: rgba(0, 0, 0, 0.08);';
 			}
 		}
 
@@ -108,13 +98,14 @@ class GT_Basic_Custom_Colors {
 
 		// Set Footer Color.
 		if ( $theme_options['footer_color'] !== $default['footer_color'] ) {
-			$color_variables .= '--footer-color: ' . $theme_options['footer_color'] . ';';
+			$color_variables .= '--footer-background-color: ' . $theme_options['footer_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['footer_color'] ) ) {
-				$color_variables .= '--footer-text-color: #202020;';
-				$color_variables .= '--footer-hover-text-color: rgba(0, 0, 0, 0.5);';
-				$color_variables .= '--footer-border-color: rgba(0, 0, 0, 0.05);';
+				$color_variables .= '--footer-text-color: #252525;';
+				$color_variables .= '--footer-link-color: rgba(0, 0, 0, 0.5);';
+				$color_variables .= '--footer-link-hover-color: #252525;';
+				$color_variables .= '--footer-border-color: rgba(0, 0, 0, 0.1);';
 			}
 		}
 

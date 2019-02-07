@@ -8,23 +8,22 @@
 # - Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #ee1133;
-	--secondary-color: #d5001a;
-	--accent-color: #11a2ee;
-	--link-color: #ee1133;
-	--link-hover-color: #353535;
+	--primary-color: #dd1133;
+	--secondary-color: #b7000d;
+	--accent-color: #ddcc11;
+	--link-color: #dd1133;
+	--link-hover-color: #252525;
 	--button-color: #ee1133;
 	--button-text-color: #fff;
-	--button-hover-color: #353535;
+	--button-hover-color: #252525;
 	--button-hover-text-color: #fff;
-	--title-color: #353535;
-	--title-hover-color: #ee1133;
-	--navi-color: #353535;
+	--title-color: #252525;
+	--title-hover-color: #dd1133;
+	--navi-color: #252525;
 	--navi-text-color: #fff;
 	--navi-hover-color: rgba(255, 255, 255, 0.06);
-	--navi-active-color: #ee1133;
 	--navi-border-color: rgba(255, 255, 255, 0.08);
-	--footer-background-color: #353535;
+	--footer-background-color: #252525;
 	--footer-text-color: #fff;
 	--footer-link-color: rgba(255, 255, 255, 0.5);
 	--footer-link-hover-color: #fff;
@@ -126,7 +125,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	font-size: 18px;
 	font-size: 1.125rem;
 	line-height: 1.75;
-	color: #353535;
+	color: #252525;
 }
 
 .editor-styles-wrapper p {
@@ -168,7 +167,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 }
 
 .editor-styles-wrapper a {
-	color: #ee1133;
+	color: #dd1133;
 	color: var(--link-color);
 }
 
@@ -250,7 +249,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	margin-top: 0;
 	margin-bottom: 1.5em;
 	padding-left: 1.5em;
-	border-left: 4px solid #353535;
+	border-left: 4px solid #252525;
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -262,7 +261,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 .editor-styles-wrapper blockquote cite {
 	display: block;
-	color: #353535;
+	color: #252525;
 	font-size: 16px;
 	font-size: 1rem;
 }
@@ -418,7 +417,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 }
 
 .wp-block-pullquote blockquote cite {
-	color: #353535;
+	color: #252525;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--text-font);
 	font-style: normal;
@@ -485,7 +484,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 /* Quote Block */
 .wp-block-quote:not(.is-large):not(.is-style-large) {
 	padding-left: 1.5em;
-	border-left: 4px solid #353535;
+	border-left: 4px solid #252525;
 }
 
 .wp-block-quote cite,
@@ -494,7 +493,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 .wp-block-pullquote cite,
 .wp-block-pullquote footer,
 .wp-block-pullquote .wp-block-pullquote__citation {
-	color: #353535;
+	color: #252525;
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: none;
@@ -536,17 +535,17 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 /* Block Text Colors */
 .has-primary-color {
-	color: #ee1133;
+	color: #dd1133;
 	color: var(--primary-color);
 }
 
 .has-secondary-color {
-	color: #d5001a;
+	color: #b7000d;
 	color: var(--secondary-color);
 }
 
 .has-accent-color {
-	color: #11a2ee;
+	color: #ddcc11;
 	color: var(--accent-color);
 }
 
@@ -563,22 +562,22 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-black-color {
-	color: #353535;
+	color: #252525;
 }
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #ee1133;
+	background-color: #dd1133;
 	background-color: var(--primary-color);
 }
 
 .has-secondary-background-color {
-	background-color: #d5001a;
+	background-color: #b7000d;
 	background-color: var(--secondary-color);
 }
 
 .has-accent-background-color {
-	background-color: #11a2ee;
+	background-color: #ddcc11;
 	background-color: var(--accent-color);
 }
 
@@ -595,7 +594,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-black-background-color {
-	background-color: #353535;
+	background-color: #252525;
 }
 
 /*--------------------------------------------------------------

@@ -4,6 +4,10 @@
 		display: none;
 	}
 
+	.main-navigation {
+		padding: 0 0.5rem;
+	}
+
 	.main-navigation ul,
 	.main-navigation ul ul {
 		display: block;
@@ -18,13 +22,8 @@
 	}
 
 	.main-navigation ul a {
-		padding: 1.25rem;
+		padding: 1.25rem 1.5rem;
 		border: none;
-	}
-
-	.main-navigation ul li.current-menu-item > a {
-		text-decoration: none;
-		@include background(--navi-active-color);
 	}
 
 	/* Dropdown Menus */

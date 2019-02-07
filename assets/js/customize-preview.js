@@ -47,45 +47,27 @@
 	/* Primary Color Option */
 	wp.customize( 'gt_basic_theme_options[primary_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color, text_hover_color, border_color;
+			var text_color;
 
 			if( isColorLight( newval ) ) {
-				text_color = '#202020';
-				text_hover_color = 'rgba(0, 0, 0, 0.5)';
-				border_color = 'rgba(0, 0, 0, 0.1)';
+				text_color = '#252525';
 			} else {
 				text_color = '#ffffff';
-				text_hover_color = 'rgba(255, 255, 255, 0.5)';
-				border_color = 'rgba(255, 255, 255, 0.075)';
 			}
 
 			document.documentElement.style.setProperty( '--primary-color', newval );
 			document.documentElement.style.setProperty( '--link-color', newval );
 			document.documentElement.style.setProperty( '--button-color', newval );
-			document.documentElement.style.setProperty( '--button-text-color', text_color );
+			document.documentElement.style.setProperty( '--title-hover-color', newval );
 
-			document.documentElement.style.setProperty( '--submenu-color', newval );
-			document.documentElement.style.setProperty( '--submenu-text-color', text_color );
-			document.documentElement.style.setProperty( '--submenu-hover-text-color', text_hover_color );
-			document.documentElement.style.setProperty( '--submenu-border-color', border_color );
+			document.documentElement.style.setProperty( '--button-text-color', text_color );
 		} );
 	} );
 
 	/* Secondary Color Option */
 	wp.customize( 'gt_basic_theme_options[secondary_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color;
-
-			if( isColorLight( newval ) ) {
-				text_color = '#202020';
-			} else {
-				text_color = '#ffffff';
-			}
-
 			document.documentElement.style.setProperty( '--secondary-color', newval );
-			document.documentElement.style.setProperty( '--link-hover-color', newval );
-			document.documentElement.style.setProperty( '--button-hover-color', newval );
-			document.documentElement.style.setProperty( '--button-hover-text-color', text_color );
 		} );
 	} );
 
@@ -99,21 +81,21 @@
 	/* Navi Color Option */
 	wp.customize( 'gt_basic_theme_options[navi_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color, text_hover_color, border_color;
+			var text_color, hover_color, border_color;
 
 			if( isColorLight( newval ) ) {
-				text_color = '#202020';
-				text_hover_color = 'rgba(0, 0, 0, 0.5)';
-				border_color = 'rgba(0, 0, 0, 0.075)';
+				text_color = '#252525';
+				hover_color = 'rgba(0, 0, 0, 0.06)';
+				border_color = 'rgba(0, 0, 0, 0.08)';
 			} else {
 				text_color = '#ffffff';
-				text_hover_color = 'rgba(255, 255, 255, 0.5)';
-				border_color = 'rgba(255, 255, 255, 0.05)';
+				hover_color = 'rgba(255, 255, 255, 0.06)';
+				border_color = 'rgba(255, 255, 255, 0.08)';
 			}
 
 			document.documentElement.style.setProperty( '--navi-color', newval );
 			document.documentElement.style.setProperty( '--navi-text-color', text_color );
-			document.documentElement.style.setProperty( '--navi-hover-text-color', text_hover_color );
+			document.documentElement.style.setProperty( '--navi-hover-color', hover_color );
 			document.documentElement.style.setProperty( '--navi-border-color', border_color );
 		} );
 	} );
@@ -128,21 +110,22 @@
 	/* Footer Color Option */
 	wp.customize( 'gt_basic_theme_options[footer_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color, text_hover_color, border_color;
+			var text_color, link_color, border_color;
 
 			if( isColorLight( newval ) ) {
-				text_color = '#202020';
-				text_hover_color = 'rgba(0, 0, 0, 0.5)';
-				border_color = 'rgba(0, 0, 0, 0.05)';
+				text_color = '#282828';
+				link_color = 'rgba(0, 0, 0, 0.5)';
+				border_color = 'rgba(0, 0, 0, 0.1)';
 			} else {
 				text_color = '#ffffff';
-				text_hover_color = 'rgba(255, 255, 255, 0.5)';
-				border_color = 'rgba(255, 255, 255, 0.035)';
+				link_color = 'rgba(255, 255, 255, 0.5)';
+				border_color = 'rgba(255, 255, 255, 0.1)';
 			}
 
-			document.documentElement.style.setProperty( '--footer-color', newval );
+			document.documentElement.style.setProperty( '--footer-background-color', newval );
 			document.documentElement.style.setProperty( '--footer-text-color', text_color );
-			document.documentElement.style.setProperty( '--footer-hover-text-color', text_hover_color );
+			document.documentElement.style.setProperty( '--footer-link-color', link_color );
+			document.documentElement.style.setProperty( '--footer-link-hover-color', text_color );
 			document.documentElement.style.setProperty( '--footer-border-color', border_color );
 		} );
 	} );

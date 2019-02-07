@@ -44,23 +44,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #ee1133;
-	--secondary-color: #d5001a;
-	--accent-color: #11a2ee;
-	--link-color: #ee1133;
-	--link-hover-color: #353535;
+	--primary-color: #dd1133;
+	--secondary-color: #b7000d;
+	--accent-color: #ddcc11;
+	--link-color: #dd1133;
+	--link-hover-color: #252525;
 	--button-color: #ee1133;
 	--button-text-color: #fff;
-	--button-hover-color: #353535;
+	--button-hover-color: #252525;
 	--button-hover-text-color: #fff;
-	--title-color: #353535;
-	--title-hover-color: #ee1133;
-	--navi-color: #353535;
+	--title-color: #252525;
+	--title-hover-color: #dd1133;
+	--navi-color: #252525;
 	--navi-text-color: #fff;
 	--navi-hover-color: rgba(255, 255, 255, 0.06);
-	--navi-active-color: #ee1133;
 	--navi-border-color: rgba(255, 255, 255, 0.08);
-	--footer-background-color: #353535;
+	--footer-background-color: #252525;
 	--footer-text-color: #fff;
 	--footer-link-color: rgba(255, 255, 255, 0.5);
 	--footer-link-hover-color: #fff;
@@ -301,7 +300,7 @@ button,
 input,
 select,
 textarea {
-	color: #353535;
+	color: #252525;
 	font-size: 16px;
 	font-size: 1rem;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -429,7 +428,7 @@ body {
 blockquote {
 	margin: 0 0 1.5em;
 	padding-left: 1.5em;
-	border-left: 4px solid #353535;
+	border-left: 4px solid #252525;
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -441,7 +440,7 @@ blockquote p {
 
 blockquote cite {
 	display: block;
-	color: #353535;
+	color: #252525;
 	font-size: 16px;
 	font-size: 1rem;
 }
@@ -510,7 +509,7 @@ td {
 }
 
 a {
-	color: #ee1133;
+	color: #dd1133;
 	color: var(--link-color);
 	text-decoration: underline;
 }
@@ -518,7 +517,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-	color: #353535;
+	color: #252525;
 	color: var(--link-hover-color);
 	text-decoration: none;
 }
@@ -566,7 +565,7 @@ input[type="reset"]:active,
 input[type="submit"]:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #353535;
+	background-color: #252525;
 	background-color: var(--button-hover-color);
 }
 
@@ -590,7 +589,7 @@ input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
 	border: 1px solid rgba(0, 0, 0, 0.2);
-	color: #353535;
+	color: #252525;
 }
 
 textarea {
@@ -636,7 +635,7 @@ textarea {
 
 .search-form .search-submit:hover,
 .search-form .search-submit:active {
-	background-color: #353535;
+	background-color: #252525;
 	background-color: var(--button-hover-color);
 }
 
@@ -765,7 +764,7 @@ textarea {
 .site-title {
 	margin: 0;
 	padding: 0;
-	color: #353535;
+	color: #252525;
 	color: var(--title-color);
 	text-decoration: none;
 	font-size: 32px;
@@ -781,13 +780,13 @@ textarea {
 
 .site-title a:link,
 .site-title a:visited {
-	color: #353535;
+	color: #252525;
 	color: var(--title-color);
 }
 
 .site-title a:hover,
 .site-title a:active {
-	color: #ee1133;
+	color: #dd1133;
 	color: var(--title-hover-color);
 }
 
@@ -795,7 +794,7 @@ textarea {
 	display: block;
 	margin: 0;
 	padding: 0;
-	color: #353535;
+	color: #252525;
 	color: var(--title-color);
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -811,7 +810,7 @@ textarea {
 --------------------------------------------------------------*/
 .primary-navigation {
 	position: relative;
-	background-color: #353535;
+	background-color: #252525;
 	background-color: var(--navi-color);
 }
 
@@ -1008,7 +1007,7 @@ textarea {
 .entry-title {
 	margin: 0;
 	padding: 0;
-	color: #353535;
+	color: #252525;
 	color: var(--title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
@@ -1025,14 +1024,14 @@ textarea {
 
 .entry-title a:link,
 .entry-title a:visited {
-	color: #353535;
+	color: #252525;
 	color: var(--title-color);
 	text-decoration: none;
 }
 
 .entry-title a:hover,
 .entry-title a:active {
-	color: #ee1133;
+	color: #dd1133;
 	color: var(--title-hover-color);
 }
 
@@ -1077,7 +1076,7 @@ textarea {
 
 .entry-meta a:hover,
 .entry-meta a:active {
-	color: #353535;
+	color: #252525;
 }
 
 .entry-meta .updated:not(.published) {
@@ -1126,7 +1125,7 @@ textarea {
 .more-link:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #353535;
+	background-color: #252525;
 	background-color: var(--button-hover-color);
 	text-decoration: none;
 }
@@ -1166,7 +1165,7 @@ textarea {
 .pagination a:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #353535;
+	background-color: #252525;
 	background-color: var(--button-hover-color);
 }
 
@@ -1178,7 +1177,7 @@ textarea {
 	padding-bottom: 1px;
 	color: #fff;
 	color: var(--footer-text-color);
-	background-color: #353535;
+	background-color: #252525;
 	background-color: var(--footer-background-color);
 }
 
@@ -1491,7 +1490,7 @@ object {
 }
 
 .wp-block-pullquote blockquote cite {
-	color: #353535;
+	color: #252525;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--text-font);
 	font-style: normal;
@@ -1527,17 +1526,17 @@ object {
 
 /* Block Text Colors */
 .has-primary-color {
-	color: #ee1133;
+	color: #dd1133;
 	color: var(--primary-color);
 }
 
 .has-secondary-color {
-	color: #d5001a;
+	color: #b7000d;
 	color: var(--secondary-color);
 }
 
 .has-accent-color {
-	color: #11a2ee;
+	color: #ddcc11;
 	color: var(--accent-color);
 }
 
@@ -1554,22 +1553,22 @@ object {
 }
 
 .has-black-color {
-	color: #353535;
+	color: #252525;
 }
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #ee1133;
+	background-color: #dd1133;
 	background-color: var(--primary-color);
 }
 
 .has-secondary-background-color {
-	background-color: #d5001a;
+	background-color: #b7000d;
 	background-color: var(--secondary-color);
 }
 
 .has-accent-background-color {
-	background-color: #11a2ee;
+	background-color: #ddcc11;
 	background-color: var(--accent-color);
 }
 
@@ -1586,7 +1585,7 @@ object {
 }
 
 .has-black-background-color {
-	background-color: #353535;
+	background-color: #252525;
 }
 
 /* Block Font Sizes */
@@ -1919,6 +1918,10 @@ object {
 		display: none;
 	}
 
+	.main-navigation {
+		padding: 0 0.5rem;
+	}
+
 	.main-navigation ul,
 	.main-navigation ul ul {
 		display: block;
@@ -1933,14 +1936,8 @@ object {
 	}
 
 	.main-navigation ul a {
-		padding: 1.25rem;
+		padding: 1.25rem 1.5rem;
 		border: none;
-	}
-
-	.main-navigation ul li.current-menu-item > a {
-		text-decoration: none;
-		background-color: #ee1133;
-		background-color: var(--navi-active-color);
 	}
 
 	/* Dropdown Menus */
@@ -1954,7 +1951,7 @@ object {
 	}
 
 	.main-navigation ul ul li {
-		background-color: #353535;
+		background-color: #252525;
 		background-color: var(--navi-color);
 	}
 
