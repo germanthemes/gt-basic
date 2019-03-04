@@ -17,10 +17,10 @@ class GT_Basic_License_Key {
 	static function setup() {
 
 		// Define Product ID.
-		define( 'GT_BASIC_PRODUCT_ID', 171494 );
+		define( 'GT_BASIC_PRODUCT_ID', 326 );
 
 		// Define Update API URL.
-		define( 'GT_BASIC_STORE_API_URL', 'https://themezee.com' );
+		define( 'GT_BASIC_STORE_API_URL', 'https://germanthemes.de' );
 
 		// Add License API functions.
 		add_action( 'wp_ajax_gt_activate_license', array( __CLASS__, 'activate_license' ) );
@@ -53,7 +53,11 @@ class GT_Basic_License_Key {
 		);
 
 		// Call the custom API.
-		$response = wp_remote_post( GT_BASIC_STORE_API_URL, array( 'timeout' => 35, 'sslverify' => true, 'body' => $api_params ) );
+		$response = wp_remote_post( GT_BASIC_STORE_API_URL, array(
+			'timeout'   => 25,
+			'sslverify' => true,
+			'body'      => $api_params,
+		) );
 
 		// Make sure the response came back okay.
 		if ( is_wp_error( $response ) ) {
@@ -104,7 +108,11 @@ class GT_Basic_License_Key {
 		);
 
 		// Call the custom API.
-		$response = wp_remote_post( GT_BASIC_STORE_API_URL, array( 'timeout' => 35, 'sslverify' => true, 'body' => $api_params ) );
+		$response = wp_remote_post( GT_BASIC_STORE_API_URL, array(
+			'timeout'   => 25,
+			'sslverify' => true,
+			'body'      => $api_params,
+		) );
 
 		// Make sure the response came back okay.
 		if ( is_wp_error( $response ) ) {
@@ -158,7 +166,11 @@ class GT_Basic_License_Key {
 				);
 
 				// Call the custom API.
-				$response = wp_remote_post( GT_BASIC_STORE_API_URL, array( 'timeout' => 25, 'sslverify' => true, 'body' => $api_params ) );
+				$response = wp_remote_post( GT_BASIC_STORE_API_URL, array(
+					'timeout'   => 25,
+					'sslverify' => true,
+					'body'      => $api_params,
+				) );
 
 				// Make sure the response came back okay.
 				if ( is_wp_error( $response ) ) {
