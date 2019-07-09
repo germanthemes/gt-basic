@@ -12,6 +12,7 @@ require( get_template_directory() . '/inc/customizer/sanitize-functions.php' );
 require( get_template_directory() . '/inc/customizer/controls/font-control.php' );
 require( get_template_directory() . '/inc/customizer/controls/headline-control.php' );
 require( get_template_directory() . '/inc/customizer/controls/license-control.php' );
+require( get_template_directory() . '/inc/customizer/controls/plugin-control.php' );
 
 // Load Customizer Sections.
 require( get_template_directory() . '/inc/customizer/sections/website-settings.php' );
