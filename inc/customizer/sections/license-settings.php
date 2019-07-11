@@ -18,7 +18,7 @@ function gt_basic_customize_register_license_settings( $wp_customize ) {
 	$wp_customize->add_section( 'gt_basic_section_license', array(
 		'title'       => esc_html__( 'License', 'gt-basic' ),
 		'description' => esc_html__( 'Please enter your license key. An active license key is necessary for automatic theme updates and support.', 'gt-basic' ),
-		'priority'    => 30,
+		'priority'    => 40,
 		'panel'       => 'gt_basic_options_panel',
 	) );
 
