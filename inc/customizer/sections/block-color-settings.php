@@ -70,6 +70,22 @@ function gt_basic_customize_register_block_color_settings( $wp_customize ) {
 		)
 	) );
 
+	// Add Highlight Color setting.
+	$wp_customize->add_setting( 'gt_basic_theme_options[highlight_color]', array(
+		'default'           => $default['highlight_color'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_hex_color',
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control(
+		$wp_customize, 'gt_basic_theme_options[highlight_color]', array(
+			'label'    => esc_html_x( 'Highlight', 'Color Option', 'gt-basic' ),
+			'section'  => 'gt_basic_section_block_colors',
+			'settings' => 'gt_basic_theme_options[highlight_color]',
+			'priority' => 40,
+		)
+	) );
+
 	// Add Light Gray Color setting.
 	$wp_customize->add_setting( 'gt_basic_theme_options[light_gray_color]', array(
 		'default'           => $default['light_gray_color'],
@@ -82,7 +98,7 @@ function gt_basic_customize_register_block_color_settings( $wp_customize ) {
 			'label'    => esc_html_x( 'Light Gray', 'Color Option', 'gt-basic' ),
 			'section'  => 'gt_basic_section_block_colors',
 			'settings' => 'gt_basic_theme_options[light_gray_color]',
-			'priority' => 40,
+			'priority' => 50,
 		)
 	) );
 
@@ -98,7 +114,7 @@ function gt_basic_customize_register_block_color_settings( $wp_customize ) {
 			'label'    => esc_html_x( 'Gray', 'Color Option', 'gt-basic' ),
 			'section'  => 'gt_basic_section_block_colors',
 			'settings' => 'gt_basic_theme_options[gray_color]',
-			'priority' => 50,
+			'priority' => 60,
 		)
 	) );
 
@@ -114,7 +130,7 @@ function gt_basic_customize_register_block_color_settings( $wp_customize ) {
 			'label'    => esc_html_x( 'Dark Gray', 'Color Option', 'gt-basic' ),
 			'section'  => 'gt_basic_section_block_colors',
 			'settings' => 'gt_basic_theme_options[dark_gray_color]',
-			'priority' => 60,
+			'priority' => 70,
 		)
 	) );
 }

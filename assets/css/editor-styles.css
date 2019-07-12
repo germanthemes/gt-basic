@@ -10,7 +10,11 @@
 :root {
 	--primary-color: #dd1133;
 	--secondary-color: #b7000d;
-	--accent-color: #ddcc11;
+	--accent-color: #5588cc;
+	--highlight-color: #00bb33;
+	--light-gray-color: #e5e5e5;
+	--gray-color: #555555;
+	--dark-gray-color: #252525;
 	--link-color: #dd1133;
 	--link-hover-color: #252525;
 	--button-color: #ee1133;
@@ -545,8 +549,13 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-accent-color {
-	color: #ddcc11;
+	color: #5588cc;
 	color: var(--accent-color);
+}
+
+.has-highlight-color {
+	color: #00bb33;
+	color: var(--highlight-color);
 }
 
 .has-white-color {
@@ -555,14 +564,21 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 .has-light-gray-color {
 	color: #e5e5e5;
+	color: var(--light-gray-color);
+}
+
+.has-gray-color {
+	color: #555555;
+	color: var(--gray-color);
 }
 
 .has-dark-gray-color {
-	color: #555555;
+	color: #252525;
+	color: var(--dark-gray-color);
 }
 
 .has-black-color {
-	color: #252525;
+	color: #000000;
 }
 
 /* Block Background Colors */
@@ -577,8 +593,13 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-accent-background-color {
-	background-color: #ddcc11;
+	background-color: #5588cc;
 	background-color: var(--accent-color);
+}
+
+.has-highlight-background-color {
+	background-color: #00bb33;
+	background-color: var(--highlight-color);
 }
 
 .has-white-background-color {
@@ -587,14 +608,21 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 .has-light-gray-background-color {
 	background-color: #e5e5e5;
+	background-color: var(--light-gray-color);
+}
+
+.has-gray-background-color {
+	background-color: #555555;
+	background-color: var(--gray-color);
 }
 
 .has-dark-gray-background-color {
-	background-color: #555555;
+	background-color: #252525;
+	background-color: var(--dark-gray-color);
 }
 
 .has-black-background-color {
-	background-color: #252525;
+	background-color: #000000;
 }
 
 /*--------------------------------------------------------------

@@ -79,6 +79,26 @@ class GT_Basic_Custom_Colors {
 			$color_variables .= '--accent-color: ' . $theme_options['accent_color'] . ';';
 		}
 
+		// Set Highlight Color.
+		if ( $theme_options['highlight_color'] !== $default['highlight_color'] ) {
+			$color_variables .= '--highlight-color: ' . $theme_options['highlight_color'] . ';';
+		}
+
+		// Set Light Gray Color.
+		if ( $theme_options['light_gray_color'] !== $default['light_gray_color'] ) {
+			$color_variables .= '--light-gray-color: ' . $theme_options['light_gray_color'] . ';';
+		}
+
+		// Set Gray Color.
+		if ( $theme_options['gray_color'] !== $default['gray_color'] ) {
+			$color_variables .= '--gray-color: ' . $theme_options['gray_color'] . ';';
+		}
+
+		// Set Dark Gray Color.
+		if ( $theme_options['dark_gray_color'] !== $default['dark_gray_color'] ) {
+			$color_variables .= '--dark-gray-color: ' . $theme_options['dark_gray_color'] . ';';
+		}
+
 		// Set Navigation Color.
 		if ( $theme_options['navi_color'] !== $default['navi_color'] ) {
 			$color_variables .= '--navi-color: ' . $theme_options['navi_color'] . ';';

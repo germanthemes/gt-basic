@@ -2,6 +2,10 @@
 	--primary-color: map-get($themeColors, --primary-color);
 	--secondary-color: map-get($themeColors, --secondary-color);
 	--accent-color: map-get($themeColors, --accent-color);
+	--highlight-color: map-get($themeColors, --highlight-color);
+	--light-gray-color: map-get($themeColors, --light-gray-color);
+	--gray-color: map-get($themeColors, --gray-color);
+	--dark-gray-color: map-get($themeColors, --dark-gray-color);
 	--link-color: map-get($themeColors, --link-color);
 	--link-hover-color: map-get($themeColors, --link-hover-color);
 	--button-color: map-get($themeColors, --button-color);

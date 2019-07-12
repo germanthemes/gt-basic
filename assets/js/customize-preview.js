@@ -78,6 +78,34 @@
 		} );
 	} );
 
+	/* Highlight Color Option */
+	wp.customize( 'gt_basic_theme_options[highlight_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--highlight-color', newval );
+		} );
+	} );
+
+	/* Light Gray Color Option */
+	wp.customize( 'gt_basic_theme_options[light_gray_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--light-gray-color', newval );
+		} );
+	} );
+
+	/* Gray Color Option */
+	wp.customize( 'gt_basic_theme_options[gray_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--gray-color', newval );
+		} );
+	} );
+
+	/* Dark Gray Color Option */
+	wp.customize( 'gt_basic_theme_options[dark_gray_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--dark-gray-color', newval );
+		} );
+	} );
+
 	/* Navi Color Option */
 	wp.customize( 'gt_basic_theme_options[navi_color]', function( value ) {
 		value.bind( function( newval ) {

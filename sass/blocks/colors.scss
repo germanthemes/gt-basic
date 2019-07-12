@@ -11,20 +11,28 @@
 	@include color(--accent-color);
 }
 
+.has-highlight-color {
+	@include color(--highlight-color);
+}
+
 .has-white-color {
-	color: $whiteColor;
+	color: #ffffff;
 }
 
 .has-light-gray-color {
-	color: $lightGrayColor;
+	@include color(--light-gray-color);
+}
+
+.has-gray-color {
+	@include color(--gray-color);
 }
 
 .has-dark-gray-color {
-	color: $darkGrayColor;
+	@include color(--dark-gray-color);
 }
 
 .has-black-color {
-	color: $blackColor;
+	color: #000000;
 }
 
 /* Block Background Colors */
@@ -40,18 +48,26 @@
 	@include background(--accent-color);
 }
 
+.has-highlight-background-color {
+	@include background(--highlight-color);
+}
+
 .has-white-background-color {
-	background-color: $whiteColor;
+	background-color: #ffffff;
 }
 
 .has-light-gray-background-color {
-	background-color: $lightGrayColor;
+	@include background(--light-gray-color);
+}
+
+.has-gray-background-color {
+	@include background(--gray-color);
 }
 
 .has-dark-gray-background-color {
-	background-color: $darkGrayColor;
+	@include background(--dark-gray-color);
 }
 
 .has-black-background-color {
-	background-color: $blackColor;
+	background-color: #000000;
 }
