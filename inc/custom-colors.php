@@ -59,14 +59,6 @@ class GT_Basic_Custom_Colors {
 		// Set Primary Color.
 		if ( $theme_options['primary_color'] !== $default['primary_color'] ) {
 			$color_variables .= '--primary-color: ' . $theme_options['primary_color'] . ';';
-			$color_variables .= '--link-color: ' . $theme_options['primary_color'] . ';';
-			$color_variables .= '--button-color: ' . $theme_options['primary_color'] . ';';
-			$color_variables .= '--title-hover-color: ' . $theme_options['primary_color'] . ';';
-
-			// Check if a light background color was chosen.
-			if ( self::is_color_light( $theme_options['primary_color'] ) ) {
-				$color_variables .= '--button-text-color: #252525;';
-			}
 		}
 
 		// Set Secondary Color.
@@ -99,13 +91,39 @@ class GT_Basic_Custom_Colors {
 			$color_variables .= '--dark-gray-color: ' . $theme_options['dark_gray_color'] . ';';
 		}
 
+		// Set Link Color.
+		if ( $theme_options['link_color'] !== $default['link_color'] ) {
+			$color_variables .= '--link-color: ' . $theme_options['link_color'] . ';';
+			$color_variables .= '--link-hover-color: ' . $theme_options['link_color'] . ';';
+		}
+
+		// Set Button Color.
+		if ( $theme_options['button_color'] !== $default['button_color'] ) {
+			$color_variables .= '--button-color: ' . $theme_options['button_color'] . ';';
+
+			// Check if a light background color was chosen.
+			if ( self::is_color_light( $theme_options['button_color'] ) ) {
+				$color_variables .= '--button-text-color: #151515;';
+			}
+		}
+
+		// Set Button Hover Color.
+		if ( $theme_options['button_hover_color'] !== $default['button_hover_color'] ) {
+			$color_variables .= '--button-hover-color: ' . $theme_options['button_hover_color'] . ';';
+
+			// Check if a light background color was chosen.
+			if ( self::is_color_light( $theme_options['button_hover_color'] ) ) {
+				$color_variables .= '--button-hover-text-color: #151515;';
+			}
+		}
+
 		// Set Navigation Color.
 		if ( $theme_options['navi_color'] !== $default['navi_color'] ) {
 			$color_variables .= '--navi-color: ' . $theme_options['navi_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['navi_color'] ) ) {
-				$color_variables .= '--navi-text-color: #252525;';
+				$color_variables .= '--navi-text-color: #151515;';
 				$color_variables .= '--navi-hover-color: rgba(0, 0, 0, 0.06);';
 				$color_variables .= '--navi-border-color: rgba(0, 0, 0, 0.08);';
 			}
@@ -116,15 +134,20 @@ class GT_Basic_Custom_Colors {
 			$color_variables .= '--title-color: ' . $theme_options['title_color'] . ';';
 		}
 
+		// Set Title Hover Color.
+		if ( $theme_options['title_hover_color'] !== $default['title_hover_color'] ) {
+			$color_variables .= '--title-hover-color: ' . $theme_options['title_hover_color'] . ';';
+		}
+
 		// Set Footer Color.
 		if ( $theme_options['footer_color'] !== $default['footer_color'] ) {
 			$color_variables .= '--footer-background-color: ' . $theme_options['footer_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['footer_color'] ) ) {
-				$color_variables .= '--footer-text-color: #252525;';
+				$color_variables .= '--footer-text-color: #151515;';
 				$color_variables .= '--footer-link-color: rgba(0, 0, 0, 0.5);';
-				$color_variables .= '--footer-link-hover-color: #252525;';
+				$color_variables .= '--footer-link-hover-color: #151515;';
 				$color_variables .= '--footer-border-color: rgba(0, 0, 0, 0.1);';
 			}
 		}
