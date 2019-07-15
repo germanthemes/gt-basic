@@ -38,7 +38,7 @@ function gt_basic_customize_register_theme_color_settings( $wp_customize ) {
 		)
 	) );
 
-	// Add Link Color setting.
+	// Add Button Color setting.
 	$wp_customize->add_setting( 'gt_basic_theme_options[button_color]', array(
 		'default'           => $default['button_color'],
 		'type'              => 'option',
