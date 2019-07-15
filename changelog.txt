@@ -2,6 +2,12 @@
 GT Basic Changelog
 ===================================
 
+Version 1.1
+-----------------------------------
+* added Customizer section for Block Color options
+* added Customizer section for Theme Color options
+* added support and Customizer control for the GT Local Fonts plugin
+
 Version 1.0
 -----------------------------------
 First Release
