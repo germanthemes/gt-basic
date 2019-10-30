@@ -11,7 +11,7 @@ Text Domain: gt-basic
 Tags: custom-background, custom-logo, custom-header, custom-menu, grid-layout, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
 
 This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Use it to make something cool and share what you've learned with others.
 
 GT Basic is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
@@ -1550,7 +1550,7 @@ object {
 }
 
 .has-white-color {
-	color: #ffffff;
+	color: #fff;
 }
 
 .has-light-gray-color {
@@ -1569,7 +1569,7 @@ object {
 }
 
 .has-black-color {
-	color: #000000;
+	color: #000;
 }
 
 /* Block Background Colors */
@@ -1594,7 +1594,7 @@ object {
 }
 
 .has-white-background-color {
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
 .has-light-gray-background-color {
@@ -1613,7 +1613,7 @@ object {
 }
 
 .has-black-background-color {
-	background-color: #000000;
+	background-color: #000;
 }
 
 /* Block Font Sizes */
@@ -1835,8 +1835,8 @@ object {
 
 	/* Adjust Wide Blocks for Fullwidth pages */
 	body.fullwidth-page-layout .entry-content > .alignwide {
-		margin-left: calc( -100vw / 2 + 100% / 2);
-		margin-right: calc( -100vw / 2 + 100% / 2);
+		margin-left: calc(-100vw / 2 + 100% / 2);
+		margin-right: calc(-100vw / 2 + 100% / 2);
 		max-width: 100vw;
 	}
 }
@@ -1886,8 +1886,8 @@ object {
 	.post-image,
 	.entry-content > .alignfull,
 	body.fullwidth-page-layout .entry-content > .alignwide {
-		margin-left: calc( -100vw / 2 + 100% / 2 + 1.5rem);
-		margin-right: calc( -100vw / 2 + 100% / 2 + 1.5rem);
+		margin-left: calc(-100vw / 2 + 100% / 2 + 1.5rem);
+		margin-right: calc(-100vw / 2 + 100% / 2 + 1.5rem);
 	}
 
 	/* Footer */
@@ -1921,8 +1921,8 @@ object {
 	.post-image,
 	.entry-content > .alignfull,
 	body.fullwidth-page-layout .entry-content > .alignwide {
-		margin-left: calc( -100vw / 2 + 100% / 2 + 2rem);
-		margin-right: calc( -100vw / 2 + 100% / 2 + 2rem);
+		margin-left: calc(-100vw / 2 + 100% / 2 + 2rem);
+		margin-right: calc(-100vw / 2 + 100% / 2 + 2rem);
 	}
 }
 
@@ -1931,8 +1931,8 @@ object {
 	.post-image,
 	.entry-content > .alignfull,
 	body.fullwidth-page-layout .entry-content > .alignwide {
-		margin-left: calc( 100% / 2 - 1280px / 2);
-		margin-right: calc( 100% / 2 - 1280px / 2);
+		margin-left: calc(100% / 2 - 1280px / 2);
+		margin-right: calc(100% / 2 - 1280px / 2);
 		max-width: 1280px;
 	}
 }

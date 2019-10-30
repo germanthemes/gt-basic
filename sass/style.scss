@@ -11,7 +11,7 @@ Text Domain: gt-basic
 Tags: custom-background, custom-logo, custom-header, custom-menu, grid-layout, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
 
 This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Use it to make something cool and share what you've learned with others.
 
 GT Basic is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
@@ -43,80 +43,80 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # - CSS Variables
 --------------------------------------------------------------*/
-@import '_mixins';
-@import '_variables';
-@import '_root';
+@import "_mixins";
+@import "_variables";
+@import "_root";
 
 /*--------------------------------------------------------------
 # - Normalize
 --------------------------------------------------------------*/
-@import 'setup/normalize';
+@import "setup/normalize";
 
 /*--------------------------------------------------------------
 # - Typography
 --------------------------------------------------------------*/
-@import 'setup/typography';
+@import "setup/typography";
 
 /*--------------------------------------------------------------
 # - Elements
 --------------------------------------------------------------*/
-@import 'setup/elements';
+@import "setup/elements";
 
 /*--------------------------------------------------------------
 # - Forms
 --------------------------------------------------------------*/
-@import 'setup/forms';
+@import "setup/forms";
 
 /*--------------------------------------------------------------
 # - Accessibility
 --------------------------------------------------------------*/
-@import 'setup/accessibility';
+@import "setup/accessibility";
 
 /*--------------------------------------------------------------
 # - Alignments
 --------------------------------------------------------------*/
-@import 'setup/alignments';
+@import "setup/alignments";
 
 /*--------------------------------------------------------------
 # - Layout Structure
 --------------------------------------------------------------*/
-@import 'layout/layout';
+@import "layout/layout";
 
 /*--------------------------------------------------------------
 # - Header
 --------------------------------------------------------------*/
-@import 'layout/header';
+@import "layout/header";
 
 /*--------------------------------------------------------------
 # - Navigation
 --------------------------------------------------------------*/
-@import 'layout/navigation';
+@import "layout/navigation";
 
 /*--------------------------------------------------------------
 # - Posts and pages
 --------------------------------------------------------------*/
-@import 'content/content';
-@import 'content/entry-meta';
-@import 'content/more-link';
-@import 'content/pagination';
+@import "content/content";
+@import "content/entry-meta";
+@import "content/more-link";
+@import "content/pagination";
 
 /*--------------------------------------------------------------
 # - Footer
 --------------------------------------------------------------*/
-@import 'layout/footer';
+@import "layout/footer";
 
 /*--------------------------------------------------------------
 # - Media
 --------------------------------------------------------------*/
-@import 'content/media';
+@import "content/media";
 
 /*--------------------------------------------------------------
 # - Blocks
 --------------------------------------------------------------*/
-@import 'blocks/core-blocks';
-@import 'blocks/gt-blocks';
-@import 'blocks/colors';
-@import 'blocks/font-sizes';
+@import "blocks/core-blocks";
+@import "blocks/gt-blocks";
+@import "blocks/colors";
+@import "blocks/font-sizes";
 
 /*--------------------------------------------------------------
 # - Media Queries
@@ -125,24 +125,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 ## - Media Queries for Typography
 --------------------------------------------------------------*/
-@import 'media-queries/mq-typography';
+@import "media-queries/mq-typography";
 
 /*--------------------------------------------------------------
 ## - Media Queries for Layout
 --------------------------------------------------------------*/
-@import 'media-queries/mq-layout';
+@import "media-queries/mq-layout";
 
 /*--------------------------------------------------------------
 ## - Media Queries for Navigation
 --------------------------------------------------------------*/
-@import 'media-queries/mq-navigation';
+@import "media-queries/mq-navigation";
 
 /*--------------------------------------------------------------
 ## - Media Queries for Media
 --------------------------------------------------------------*/
-@import 'media-queries/mq-media';
+@import "media-queries/mq-media";
 
 /*--------------------------------------------------------------
 # - Theme Options
 --------------------------------------------------------------*/
-@import 'content/theme-options';
+@import "content/theme-options";

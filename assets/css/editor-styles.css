@@ -559,7 +559,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-white-color {
-	color: #ffffff;
+	color: #fff;
 }
 
 .has-light-gray-color {
@@ -578,7 +578,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-black-color {
-	color: #000000;
+	color: #000;
 }
 
 /* Block Background Colors */
@@ -603,7 +603,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-white-background-color {
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
 .has-light-gray-background-color {
@@ -622,7 +622,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-black-background-color {
-	background-color: #000000;
+	background-color: #000;
 }
 
 /*--------------------------------------------------------------

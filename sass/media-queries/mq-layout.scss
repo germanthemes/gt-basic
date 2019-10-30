@@ -1,4 +1,5 @@
 @media only screen and (min-width: 560px) {
+
 	/* Footer Widgets */
 	.footer-widgets-columns {
 		display: flex;
@@ -68,7 +69,7 @@
 		padding-top: 2rem;
 		margin-bottom: 2rem;
 	}
-	
+
 	/* Three Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(3),
 	.footer-widget-column:nth-child(2):nth-last-child(2),
@@ -86,13 +87,14 @@
 
 	/* Adjust Wide Blocks for Fullwidth pages */
 	body.fullwidth-page-layout .entry-content > .alignwide {
-		margin-left: calc( -100vw / 2 + 100% / 2 );
-		margin-right: calc( -100vw / 2 + 100% / 2 );
+		margin-left: calc(-100vw / 2 + 100% / 2);
+		margin-right: calc(-100vw / 2 + 100% / 2);
 		max-width: 100vw;
 	}
 }
 
 @media only screen and (min-width: 1040px) {
+
 	/* Four Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(4),
 	.footer-widget-column:nth-child(2):nth-last-child(3),
@@ -108,7 +110,7 @@
 	}
 
 	.site {
-		box-shadow: 0 0 5px rgba(0,0,0,0.2);
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 	}
 
 	.header-main,
@@ -129,7 +131,7 @@
 	.pagination {
 		margin-bottom: 2.5rem;
 	}
-	
+
 	.entry-header {
 		margin: 2.5rem 0 2rem;
 	}
@@ -137,8 +139,8 @@
 	.post-image,
 	.entry-content > .alignfull,
 	body.fullwidth-page-layout .entry-content > .alignwide {
-		margin-left: calc( -100vw / 2 + 100% / 2 + 1.5rem );
-		margin-right: calc( -100vw / 2 + 100% / 2 + 1.5rem );
+		margin-left: calc(-100vw / 2 + 100% / 2 + 1.5rem);
+		margin-right: calc(-100vw / 2 + 100% / 2 + 1.5rem);
 	}
 
 	/* Footer */
@@ -172,8 +174,8 @@
 	.post-image,
 	.entry-content > .alignfull,
 	body.fullwidth-page-layout .entry-content > .alignwide {
-		margin-left: calc( -100vw / 2 + 100% / 2 + 2rem );
-		margin-right: calc( -100vw / 2 + 100% / 2 + 2rem );
+		margin-left: calc(-100vw / 2 + 100% / 2 + 2rem);
+		margin-right: calc(-100vw / 2 + 100% / 2 + 2rem);
 	}
 }
 
@@ -182,8 +184,8 @@
 	.post-image,
 	.entry-content > .alignfull,
 	body.fullwidth-page-layout .entry-content > .alignwide {
-		margin-left: calc( 100% / 2 - #{$themeWidth} / 2 );
-		margin-right: calc( 100% / 2 - #{$themeWidth} / 2 );
+		margin-left: calc(100% / 2 - #{$themeWidth} / 2);
+		margin-right: calc(100% / 2 - #{$themeWidth} / 2);
 		max-width: 1280px;
 	}
 }

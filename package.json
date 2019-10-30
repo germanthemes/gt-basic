@@ -30,12 +30,29 @@
     "stylelint-config-wordpress": "^12.0.0"
   },
   "stylelint": {
-    "extends": "stylelint-config-wordpress",
+    "extends": [
+		"stylelint-config-wordpress",
+		"stylelint-config-wordpress/scss"
+    ],
     "rules": {
-      "indentation": "tab",
-      "color-hex-length": null,
-      "font-weight-notation": null,
-      "max-line-length": null
+	  "indentation": "tab",
+	  "no-descending-specificity": null,
+	  "font-weight-notation": "named-where-possible",
+	  "rule-empty-line-before": [ "always", {
+		"ignore": [
+		  "first-nested",
+		  "after-comment"
+		]
+	  } ],
+	  "at-rule-empty-line-before": [ "always", {
+		"except": [
+		  "inside-block"
+		],
+		"ignore": [
+			"after-comment",
+			"blockless-after-same-name-blockless"
+		  ]
+	  } ]
     }
   }
 }
