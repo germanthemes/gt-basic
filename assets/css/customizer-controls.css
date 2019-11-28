@@ -15,6 +15,14 @@
 	margin-bottom: 6px;
 }
 
+#customize-control-gt_basic_theme_links {
+	margin-bottom: 16px;
+}
+
+#customize-control-gt_basic_theme_links .customize-control-title {
+	margin-bottom: 0;
+}
+
 /* Custom Font Control */
 .customize-control-gt_basic_custom_font {
 	margin-top: 24px;
