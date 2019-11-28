@@ -1173,6 +1173,37 @@ textarea {
 	background-color: var(--button-hover-color);
 }
 
+/* Comments */
+.comment-list {
+	list-style: none;
+	padding: 0;
+}
+
+.comment-list .comment {
+	margin-bottom: 1.5rem;
+}
+
+.comment-list .comment .comment-author {
+	font-size: 120%;
+}
+
+.comment-list .comment .comment-meta {
+	font-size: 80%;
+	margin-bottom: 0.5rem;
+}
+
+.comment-list .bypostauthor .comment-author .fn {
+	font-weight: bold;
+}
+
+.comment-list .children {
+	list-style: none;
+}
+
+.comment-form label {
+	display: block;
+}
+
 /*--------------------------------------------------------------
 # - Footer
 --------------------------------------------------------------*/
