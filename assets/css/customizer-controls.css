@@ -15,6 +15,19 @@
 	margin-bottom: 6px;
 }
 
+#customize-control-gt_basic_theme_options-post_details,
+#customize-control-gt_basic_theme_options-single_post {
+	margin-top: 16px;
+	margin-bottom: 0;
+}
+
+#customize-control-gt_basic_theme_options-meta_date,
+#customize-control-gt_basic_theme_options-meta_author,
+#customize-control-gt_basic_theme_options-meta_categories,
+#customize-control-gt_basic_theme_options-meta_tags {
+	margin-bottom: 4px;
+}
+
 #customize-control-gt_basic_theme_links {
 	margin-bottom: 16px;
 }
