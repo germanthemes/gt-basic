@@ -44,6 +44,50 @@
 		} );
 	} );
 
+	// Post Date checkbox.
+	wp.customize( 'gt_basic_theme_options[meta_date]', function( value ) {
+		value.bind( function( newval ) {
+			if ( false === newval ) {
+				$( 'body' ).addClass( 'date-hidden' );
+			} else {
+				$( 'body' ).removeClass( 'date-hidden' );
+			}
+		} );
+	} );
+
+	// Post Author checkbox.
+	wp.customize( 'gt_basic_theme_options[meta_author]', function( value ) {
+		value.bind( function( newval ) {
+			if ( false === newval ) {
+				$( 'body' ).addClass( 'author-hidden' );
+			} else {
+				$( 'body' ).removeClass( 'author-hidden' );
+			}
+		} );
+	} );
+
+	// Post Category checkbox.
+	wp.customize( 'gt_basic_theme_options[meta_categories]', function( value ) {
+		value.bind( function( newval ) {
+			if ( false === newval ) {
+				$( 'body' ).addClass( 'categories-hidden' );
+			} else {
+				$( 'body' ).removeClass( 'categories-hidden' );
+			}
+		} );
+	} );
+
+	// Post Tags checkbox.
+	wp.customize( 'gt_basic_theme_options[meta_tags]', function( value ) {
+		value.bind( function( newval ) {
+			if ( false === newval ) {
+				$( 'body' ).addClass( 'tags-hidden' );
+			} else {
+				$( 'body' ).removeClass( 'tags-hidden' );
+			}
+		} );
+	} );
+
 	/* Primary Color Option */
 	wp.customize( 'gt_basic_theme_options[primary_color]', function( value ) {
 		value.bind( function( newval ) {
