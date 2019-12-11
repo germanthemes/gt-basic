@@ -49,7 +49,7 @@ add_action( 'customize_register', 'gt_basic_customize_register_options' );
  * Embed JS file to make Theme Customizer preview reload changes asynchronously.
  */
 function gt_basic_customize_preview_js() {
-	wp_enqueue_script( 'gt-basic-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20191130', true );
+	wp_enqueue_script( 'gt-basic-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.min.js', array( 'customize-preview' ), '20191130', true );
 }
 add_action( 'customize_preview_init', 'gt_basic_customize_preview_js' );
 
@@ -58,7 +58,7 @@ add_action( 'customize_preview_init', 'gt_basic_customize_preview_js' );
  * Embed JS for Customizer Controls.
  */
 function gt_basic_customizer_controls_js() {
-	wp_enqueue_script( 'gt-basic-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array(), '20191130', true );
+	wp_enqueue_script( 'gt-basic-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.min.js', array(), '20191130', true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'gt_basic_customizer_controls_js' );
 
