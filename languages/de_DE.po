@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GT Basic\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2019-07-15 15:16+0200\n"
-"PO-Revision-Date: 2019-07-15 15:23+0200\n"
+"POT-Creation-Date: 2019-12-12 10:54+0100\n"
+"PO-Revision-Date: 2019-12-12 10:55+0100\n"
 "Last-Translator: \n"
 "Language-Team: GermanThemes <support@germanthemes.de>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
 "_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
 "esc_html_x:1,2c\n"
@@ -31,6 +31,19 @@ msgstr ""
 "Unter dieser Adresse wurde nichts gefunden. Möglicherweise hilft eine Suche "
 "oder einer der Links unterhalb?"
 
+#: comments.php:33
+msgid "One comment"
+msgstr "Ein Kommentar"
+
+#: comments.php:36
+#, php-format
+msgid "%s comments"
+msgstr "%s Kommentare"
+
+#: comments.php:59
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
 #: functions.php:34
 msgid "Main Navigation"
 msgstr "Hauptnavigation"
@@ -43,52 +56,52 @@ msgstr "Untermenü öffnen"
 msgid "Collapse child menu"
 msgstr "Untermenü schließen"
 
-#: functions.php:130
+#: functions.php:135
 msgid "Footer Column 1"
 msgstr "Footer Spalte 1"
 
-#: functions.php:132
+#: functions.php:137
 msgctxt "widget area description"
 msgid "Appears in the first column in footer."
 msgstr "Erscheint in der ersten Spalte im Footer."
 
-#: functions.php:141
+#: functions.php:146
 msgid "Footer Column 2"
 msgstr "Footer Spalte 2"
 
-#: functions.php:143
+#: functions.php:148
 msgctxt "widget area description"
 msgid "Appears in the second column in footer."
 msgstr "Erscheint in der zweiten Spalte im Footer."
 
-#: functions.php:152
+#: functions.php:157
 msgid "Footer Column 3"
 msgstr "Footer Spalte 3"
 
-#: functions.php:154
+#: functions.php:159
 msgctxt "widget area description"
 msgid "Appears in the third column in footer."
 msgstr "Erscheint in der dritten Spalte im Footer."
 
-#: functions.php:163
+#: functions.php:168
 msgid "Footer Column 4"
 msgstr "Footer Spalte 4"
 
-#: functions.php:165
+#: functions.php:170
 msgctxt "widget area description"
 msgid "Appears in the fourth column in footer."
 msgstr "Erscheint in der vierten Spalte im Footer."
 
-#: functions.php:174
+#: functions.php:179
 msgid "Footer Copyright"
 msgstr "Footer Copyright"
 
-#: functions.php:176
+#: functions.php:181
 msgctxt "widget area description"
 msgid "Appears in the bottom footer line."
 msgstr "Erscheint in der unteren Zeile im Footer."
 
-#: functions.php:206
+#: functions.php:211
 msgid ""
 "Updating this theme will lose any customizations you have made. 'Cancel' to "
 "stop, 'OK' to update."
@@ -96,7 +109,7 @@ msgstr ""
 "Bei der Aktualisierung dieses Themes gehen alle Modifikationen verloren. "
 "Klicke \"Abbrechen\" um zu stoppen, \"OK\" um zu aktualisieren."
 
-#: functions.php:207
+#: functions.php:212
 #, php-format
 msgid ""
 "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" "
@@ -107,7 +120,7 @@ msgstr ""
 "\" title=\"%4$s\">Finde heraus, was es Neues gibt</a> oder <a href=\"%5$s"
 "\"%6$s>aktualisiere jetzt</a>."
 
-#: header.php:25
+#: header.php:26
 msgid "Skip to content"
 msgstr "Zum Inhalt springen"
 
@@ -185,15 +198,39 @@ msgstr ""
 msgid "License Status"
 msgstr "Lizenz-Status"
 
+#: inc/customizer/controls/links-control.php:25
+msgid "Theme Links"
+msgstr "Theme Links"
+
+#: inc/customizer/controls/links-control.php:28
+msgid "https://germanthemes.de/en/themes/gt-basic/"
+msgstr "https://germanthemes.de/themes/gt-basic/"
+
+#: inc/customizer/controls/links-control.php:29
+msgid "Theme Page"
+msgstr "Theme Seite"
+
+#: inc/customizer/controls/links-control.php:35
+msgid "Theme Demo"
+msgstr "Theme Demo"
+
+#: inc/customizer/controls/links-control.php:40
+msgid "https://germanthemes.de/en/docs/gt-basic-documentation/"
+msgstr "https://germanthemes.de/doku/gt-basic-dokumentation/"
+
+#: inc/customizer/controls/links-control.php:41
+msgid "Theme Documentation"
+msgstr "Theme Dokumentation"
+
 #: inc/customizer/controls/plugin-control.php:33
 msgid "Install Plugin"
 msgstr "Plugin installieren"
 
-#: inc/customizer/customizer.php:36
+#: inc/customizer/customizer.php:38
 msgid "Theme Options"
 msgstr "Theme Optionen"
 
-#: inc/customizer/customizer.php:41
+#: inc/customizer/customizer.php:43
 msgid "Background"
 msgstr "Hintergrund"
 
@@ -236,6 +273,38 @@ msgctxt "Color Option"
 msgid "Dark Gray"
 msgstr "Dunkelgrau"
 
+#: inc/customizer/sections/blog-settings.php:17
+msgid "Blog Settings"
+msgstr "Blog-Einstellungen"
+
+#: inc/customizer/sections/blog-settings.php:34
+msgid "Number of Posts"
+msgstr "Anzahl der Beiträge"
+
+#: inc/customizer/sections/blog-settings.php:52
+msgid "Post Details"
+msgstr "Beitrag-Details"
+
+#: inc/customizer/sections/blog-settings.php:68
+msgid "Display date"
+msgstr "Datum anzeigen"
+
+#: inc/customizer/sections/blog-settings.php:84
+msgid "Display author"
+msgstr "Autor anzeigen"
+
+#: inc/customizer/sections/blog-settings.php:100
+msgid "Display categories"
+msgstr "Kategorien anzeigen"
+
+#: inc/customizer/sections/blog-settings.php:110
+msgid "Single Post"
+msgstr "Einzelner Beitrag"
+
+#: inc/customizer/sections/blog-settings.php:126
+msgid "Display tags"
+msgstr "Schlagwörter anzeigen"
+
 #: inc/customizer/sections/license-settings.php:19
 msgid "License"
 msgstr "Lizenz"
@@ -248,7 +317,7 @@ msgstr ""
 "Bitte trage deinen Lizenzschlüssel ein. Eine aktive Lizenz ist notwendig, um "
 "automatische Updates und Support zu erhalten."
 
-#: inc/customizer/sections/license-settings.php:35
+#: inc/customizer/sections/license-settings.php:44
 msgid "License Key"
 msgstr "Lizenzschlüssel"
 
@@ -444,12 +513,16 @@ msgstr "Suchergebnisse für: %s"
 msgid "View all posts by %s"
 msgstr "Alle Artikel von %s ansehen"
 
-#: inc/template-tags.php:229
+#: inc/template-tags.php:227
+msgid "Tags: "
+msgstr "Schlagwörter: "
+
+#: inc/template-tags.php:246
 msgctxt "pagination"
 msgid "Previous Posts"
 msgstr "Vorherige Beiträge"
 
-#: inc/template-tags.php:230
+#: inc/template-tags.php:247
 msgctxt "pagination"
 msgid "Next Posts"
 msgstr "Nächste Beiträge"
