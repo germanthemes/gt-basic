@@ -2,7 +2,16 @@
 GT Basic Changelog
 ===================================
 
-Version 1.1
+Version 1.2 - 2019-12-12
+-----------------------------------
+* added Blog Settings to Customizer
+* added Comments section to single posts and pages
+* added new wp_body_open tag
+* added wp_link_pages to single view
+* added theme links to Customizer
+* improved loading of custom fonts for typography settings in Customizer preview
+
+Version 1.1 - 2019-07-15
 -----------------------------------
 * added Customizer section for Block Color options
 * added Customizer section for Theme Color options
