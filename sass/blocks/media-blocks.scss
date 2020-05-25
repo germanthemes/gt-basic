@@ -1,0 +1,34 @@
+/* Image Block */
+.wp-block-image {
+	margin-bottom: 1.5em;
+
+	img {
+		vertical-align: top;
+	}
+}
+
+/* Media Text Block */
+.wp-block-media-text {
+	margin-bottom: 1.5em;
+}
+
+/* Cover Block */
+.wp-block-cover {
+	display: flex;
+}
+
+.wp-block-cover-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	@include font-size(32);
+}
+
+.wp-block-cover.alignwide,
+.wp-block-cover.alignfull {
+	width: auto;
+}
+
+/* Video Embed Block */
+.wp-block-embed-vimeo.alignfull iframe {
+	width: 100%;
+}
