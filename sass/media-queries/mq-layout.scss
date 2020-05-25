@@ -82,14 +82,6 @@
 	.entry-content > .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;
-		max-width: $wideBlockWidth;
-	}
-
-	/* Adjust Wide Blocks for Fullwidth pages */
-	body.fullwidth-page-layout .entry-content > .alignwide {
-		margin-left: calc(-100vw / 2 + 100% / 2);
-		margin-right: calc(-100vw / 2 + 100% / 2);
-		max-width: 100vw;
 	}
 }
 
@@ -137,8 +129,7 @@
 	}
 
 	.post-image,
-	.entry-content > .alignfull,
-	body.fullwidth-page-layout .entry-content > .alignwide {
+	.entry-content > .alignfull {
 		margin-left: calc(-100vw / 2 + 100% / 2 + 1.5rem);
 		margin-right: calc(-100vw / 2 + 100% / 2 + 1.5rem);
 	}
@@ -172,8 +163,7 @@
 	}
 
 	.post-image,
-	.entry-content > .alignfull,
-	body.fullwidth-page-layout .entry-content > .alignwide {
+	.entry-content > .alignfull {
 		margin-left: calc(-100vw / 2 + 100% / 2 + 2rem);
 		margin-right: calc(-100vw / 2 + 100% / 2 + 2rem);
 	}
@@ -182,8 +172,7 @@
 /* theme width + padding * 2: 1280px + 2.5rem * 2 = 1360px */
 @media only screen and ( min-width: calc( #{$themeWidth} + 80px ) ) {
 	.post-image,
-	.entry-content > .alignfull,
-	body.fullwidth-page-layout .entry-content > .alignwide {
+	.entry-content > .alignfull {
 		margin-left: calc(100% / 2 - #{$themeWidth} / 2);
 		margin-right: calc(100% / 2 - #{$themeWidth} / 2);
 		max-width: 1280px;

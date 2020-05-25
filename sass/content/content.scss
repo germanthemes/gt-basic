@@ -39,13 +39,6 @@
 	@include font-size(17);
 }
 
-.entry-content > .alignwide,
-.entry-content > .alignfull {
-	margin-left: calc( -100vw / 2 + 100% / 2 );
-	margin-right: calc( -100vw / 2 + 100% / 2 );
-	max-width: 100vw;
-}
-
 /* Featured Images */
 .post-image {
 	margin-top: 1px;

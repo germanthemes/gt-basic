@@ -1,6 +1,47 @@
-/* Fullwidth Page Layout */
-body.fullwidth-page-layout .site-content .site-main {
-	max-width: $contentFullwidth;
+/* Fullwidth Page Template */
+body.fullwidth-page-layout {
+	.site-content .site-main {
+		max-width: $contentFullwidth;
+
+		.entry-content > .alignwide {
+			max-width: $wideBlockFullwidth;
+		}
+
+		.entry-content > .alignwide,
+		.entry-content > .alignfull {
+
+			> [class*="__inner-container"] > * {
+				max-width: $contentFullwidth;
+
+				&.alignwide {
+					max-width: $wideBlockFullwidth;
+				}
+
+				&.alignfull {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
+
+/* Adjust Wide Blocks */
+@media only screen and (min-width: 960px) {
+	body.fullwidth-page-layout {
+		.entry-content > .alignwide {
+			margin-left: calc(-100vw / 2 + 100% / 2);
+			margin-right: calc(-100vw / 2 + 100% / 2);
+		}
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	body.fullwidth-page-layout {
+		.entry-content > .alignwide {
+			margin-left: -120px;
+			margin-right: -120px;
+		}
+	}
 }
 
 /* Hide Page Title */
