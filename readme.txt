@@ -4,7 +4,7 @@ Theme URI: https://germanthemes.de/themes/gt-basic/
 Contributors: germanthemes
 Tags: custom-background, custom-logo, custom-header, custom-menu, grid-layout, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
 Requires at least: 5.0
-Tested up to: 5.2
+Tested up to: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

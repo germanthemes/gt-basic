@@ -2,6 +2,14 @@
 GT Basic Changelog
 ===================================
 
+Version 1.3 - 2020-05-28
+-----------------------------------
+* fixed alignment of nested blocks
+* fixed text color issues in Editor
+* adjusted spacing of Group block
+* improved styling for Cover block
+* improved styling of Button block
+
 Version 1.2 - 2019-12-12
 -----------------------------------
 * added Blog Settings to Customizer
