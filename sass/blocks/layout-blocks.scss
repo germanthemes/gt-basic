@@ -1,3 +1,11 @@
+/* Layout Blocks Spacing */
+.wp-block-columns,
+.wp-block-group,
+.wp-block-button,
+.wp-block-buttons {
+	margin-bottom: 1.5em;
+}
+
 /* Group Block */
 .wp-block-group.has-background {
 	padding: 1.5rem;
