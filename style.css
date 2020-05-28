@@ -1641,6 +1641,48 @@ object {
 	fill: currentColor;
 }
 
+/* Group Block */
+.wp-block-group.has-background {
+	padding: 1.5rem;
+}
+
+.wp-block-group.alignwide,
+.wp-block-group.alignfull {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.wp-block-group.has-background a:link,
+.wp-block-group.has-background a:visited {
+	color: inherit;
+}
+
+.wp-block-group.has-background a:hover,
+.wp-block-group.has-background a:active {
+	text-decoration: none;
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > *:first-child {
+	margin-top: 0;
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > *:last-child {
+	margin-bottom: 0;
+}
+
+/* GT Section Block */
+.gt-background-section .gt-section-content.gt-default-width {
+	max-width: 720px;
+}
+
+.gt-background-section .gt-section-content.gt-wide-width {
+	max-width: 960px;
+}
+
+.gt-background-section .gt-section-content.gt-full-width {
+	max-width: 1280px;
+}
+
 /* Image Block */
 .wp-block-image {
 	margin-bottom: 1.5em;
@@ -1675,19 +1717,6 @@ object {
 /* Video Embed Block */
 .wp-block-embed-vimeo.alignfull iframe {
 	width: 100%;
-}
-
-/* GT Section Block */
-.gt-background-section .gt-section-content.gt-default-width {
-	max-width: 720px;
-}
-
-.gt-background-section .gt-section-content.gt-wide-width {
-	max-width: 960px;
-}
-
-.gt-background-section .gt-section-content.gt-full-width {
-	max-width: 1280px;
 }
 
 /* Block Text Colors */
@@ -2187,6 +2216,33 @@ object {
 		transform: rotate(-90deg);
 		fill: #fff;
 		fill: var(--navi-text-color);
+	}
+}
+
+/*--------------------------------------------------------------
+## - Media Queries for Blocks
+--------------------------------------------------------------*/
+@media only screen and (min-width: 800px) {
+	.entry-content > .wp-block-group.has-background {
+		padding: 2rem;
+	}
+
+	.entry-content > .wp-block-group.alignwide,
+	.entry-content > .wp-block-group.alignfull {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	.entry-content > .wp-block-group.has-background {
+		padding: 2.5rem;
+	}
+
+	.entry-content > .wp-block-group.alignwide,
+	.entry-content > .wp-block-group.alignfull {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
 	}
 }
 
