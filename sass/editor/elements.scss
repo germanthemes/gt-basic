@@ -2,7 +2,7 @@
 .editor-styles-wrapper {
 	@include font-family(--text-font);
 	@include font-size(18);
-    line-height: 1.75;
+	line-height: 1.75;
 	color: $textColor;
 }
 
@@ -48,7 +48,7 @@
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: rgba(0,0,0,0.15);
+	background-color: rgba(0, 0, 0, 0.15);
 }
 
 .editor-styles-wrapper pre {
@@ -56,8 +56,8 @@
 	margin-bottom: 1.5em;
 	padding: 1.5em;
 	max-width: 100%;
-	border: 1px solid rgba(0,0,0,0.15);
-	background: rgba(0,0,0,0.025);
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background: rgba(0, 0, 0, 0.025);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
@@ -71,8 +71,8 @@
 .editor-styles-wrapper h4,
 .editor-styles-wrapper h5,
 .editor-styles-wrapper h6 {
-	clear: both;
-	margin: 1em 0 0.75em;
+	margin-top: 1em;
+	margin-bottom: 0.75em;
 	@include font-family(--title-font);
 	line-height: 1.4;
 
@@ -82,6 +82,7 @@
 }
 
 .editor-styles-wrapper h1 {
+	color: inherit;
 	@include font-size(32);
 }
 
@@ -111,7 +112,7 @@
 	margin-bottom: 1.5em;
 	padding-left: 1.5em;
 	border-left: 4px solid $textColor;
-	color: rgba(0,0,0,0.5);
+	color: rgba(0, 0, 0, 0.5);
 	@include font-size(18);
 }
 
@@ -125,7 +126,7 @@
 	@include font-size(16);
 }
 
-.editor-styles-wrapper blockquote cite:before {
+.editor-styles-wrapper blockquote cite::before {
 	content: "\2014\00a0";
 }
 
@@ -168,5 +169,5 @@
 .editor-styles-wrapper th,
 .editor-styles-wrapper td {
 	padding: 0.3em 0.6em;
-	border: 1px solid rgba(0,0,0,0.15);
+	border: 1px solid rgba(0, 0, 0, 0.15);
 }
