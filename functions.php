@@ -200,7 +200,7 @@ function gt_basic_theme_updater() {
 		$theme_updater = new GT_Basic_Theme_Updater(
 			array(
 				'remote_api_url' => GT_BASIC_STORE_API_URL,
-				'version'        => '1.2',
+				'version'        => '1.3',
 				'license'        => trim( gt_basic_get_option( 'license_key' ) ),
 				'item_id'        => GT_BASIC_PRODUCT_ID,
 				'item_name'      => 'GT Basic',
