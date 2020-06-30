@@ -1,22 +1,22 @@
 /* Buttons Block Style */
 .wp-block-buttons.is-style-gt-small {
 	.wp-block-button__link {
-		padding: 0.6rem 1rem;
+		padding: 0.4em 0.8em;
 		@include font-size(16);
 	}
 
 	.wp-block-button.is-style-outline .wp-block-button__link {
-		padding: calc(0.6rem - 2px) calc(1rem - 2px);
+		padding: calc(0.4em - 2px) calc(0.8em - 2px);
 	}
 }
 
 .wp-block-buttons.is-style-gt-large {
 	.wp-block-button__link {
-		padding: 0.9375rem 1.5625rem;
-		@include font-size(19);
+		padding: 0.75em 1.5em;
+		@include font-size(18);
 	}
 
 	.wp-block-button.is-style-outline .wp-block-button__link {
-		padding: calc(0.9375rem - 2px) calc(1.5625rem - 2px);
+		padding: calc(0.75em - 2px) calc(1.5em - 2px);
 	}
 }
