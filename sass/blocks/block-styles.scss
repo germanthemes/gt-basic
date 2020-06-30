@@ -1,0 +1,22 @@
+/* Buttons Block Style */
+.wp-block-buttons.is-style-gt-small {
+	.wp-block-button__link {
+		padding: 0.6rem 1rem;
+		@include font-size(16);
+	}
+
+	.wp-block-button.is-style-outline .wp-block-button__link {
+		padding: calc(0.6rem - 2px) calc(1rem - 2px);
+	}
+}
+
+.wp-block-buttons.is-style-gt-large {
+	.wp-block-button__link {
+		padding: 0.9375rem 1.5625rem;
+		@include font-size(19);
+	}
+
+	.wp-block-button.is-style-outline .wp-block-button__link {
+		padding: calc(0.9375rem - 2px) calc(1.5625rem - 2px);
+	}
+}
