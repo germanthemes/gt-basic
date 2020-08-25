@@ -66,7 +66,7 @@ add_action( 'customize_preview_init', 'gt_basic_customize_preview_js' );
  * Embed JS for Customizer Controls.
  */
 function gt_basic_customizer_controls_js() {
-	wp_enqueue_script( 'gt-basic-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.min.js', array(), '20191130', true );
+	wp_enqueue_script( 'gt-basic-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.min.js', array(), '20200825', true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'gt_basic_customizer_controls_js' );
 
