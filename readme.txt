@@ -2,9 +2,9 @@
 Author URI: https://germanthemes.de
 Theme URI: https://germanthemes.de/themes/gt-basic/
 Contributors: germanthemes
-Tags: custom-background, custom-logo, custom-header, custom-menu, grid-layout, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
+Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-styles, block-patterns
 Requires at least: 5.0
-Tested up to: 5.4
+Tested up to: 5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,40 @@ For more information about GT Basic please go to https://germanthemes.de/themes/
 2. Click on the 'Upload Theme' button to upload the ZIP-file of the theme.
 3. After the installation, navigate to Appearance > Customize and activate your license key.
 4. Go to https://germanthemes.de/docs/gt-basic-dokumentation/ for a guide on how to use and customize this theme.
+
+== Changelog ==
+
+= 1.5 - 2020-08-26 =
+* added block patterns
+* added default font
+* fixed font control in Customizer
+
+= 1.4 - 2020-06-30 =
+* added small and large size button styles to Buttons block
+* fixed outline button style of Button block
+
+= 1.3 - 2020-05-28 =
+* fixed alignment of nested blocks
+* fixed text color issues in Editor
+* adjusted spacing of Group block
+* improved styling for Cover block
+* improved styling of Button block
+
+= 1.2 - 2019-12-12 =
+* added Blog Settings to Customizer
+* added Comments section to single posts and pages
+* added new wp_body_open tag
+* added wp_link_pages to single view
+* added theme links to Customizer
+* improved loading of custom fonts for typography settings in Customizer preview
+
+= 1.1 - 2019-07-15 =
+* added Customizer section for Block Color options
+* added Customizer section for Theme Color options
+* added support and Customizer control for the GT Local Fonts plugin
+
+= 1.0 - 2020-04-02 =
+* First Release
 
 == Copyright ==
 
@@ -57,6 +91,10 @@ Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
 4. svgxuse - https://github.com/Keyamoon/svgxuse
 License: Licensed under MIT license (https://github.com/Keyamoon/svgxuse/blob/master/license)
 Copyright: 2017 IcoMoon.io
+
+5. Oswald Font - https://fonts.google.com/specimen/Oswald
+License: Distributed under the terms of the Open Font License (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+Copyright: Vernon Adams, Kalapi Gajjar, Cyreal
 
 Images used in screenshot.jpg
 
