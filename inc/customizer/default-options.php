@@ -70,7 +70,7 @@ function gt_basic_default_options() {
 		'title_hover_color'  => '#dd1133',
 		'footer_color'       => '#252525',
 		'text_font'          => 'SystemFontStack',
-		'title_font'         => 'SystemFontStack',
+		'title_font'         => 'Oswald',
 		'title_is_bold'      => true,
 		'title_is_uppercase' => false,
 		'navi_font'          => 'SystemFontStack',

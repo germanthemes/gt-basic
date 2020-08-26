@@ -27,6 +27,10 @@ class GT_Basic_Custom_Fonts {
 
 		// Add theme support for GT Typography plugin.
 		add_action( 'after_setup_theme', array( __CLASS__, 'add_typography_theme_support' ) );
+
+		// Remove default theme fonts if they are not used.
+		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'remove_default_theme_fonts' ), 2 );
+		add_action( 'enqueue_block_editor_assets', array( __CLASS__, 'remove_default_theme_fonts' ), 2 );
 	}
 
 	/**
@@ -125,9 +129,9 @@ class GT_Basic_Custom_Fonts {
 	}
 
 	/**
-	 * Register support for GT Typography plugin.
+	 * Retrieve selected fonts from Customizer options.
 	 */
-	static function add_typography_theme_support() {
+	static function get_selected_fonts() {
 
 		// Get theme options from database.
 		$theme_options = gt_basic_theme_options();
@@ -138,6 +142,27 @@ class GT_Basic_Custom_Fonts {
 			$theme_options['title_font'],
 			$theme_options['navi_font'],
 		);
+
+		return $selected_fonts;
+	}
+
+	/**
+	 * Remove default theme fonts.
+	 */
+	static function remove_default_theme_fonts() {
+		$selected_fonts = self::get_selected_fonts();
+
+		// Remove default Oswald font if not needed or GT Local Font plugin already loads it.
+		if ( ( ! in_array( 'Oswald', $selected_fonts ) && ! is_customize_preview() ) or class_exists( 'GermanThemes_Local_Fonts' ) ) {
+			wp_dequeue_style( 'gt-basic-theme-fonts' );
+		}
+	}
+
+	/**
+	 * Register support for GT Typography plugin.
+	 */
+	static function add_typography_theme_support() {
+		$selected_fonts = self::get_selected_fonts();
 
 		add_theme_support( 'gt-typography', array(
 			'selected_fonts' => $selected_fonts,
@@ -159,6 +184,7 @@ class GT_Basic_Custom_Fonts {
 			'Helvetica'                   => 'Helvetica',
 			'Impact'                      => 'Impact',
 			'Palatino, Palatino Linotype' => 'Palatino',
+			'Oswald'                      => 'Oswald', // default font from /assets/css/theme-fonts.css
 			'SystemFontStack'             => 'System Font Stack',
 			'Tahoma'                      => 'Tahoma',
 			'Trebuchet MS, Trebuchet'     => 'Trebuchet MS',

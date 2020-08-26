@@ -8,7 +8,7 @@ Version: 1.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: gt-basic
-Tags: custom-background, custom-logo, custom-header, custom-menu, grid-layout, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
+Tags: custom-background, custom-logo, custom-header, custom-menu, grid-layout, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-styles, block-patterns
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool and share what you've learned with others.
@@ -69,7 +69,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--footer-link-hover-color: #fff;
 	--footer-border-color: rgba(255, 255, 255, 0.1);
 	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	--title-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--title-font: "Oswald", arial, helvetica, sans-serif;
 	--title-font-weight: bold;
 	--title-text-transform: none;
 	--navi-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -320,7 +320,7 @@ h5,
 h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);
@@ -805,7 +805,7 @@ textarea {
 	text-decoration: none;
 	font-size: 32px;
 	font-size: 2rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);
@@ -1049,7 +1049,7 @@ textarea {
 	word-wrap: break-word;
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Oswald", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);
