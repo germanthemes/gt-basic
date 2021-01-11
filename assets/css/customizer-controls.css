@@ -28,10 +28,6 @@
 	margin-bottom: 4px;
 }
 
-#customize-control-gt_basic_theme_links {
-	margin-bottom: 16px;
-}
-
 #customize-control-gt_basic_theme_links .customize-control-title {
 	margin-bottom: 0;
 }
@@ -68,33 +64,4 @@
 /* Typography Checkbox Controls */
 #sub-accordion-section-gt_basic_section_typography .customize-control-checkbox {
 	margin-bottom: 0;
-}
-
-/* License Control */
-.customize-control-gt_basic_license_key label {
-	margin-top: 16px;
-}
-
-.customize-control-gt_basic_license_key .license-status span {
-	display: inline-block;
-	margin: 0 0 12px;
-	padding: 5px 10px;
-	color: #fff;
-	background: #777;
-	font-size: 13px;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.customize-control-gt_basic_license_key .license-status .inactive {
-	background: #444;
-}
-
-.customize-control-gt_basic_license_key .license-status .valid {
-	background: green;
-}
-
-.customize-control-gt_basic_license_key .license-status .invalid,
-.customize-control-gt_basic_license_key .license-status .expired {
-	background: red;
 }

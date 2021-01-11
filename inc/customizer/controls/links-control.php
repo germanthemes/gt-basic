@@ -42,6 +42,12 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 					</a>
 				</p>
 
+				<p>
+					<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/gt-basic/reviews/', 'gt-basic' ) ); ?>" target="_blank">
+						<?php esc_html_e( 'Rate this theme', 'gt-basic' ); ?>
+					</a>
+				</p>
+
 			</div>
 
 			<?php
