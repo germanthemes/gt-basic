@@ -9,7 +9,7 @@
  * GT Basic only works in WordPress 5.3 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '5.3', '<' ) ) {
-	require get_template_directory() . '/inc/admin/back-compat.php';
+	require get_template_directory() . '/inc/back-compat.php';
 	return;
 }
 
