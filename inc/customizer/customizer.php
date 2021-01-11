@@ -11,7 +11,6 @@ require( get_template_directory() . '/inc/customizer/sanitize-functions.php' );
 // Load Custom Controls.
 require( get_template_directory() . '/inc/customizer/controls/font-control.php' );
 require( get_template_directory() . '/inc/customizer/controls/headline-control.php' );
-require( get_template_directory() . '/inc/customizer/controls/license-control.php' );
 require( get_template_directory() . '/inc/customizer/controls/links-control.php' );
 
 // Load Customizer Sections.
@@ -20,7 +19,6 @@ require( get_template_directory() . '/inc/customizer/sections/blog-settings.php'
 require( get_template_directory() . '/inc/customizer/sections/block-color-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/theme-color-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/typography-settings.php' );
-require( get_template_directory() . '/inc/customizer/sections/license-settings.php' );
 
 /**
  * Registers Theme Options panel and sets up some WordPress core settings
@@ -57,7 +55,7 @@ add_action( 'customize_preview_init', 'gt_basic_customize_preview_js' );
  * Embed JS for Customizer Controls.
  */
 function gt_basic_customizer_controls_js() {
-	wp_enqueue_script( 'gt-basic-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.min.js', array(), '20210108', true );
+	wp_enqueue_script( 'gt-basic-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.min.js', array(), '20210111', true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'gt_basic_customizer_controls_js' );
 
