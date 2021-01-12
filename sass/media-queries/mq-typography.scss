@@ -6,6 +6,16 @@
 	.entry-title {
 		@include font-size(28);
 	}
+}
+
+@media only screen and (min-width: 640px) {
+	.site-title {
+		@include font-size(40);
+	}
+
+	.entry-title {
+		@include font-size(32);
+	}
 
 	.entry-content {
 		@include font-size(18);
@@ -23,42 +33,13 @@
 	}
 }
 
-@media only screen and (min-width: 640px) {
-	.site-title {
-		@include font-size(40);
-	}
-
-	.entry-title {
-		@include font-size(32);
-	}
-
-	.entry-content {
-		@include font-size(19);
-	}
-}
-
 @media only screen and (min-width: 800px) {
 	.site-title {
 		@include font-size(44);
 	}
-	
+
 	.entry-title {
 		@include font-size(36);
-	}
-	
-	.entry-content {
-		@include font-size(20);
-	}
-
-	.entry-meta,
-	.more-link,
-	.pagination {
-		@include font-size(17);
-	}
-
-	.entry-meta span .icon {
-		width: 22px;
-		height: 22px;
 	}
 }
 
@@ -72,17 +53,17 @@
 	}
 
 	.entry-content {
-		@include font-size(21);
+		@include font-size(19);
 	}
 
 	.entry-meta,
 	.more-link,
 	.pagination {
-		@include font-size(18);
+		@include font-size(17);
 	}
 
 	.entry-meta span .icon {
-		width: 23px;
-		height: 23px;
+		width: 22px;
+		height: 22px;
 	}
 }

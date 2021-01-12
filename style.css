@@ -1872,6 +1872,18 @@ object {
 		font-size: 28px;
 		font-size: 1.75rem;
 	}
+}
+
+@media only screen and (min-width: 640px) {
+	.site-title {
+		font-size: 40px;
+		font-size: 2.5rem;
+	}
+
+	.entry-title {
+		font-size: 32px;
+		font-size: 2rem;
+	}
 
 	.entry-content {
 		font-size: 18px;
@@ -1891,23 +1903,6 @@ object {
 	}
 }
 
-@media only screen and (min-width: 640px) {
-	.site-title {
-		font-size: 40px;
-		font-size: 2.5rem;
-	}
-
-	.entry-title {
-		font-size: 32px;
-		font-size: 2rem;
-	}
-
-	.entry-content {
-		font-size: 19px;
-		font-size: 1.1875rem;
-	}
-}
-
 @media only screen and (min-width: 800px) {
 	.site-title {
 		font-size: 44px;
@@ -1917,23 +1912,6 @@ object {
 	.entry-title {
 		font-size: 36px;
 		font-size: 2.25rem;
-	}
-
-	.entry-content {
-		font-size: 20px;
-		font-size: 1.25rem;
-	}
-
-	.entry-meta,
-	.more-link,
-	.pagination {
-		font-size: 17px;
-		font-size: 1.0625rem;
-	}
-
-	.entry-meta span .icon {
-		width: 22px;
-		height: 22px;
 	}
 }
 
@@ -1949,20 +1927,20 @@ object {
 	}
 
 	.entry-content {
-		font-size: 21px;
-		font-size: 1.3125rem;
+		font-size: 19px;
+		font-size: 1.1875rem;
 	}
 
 	.entry-meta,
 	.more-link,
 	.pagination {
-		font-size: 18px;
-		font-size: 1.125rem;
+		font-size: 17px;
+		font-size: 1.0625rem;
 	}
 
 	.entry-meta span .icon {
-		width: 23px;
-		height: 23px;
+		width: 22px;
+		height: 22px;
 	}
 }
 
