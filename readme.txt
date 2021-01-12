@@ -100,9 +100,9 @@ Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
 License: Licensed under MIT license (https://github.com/Keyamoon/svgxuse/blob/master/license)
 Copyright: 2017 IcoMoon.io
 
-5. Oswald Font - https://fonts.google.com/specimen/Oswald
-License: Distributed under the terms of the Open Font License (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
-Copyright: Vernon Adams, Kalapi Gajjar, Cyreal
+5. Roboto Font - https://fonts.google.com/specimen/Roboto
+License: Distributed under the terms of the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+Copyright: Christian Robertson
 
 6. WPTT Webfont Loader - https://github.com/WPTT/webfont-loader
 License: Distributed under the terms of the MIT License (https://github.com/WPTT/webfont-loader/blob/master/LICENSE)
