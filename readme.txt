@@ -20,8 +20,7 @@ For more information about GT Basic please go to https://germanthemes.de/themes/
 
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
 2. Click on the 'Upload Theme' button to upload the ZIP-file of the theme.
-3. After the installation, navigate to Appearance > Customize and activate your license key.
-4. Go to https://germanthemes.de/docs/gt-basic-dokumentation/ for a guide on how to use and customize this theme.
+3. Go to https://germanthemes.de/docs/gt-basic-dokumentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
 
@@ -112,9 +111,20 @@ Copyright: Christian Robertson
 License: Distributed under the terms of the MIT License (https://github.com/WPTT/webfont-loader/blob/master/LICENSE)
 Copyright: 2020 Ari Stathopoulos, WordPress Themes Team
 
-Images used in screenshot.jpg
+Images used in screenshot.jpg are all licensed under CC0
 
-Image 1: https://www.pexels.com/photo/automobiles-automotives-black-and-white-black-and-white-70912/
-Image 2: https://www.pexels.com/photo/person-touching-gray-metal-rod-on-vehicle-engine-1266019/
-Image 3: https://www.pexels.com/photo/speedometer-gauge-reading-at-zero-104836/
-Image 4: https://pixabay.com/photos/headlamp-accident-auto-blue-broken-2940/
+Image 1:
+https://stocksnap.io/photo/futuristic-red-0VIWBIBMO7
+Copyright: Travis Soule (https://stocksnap.io/author/travissoule)
+
+Image 2:
+https://stocksnap.io/photo/car-black-F2NRD5G9I6
+Copyright: Mike Birdy (https://stocksnap.io/author/29629)
+
+Image 3:
+https://stocksnap.io/photo/jumpercables-battery-T7T37KWY8G
+Copyright: Pawel Kadysz (https://stocksnap.io/author/63)
+
+Image 4:
+https://stocksnap.io/photo/auto-headlight-KEPSFKGIL9
+Copyright: Travis Soule (https://stocksnap.io/author/travissoule)
