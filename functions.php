@@ -173,6 +173,17 @@ function gt_basic_get_fonts_url() {
  */
 function gt_basic_widgets_init() {
 
+	// Register Headerwidget area.
+	register_sidebar( array(
+		'name'          => esc_html__( 'Header', 'gt-basic' ),
+		'id'            => 'header',
+		'description'   => esc_html_x( 'Appears in the header area.', 'widget area description', 'gt-basic' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
 	// Register Footer Column 1 widget area.
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Column 1', 'gt-basic' ),
@@ -180,7 +191,7 @@ function gt_basic_widgets_init() {
 		'description'   => esc_html_x( 'Appears in the first column in footer.', 'widget area description', 'gt-basic' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class = "widget-title">',
+		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
 
@@ -191,7 +202,7 @@ function gt_basic_widgets_init() {
 		'description'   => esc_html_x( 'Appears in the second column in footer.', 'widget area description', 'gt-basic' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class = "widget-title">',
+		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
 
@@ -202,7 +213,7 @@ function gt_basic_widgets_init() {
 		'description'   => esc_html_x( 'Appears in the third column in footer.', 'widget area description', 'gt-basic' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class = "widget-title">',
+		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
 
@@ -213,7 +224,7 @@ function gt_basic_widgets_init() {
 		'description'   => esc_html_x( 'Appears in the fourth column in footer.', 'widget area description', 'gt-basic' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class = "widget-title">',
+		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
 

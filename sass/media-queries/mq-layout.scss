@@ -24,6 +24,14 @@
 	}
 }
 
+@media only screen and (min-width: 640px) {
+	.header-main {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
 @media only screen and (min-width: 800px) {
 	.header-main,
 	.site-content,
