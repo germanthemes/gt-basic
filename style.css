@@ -4,7 +4,7 @@ Theme URI: https://germanthemes.de/themes/gt-basic/
 Author: germanthemes
 Author URI: https://germanthemes.de/
 Description: GT Basic is a modern Business WordPress Theme.
-Version: 1.5.2
+Version: 1.6
 Requires at least: 5.3
 Tested up to: 5.6
 Requires PHP: 5.6
@@ -1992,8 +1992,8 @@ object {
 	}
 
 	.header-main {
-		padding-top: 2.25rem;
-		padding-bottom: 2.25rem;
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
 	}
 
 	.type-post,
@@ -2071,8 +2071,8 @@ object {
 	}
 
 	.header-main {
-		padding-top: 2.5rem;
-		padding-bottom: 2.5rem;
+		padding-top: 2.75rem;
+		padding-bottom: 2.75rem;
 	}
 
 	.type-post,

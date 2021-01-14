@@ -25,6 +25,10 @@ For more information about GT Basic please go to https://germanthemes.de/themes/
 
 == Changelog ==
 
+= 1.6 - 2021-01-14 =
+* added Header widget area
+* removed license key settings
+
 = 1.5.2 - 2021-01-08 =
 * added WPTT Webfont loader to embed default theme fonts
 * updated typography options to use WPTT Webfont loader
