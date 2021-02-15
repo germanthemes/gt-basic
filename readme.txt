@@ -24,6 +24,10 @@ For more information about GT Basic please go to https://germanthemes.de/themes/
 
 == Changelog ==
 
+= 1.6.1 - 2021-02-15 =
+* added prefix for CSS variables
+* added focus style for navigation menu toggle
+
 = 1.6 - 2021-01-14 =
 * added Header widget area
 * removed license key settings

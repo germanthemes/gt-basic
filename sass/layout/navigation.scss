@@ -85,12 +85,12 @@
 
 .menu-toggle:focus {
 	outline: thin dotted;
-	@include color(--navi-text-color);
-	background: none;
 }
 
 .menu-toggle:hover,
-.menu-toggle:active {
+.menu-toggle:active,
+.menu-toggle:focus {
+	@include color(--navi-text-color);
 	@include background(--navi-hover-color);
 	cursor: pointer;
 }
