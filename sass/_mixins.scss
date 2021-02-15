@@ -1,7 +1,7 @@
 // Font Family Variable.
 @mixin font-family($fontVar) {
 	font-family: map-get($themeFonts, $fontVar);
-	font-family: var($fontVar);
+	font-family: var($themeSlug + $fontVar);
 }
 
 // Rem output with px fallback.
@@ -13,34 +13,34 @@
 // Font Weight Variable.
 @mixin font-weight($fontVar) {
 	font-weight: map-get($fontWeight, $fontVar);
-	font-weight: var($fontVar);
+	font-weight: var($themeSlug + $fontVar);
 }
 
 // Text Transform Variable.
 @mixin text-transform($textVar) {
 	text-transform: map-get($textTransform, $textVar);
-	text-transform: var($textVar);
+	text-transform: var($themeSlug + $textVar);
 }
 
 // Color CSS Variable.
 @mixin color($colorVar) {
 	color: map-get($themeColors, $colorVar);
-	color: var($colorVar);
+	color: var($themeSlug + $colorVar);
 }
 
 // Background CSS Variable.
 @mixin background($colorVar) {
 	background-color: map-get($themeColors, $colorVar);
-	background-color: var($colorVar);
+	background-color: var($themeSlug + $colorVar);
 }
 
 // Fill Icon CSS Variable.
 @mixin fill($colorVar) {
 	fill: map-get($themeColors, $colorVar);
-	fill: var($colorVar);
+	fill: var($themeSlug + $colorVar);
 }
 
 // CSS Variable
 @mixin variable($variable, $map) {
-	#{$variable}: map-get($map, $variable);
+	#{$themeSlug + $variable}: map-get($map, $variable);
 }

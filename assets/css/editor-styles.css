@@ -8,37 +8,37 @@
 # - Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #dd1133;
-	--secondary-color: #b7000d;
-	--accent-color: #5588cc;
-	--highlight-color: #00bb33;
-	--light-gray-color: #e5e5e5;
-	--gray-color: #555555;
-	--dark-gray-color: #252525;
-	--link-color: #dd1133;
-	--link-hover-color: #dd1133;
-	--button-color: #ee1133;
-	--button-text-color: #fff;
-	--button-hover-color: #252525;
-	--button-hover-text-color: #fff;
-	--title-color: #252525;
-	--title-hover-color: #dd1133;
-	--navi-color: #252525;
-	--navi-text-color: #fff;
-	--navi-hover-color: rgba(255, 255, 255, 0.06);
-	--navi-border-color: rgba(255, 255, 255, 0.08);
-	--footer-background-color: #252525;
-	--footer-text-color: #fff;
-	--footer-link-color: rgba(255, 255, 255, 0.5);
-	--footer-link-hover-color: #fff;
-	--footer-border-color: rgba(255, 255, 255, 0.1);
-	--text-font: "Roboto", arial, helvetica, sans-serif;
-	--title-font: "Roboto", arial, helvetica, sans-serif;
-	--title-font-weight: bold;
-	--title-text-transform: none;
-	--navi-font: "Roboto", arial, helvetica, sans-serif;
-	--navi-font-weight: normal;
-	--navi-text-transform: none;
+	--gt-basic--primary-color: #dd1133;
+	--gt-basic--secondary-color: #b7000d;
+	--gt-basic--accent-color: #5588cc;
+	--gt-basic--highlight-color: #00bb33;
+	--gt-basic--light-gray-color: #e5e5e5;
+	--gt-basic--gray-color: #555555;
+	--gt-basic--dark-gray-color: #252525;
+	--gt-basic--link-color: #dd1133;
+	--gt-basic--link-hover-color: #dd1133;
+	--gt-basic--button-color: #ee1133;
+	--gt-basic--button-text-color: #fff;
+	--gt-basic--button-hover-color: #252525;
+	--gt-basic--button-hover-text-color: #fff;
+	--gt-basic--title-color: #252525;
+	--gt-basic--title-hover-color: #dd1133;
+	--gt-basic--navi-color: #252525;
+	--gt-basic--navi-text-color: #fff;
+	--gt-basic--navi-hover-color: rgba(255, 255, 255, 0.06);
+	--gt-basic--navi-border-color: rgba(255, 255, 255, 0.08);
+	--gt-basic--footer-background-color: #252525;
+	--gt-basic--footer-text-color: #fff;
+	--gt-basic--footer-link-color: rgba(255, 255, 255, 0.5);
+	--gt-basic--footer-link-hover-color: #fff;
+	--gt-basic--footer-border-color: rgba(255, 255, 255, 0.1);
+	--gt-basic--text-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-basic--title-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-basic--title-font-weight: bold;
+	--gt-basic--title-text-transform: none;
+	--gt-basic--navi-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-basic--navi-font-weight: normal;
+	--gt-basic--navi-text-transform: none;
 }
 
 /*--------------------------------------------------------------
@@ -74,11 +74,11 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	font-size: 24px;
 	font-size: 1.5rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-basic--title-font);
 	font-weight: bold;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-basic--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-basic--title-text-transform);
 	line-height: 1.4;
 }
 
@@ -125,7 +125,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 /* Typography */
 .editor-styles-wrapper {
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-basic--text-font);
 	font-size: 18px;
 	font-size: 1.125rem;
 	line-height: 1.75;
@@ -172,7 +172,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 
 .editor-styles-wrapper a {
 	color: #dd1133;
-	color: var(--link-color);
+	color: var(--gt-basic--link-color);
 }
 
 .editor-styles-wrapper hr {
@@ -205,7 +205,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 	margin-top: 1em;
 	margin-bottom: 0.75em;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-basic--title-font);
 	line-height: 1.4;
 }
 
@@ -348,7 +348,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 .wp-block-quote.is-style-large cite {
 	text-align: inherit;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-basic--text-font);
 }
 
 /* Pullquote Block */
@@ -377,7 +377,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 .wp-block-pullquote blockquote cite {
 	color: #151515;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-basic--text-font);
 	font-style: normal;
 }
 
@@ -463,18 +463,18 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):link,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):visited {
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-basic--button-text-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
 	background-color: #ee1133;
-	background-color: var(--button-color);
+	background-color: var(--gt-basic--button-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):active {
 	background-color: #252525;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-basic--button-hover-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link.has-text-color:hover,
@@ -487,7 +487,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:active {
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--gt-basic--button-hover-text-color);
 	background-color: var(--button-hover-color) !important;
 	text-decoration: none;
 }
@@ -731,22 +731,22 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 /* Block Text Colors */
 .has-primary-color {
 	color: #dd1133;
-	color: var(--primary-color);
+	color: var(--gt-basic--primary-color);
 }
 
 .has-secondary-color {
 	color: #b7000d;
-	color: var(--secondary-color);
+	color: var(--gt-basic--secondary-color);
 }
 
 .has-accent-color {
 	color: #5588cc;
-	color: var(--accent-color);
+	color: var(--gt-basic--accent-color);
 }
 
 .has-highlight-color {
 	color: #00bb33;
-	color: var(--highlight-color);
+	color: var(--gt-basic--highlight-color);
 }
 
 .has-white-color {
@@ -755,17 +755,17 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 
 .has-light-gray-color {
 	color: #e5e5e5;
-	color: var(--light-gray-color);
+	color: var(--gt-basic--light-gray-color);
 }
 
 .has-gray-color {
 	color: #555555;
-	color: var(--gray-color);
+	color: var(--gt-basic--gray-color);
 }
 
 .has-dark-gray-color {
 	color: #252525;
-	color: var(--dark-gray-color);
+	color: var(--gt-basic--dark-gray-color);
 }
 
 .has-black-color {
@@ -775,22 +775,22 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 /* Block Background Colors */
 .has-primary-background-color {
 	background-color: #dd1133;
-	background-color: var(--primary-color);
+	background-color: var(--gt-basic--primary-color);
 }
 
 .has-secondary-background-color {
 	background-color: #b7000d;
-	background-color: var(--secondary-color);
+	background-color: var(--gt-basic--secondary-color);
 }
 
 .has-accent-background-color {
 	background-color: #5588cc;
-	background-color: var(--accent-color);
+	background-color: var(--gt-basic--accent-color);
 }
 
 .has-highlight-background-color {
 	background-color: #00bb33;
-	background-color: var(--highlight-color);
+	background-color: var(--gt-basic--highlight-color);
 }
 
 .has-white-background-color {
@@ -799,17 +799,17 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 
 .has-light-gray-background-color {
 	background-color: #e5e5e5;
-	background-color: var(--light-gray-color);
+	background-color: var(--gt-basic--light-gray-color);
 }
 
 .has-gray-background-color {
 	background-color: #555555;
-	background-color: var(--gray-color);
+	background-color: var(--gt-basic--gray-color);
 }
 
 .has-dark-gray-background-color {
 	background-color: #252525;
-	background-color: var(--dark-gray-color);
+	background-color: var(--gt-basic--dark-gray-color);
 }
 
 .has-black-background-color {

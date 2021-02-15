@@ -47,37 +47,37 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #dd1133;
-	--secondary-color: #b7000d;
-	--accent-color: #5588cc;
-	--highlight-color: #00bb33;
-	--light-gray-color: #e5e5e5;
-	--gray-color: #555555;
-	--dark-gray-color: #252525;
-	--link-color: #dd1133;
-	--link-hover-color: #dd1133;
-	--button-color: #ee1133;
-	--button-text-color: #fff;
-	--button-hover-color: #252525;
-	--button-hover-text-color: #fff;
-	--title-color: #252525;
-	--title-hover-color: #dd1133;
-	--navi-color: #252525;
-	--navi-text-color: #fff;
-	--navi-hover-color: rgba(255, 255, 255, 0.06);
-	--navi-border-color: rgba(255, 255, 255, 0.08);
-	--footer-background-color: #252525;
-	--footer-text-color: #fff;
-	--footer-link-color: rgba(255, 255, 255, 0.5);
-	--footer-link-hover-color: #fff;
-	--footer-border-color: rgba(255, 255, 255, 0.1);
-	--text-font: "Roboto", arial, helvetica, sans-serif;
-	--title-font: "Roboto", arial, helvetica, sans-serif;
-	--title-font-weight: bold;
-	--title-text-transform: none;
-	--navi-font: "Roboto", arial, helvetica, sans-serif;
-	--navi-font-weight: normal;
-	--navi-text-transform: none;
+	--gt-basic--primary-color: #dd1133;
+	--gt-basic--secondary-color: #b7000d;
+	--gt-basic--accent-color: #5588cc;
+	--gt-basic--highlight-color: #00bb33;
+	--gt-basic--light-gray-color: #e5e5e5;
+	--gt-basic--gray-color: #555555;
+	--gt-basic--dark-gray-color: #252525;
+	--gt-basic--link-color: #dd1133;
+	--gt-basic--link-hover-color: #dd1133;
+	--gt-basic--button-color: #ee1133;
+	--gt-basic--button-text-color: #fff;
+	--gt-basic--button-hover-color: #252525;
+	--gt-basic--button-hover-text-color: #fff;
+	--gt-basic--title-color: #252525;
+	--gt-basic--title-hover-color: #dd1133;
+	--gt-basic--navi-color: #252525;
+	--gt-basic--navi-text-color: #fff;
+	--gt-basic--navi-hover-color: rgba(255, 255, 255, 0.06);
+	--gt-basic--navi-border-color: rgba(255, 255, 255, 0.08);
+	--gt-basic--footer-background-color: #252525;
+	--gt-basic--footer-text-color: #fff;
+	--gt-basic--footer-link-color: rgba(255, 255, 255, 0.5);
+	--gt-basic--footer-link-hover-color: #fff;
+	--gt-basic--footer-border-color: rgba(255, 255, 255, 0.1);
+	--gt-basic--text-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-basic--title-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-basic--title-font-weight: bold;
+	--gt-basic--title-text-transform: none;
+	--gt-basic--navi-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-basic--navi-font-weight: normal;
+	--gt-basic--navi-text-transform: none;
 }
 
 /*--------------------------------------------------------------
@@ -311,7 +311,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-basic--text-font);
 	line-height: 1.75;
 }
 
@@ -324,11 +324,11 @@ h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-basic--title-font);
 	font-weight: bold;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-basic--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-basic--title-text-transform);
 	line-height: 1.4;
 }
 
@@ -517,7 +517,7 @@ td {
 
 a {
 	color: #dd1133;
-	color: var(--link-color);
+	color: var(--gt-basic--link-color);
 	text-decoration: underline;
 }
 
@@ -525,7 +525,7 @@ a:hover,
 a:focus,
 a:active {
 	color: #dd1133;
-	color: var(--link-hover-color);
+	color: var(--gt-basic--link-hover-color);
 	text-decoration: none;
 }
 
@@ -549,9 +549,9 @@ input[type="submit"] {
 	padding: 0.5em 1em;
 	border: none;
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-basic--button-text-color);
 	background-color: #ee1133;
-	background-color: var(--button-color);
+	background-color: var(--gt-basic--button-color);
 	text-decoration: none;
 	font-weight: normal;
 	font-size: 17px;
@@ -571,9 +571,9 @@ input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--gt-basic--button-hover-text-color);
 	background-color: #252525;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-basic--button-hover-color);
 }
 
 input[type="text"],
@@ -637,13 +637,13 @@ textarea {
 	padding: 0.6em 0.8em;
 	border: none;
 	background-color: #ee1133;
-	background-color: var(--button-color);
+	background-color: var(--gt-basic--button-color);
 }
 
 .search-form .search-submit:hover,
 .search-form .search-submit:active {
 	background-color: #252525;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-basic--button-hover-color);
 }
 
 .search-form .search-submit .icon-search {
@@ -651,13 +651,13 @@ textarea {
 	width: 22px;
 	height: 22px;
 	fill: #fff;
-	fill: var(--button-text-color);
+	fill: var(--gt-basic--button-text-color);
 }
 
 .search-form .search-submit:hover .icon-search,
 .search-form .search-submit:active .icon-search {
 	fill: #fff;
-	fill: var(--button-hover-text-color);
+	fill: var(--gt-basic--button-hover-text-color);
 }
 
 /*--------------------------------------------------------------
@@ -808,29 +808,29 @@ textarea {
 	margin: 0;
 	padding: 0;
 	color: #252525;
-	color: var(--title-color);
+	color: var(--gt-basic--title-color);
 	text-decoration: none;
 	font-size: 32px;
 	font-size: 2rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-basic--title-font);
 	font-weight: bold;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-basic--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-basic--title-text-transform);
 	line-height: 1.4;
 }
 
 .site-title a:link,
 .site-title a:visited {
 	color: #252525;
-	color: var(--title-color);
+	color: var(--gt-basic--title-color);
 }
 
 .site-title a:hover,
 .site-title a:active {
 	color: #dd1133;
-	color: var(--title-hover-color);
+	color: var(--gt-basic--title-hover-color);
 }
 
 .site-description {
@@ -838,7 +838,7 @@ textarea {
 	margin: 0;
 	padding: 0;
 	color: #252525;
-	color: var(--title-color);
+	color: var(--gt-basic--title-color);
 	font-size: 14px;
 	font-size: 0.875rem;
 }
@@ -854,23 +854,23 @@ textarea {
 .primary-navigation {
 	position: relative;
 	background-color: #252525;
-	background-color: var(--navi-color);
+	background-color: var(--gt-basic--navi-color);
 }
 
 .main-navigation ul {
 	margin: 0;
 	padding: 0;
 	color: #fff;
-	color: var(--navi-text-color);
+	color: var(--gt-basic--navi-text-color);
 	list-style: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--navi-font);
+	font-family: var(--gt-basic--navi-font);
 	font-weight: normal;
-	font-weight: var(--navi-font-weight);
+	font-weight: var(--gt-basic--navi-font-weight);
 	text-transform: none;
-	text-transform: var(--navi-text-transform);
+	text-transform: var(--gt-basic--navi-text-transform);
 }
 
 /* Hide the menu on small screens when JavaScript is available. */
@@ -903,14 +903,14 @@ textarea {
 .main-navigation ul a:link,
 .main-navigation ul a:visited {
 	color: #fff;
-	color: var(--navi-text-color);
+	color: var(--gt-basic--navi-text-color);
 	text-decoration: none;
 }
 
 .main-navigation ul a:hover,
 .main-navigation ul a:active {
 	background-color: rgba(255, 255, 255, 0.06);
-	background-color: var(--navi-hover-color);
+	background-color: var(--gt-basic--navi-hover-color);
 }
 
 .main-navigation ul li.current-menu-item > a {
@@ -936,16 +936,16 @@ textarea {
 	border: none;
 	background: none;
 	color: #fff;
-	color: var(--navi-text-color);
+	color: var(--gt-basic--navi-text-color);
 	text-decoration: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--navi-font);
+	font-family: var(--gt-basic--navi-font);
 	font-weight: normal;
-	font-weight: var(--navi-font-weight);
+	font-weight: var(--gt-basic--navi-font-weight);
 	text-transform: none;
-	text-transform: var(--navi-text-transform);
+	text-transform: var(--gt-basic--navi-text-transform);
 	text-align: left;
 	width: 100%;
 }
@@ -953,14 +953,14 @@ textarea {
 .menu-toggle:focus {
 	outline: thin dotted;
 	color: #fff;
-	color: var(--navi-text-color);
+	color: var(--gt-basic--navi-text-color);
 	background: none;
 }
 
 .menu-toggle:hover,
 .menu-toggle:active {
 	background-color: rgba(255, 255, 255, 0.06);
-	background-color: var(--navi-hover-color);
+	background-color: var(--gt-basic--navi-hover-color);
 	cursor: pointer;
 }
 
@@ -970,7 +970,7 @@ textarea {
 	height: 22px;
 	vertical-align: top;
 	fill: #fff;
-	fill: var(--navi-text-color);
+	fill: var(--gt-basic--navi-text-color);
 }
 
 .toggled-on .menu-toggle .icon-menu,
@@ -997,14 +997,14 @@ textarea {
 .dropdown-toggle:focus {
 	outline: thin dotted;
 	color: #fff;
-	color: var(--navi-text-color);
+	color: var(--gt-basic--navi-text-color);
 	background: none;
 }
 
 .dropdown-toggle:hover,
 .dropdown-toggle:active {
 	background-color: rgba(255, 255, 255, 0.06);
-	background-color: var(--navi-hover-color);
+	background-color: var(--gt-basic--navi-hover-color);
 }
 
 .dropdown-toggle .icon {
@@ -1013,7 +1013,7 @@ textarea {
 	height: 20px;
 	vertical-align: top;
 	fill: #fff;
-	fill: var(--navi-text-color);
+	fill: var(--gt-basic--navi-text-color);
 }
 
 .dropdown-toggle.toggled-on .icon {
@@ -1051,31 +1051,31 @@ textarea {
 	margin: 0;
 	padding: 0;
 	color: #252525;
-	color: var(--title-color);
+	color: var(--gt-basic--title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	font-size: 24px;
 	font-size: 1.5rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-basic--title-font);
 	font-weight: bold;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-basic--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-basic--title-text-transform);
 	line-height: 1.4;
 }
 
 .entry-title a:link,
 .entry-title a:visited {
 	color: #252525;
-	color: var(--title-color);
+	color: var(--gt-basic--title-color);
 	text-decoration: none;
 }
 
 .entry-title a:hover,
 .entry-title a:active {
 	color: #dd1133;
-	color: var(--title-hover-color);
+	color: var(--gt-basic--title-hover-color);
 }
 
 /* Entry Content */
@@ -1158,9 +1158,9 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	display: inline-block;
 	padding: 0.5em 1em;
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-basic--button-text-color);
 	background-color: #ee1133;
-	background-color: var(--button-color);
+	background-color: var(--gt-basic--button-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -1168,16 +1168,16 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .more-link:link,
 .more-link:visited {
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-basic--button-text-color);
 	text-decoration: none;
 }
 
 .more-link:hover,
 .more-link:active {
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--gt-basic--button-hover-text-color);
 	background-color: #252525;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-basic--button-hover-color);
 	text-decoration: none;
 }
 
@@ -1202,9 +1202,9 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-basic--button-text-color);
 	background-color: #ee1133;
-	background-color: var(--button-color);
+	background-color: var(--gt-basic--button-color);
 }
 
 .pagination .page-numbers.dots {
@@ -1215,9 +1215,9 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .pagination a:hover,
 .pagination a:active {
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--gt-basic--button-hover-text-color);
 	background-color: #252525;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-basic--button-hover-color);
 }
 
 /* Comments */
@@ -1258,21 +1258,21 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	padding-top: 1.5rem;
 	padding-bottom: 1px;
 	color: #fff;
-	color: var(--footer-text-color);
+	color: var(--gt-basic--footer-text-color);
 	background-color: #252525;
-	background-color: var(--footer-background-color);
+	background-color: var(--gt-basic--footer-background-color);
 }
 
 .site-footer a:link,
 .site-footer a:visited {
 	color: rgba(255, 255, 255, 0.5);
-	color: var(--footer-link-color);
+	color: var(--gt-basic--footer-link-color);
 }
 
 .site-footer a:hover,
 .site-footer a:active {
 	color: #fff;
-	color: var(--footer-link-hover-color);
+	color: var(--gt-basic--footer-link-hover-color);
 }
 
 .site-footer input[type="text"],
@@ -1285,7 +1285,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	border: 1px solid var(--footer-border-color);
 	color: #fff;
-	color: var(--footer-link-hover-color);
+	color: var(--gt-basic--footer-link-hover-color);
 }
 
 .site-footer input[type="text"]:focus,
@@ -1295,7 +1295,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .site-footer input[type="search"]:focus,
 .site-footer textarea:focus {
 	color: #fff;
-	color: var(--footer-text-color);
+	color: var(--gt-basic--footer-text-color);
 }
 
 /* Footer Widgets */
@@ -1498,7 +1498,7 @@ object {
 .wp-block-quote.is-style-large cite {
 	text-align: inherit;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-basic--text-font);
 }
 
 /* Pullquote Block */
@@ -1527,7 +1527,7 @@ object {
 .wp-block-pullquote blockquote cite {
 	color: #151515;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-basic--text-font);
 	font-style: normal;
 }
 
@@ -1613,18 +1613,18 @@ object {
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):link,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):visited {
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-basic--button-text-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
 	background-color: #ee1133;
-	background-color: var(--button-color);
+	background-color: var(--gt-basic--button-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):active {
 	background-color: #252525;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-basic--button-hover-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link.has-text-color:hover,
@@ -1637,7 +1637,7 @@ object {
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:active {
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--gt-basic--button-hover-text-color);
 	background-color: var(--button-hover-color) !important;
 	text-decoration: none;
 }
@@ -1760,22 +1760,22 @@ object {
 /* Block Text Colors */
 .has-primary-color {
 	color: #dd1133;
-	color: var(--primary-color);
+	color: var(--gt-basic--primary-color);
 }
 
 .has-secondary-color {
 	color: #b7000d;
-	color: var(--secondary-color);
+	color: var(--gt-basic--secondary-color);
 }
 
 .has-accent-color {
 	color: #5588cc;
-	color: var(--accent-color);
+	color: var(--gt-basic--accent-color);
 }
 
 .has-highlight-color {
 	color: #00bb33;
-	color: var(--highlight-color);
+	color: var(--gt-basic--highlight-color);
 }
 
 .has-white-color {
@@ -1784,17 +1784,17 @@ object {
 
 .has-light-gray-color {
 	color: #e5e5e5;
-	color: var(--light-gray-color);
+	color: var(--gt-basic--light-gray-color);
 }
 
 .has-gray-color {
 	color: #555555;
-	color: var(--gray-color);
+	color: var(--gt-basic--gray-color);
 }
 
 .has-dark-gray-color {
 	color: #252525;
-	color: var(--dark-gray-color);
+	color: var(--gt-basic--dark-gray-color);
 }
 
 .has-black-color {
@@ -1804,22 +1804,22 @@ object {
 /* Block Background Colors */
 .has-primary-background-color {
 	background-color: #dd1133;
-	background-color: var(--primary-color);
+	background-color: var(--gt-basic--primary-color);
 }
 
 .has-secondary-background-color {
 	background-color: #b7000d;
-	background-color: var(--secondary-color);
+	background-color: var(--gt-basic--secondary-color);
 }
 
 .has-accent-background-color {
 	background-color: #5588cc;
-	background-color: var(--accent-color);
+	background-color: var(--gt-basic--accent-color);
 }
 
 .has-highlight-background-color {
 	background-color: #00bb33;
-	background-color: var(--highlight-color);
+	background-color: var(--gt-basic--highlight-color);
 }
 
 .has-white-background-color {
@@ -1828,17 +1828,17 @@ object {
 
 .has-light-gray-background-color {
 	background-color: #e5e5e5;
-	background-color: var(--light-gray-color);
+	background-color: var(--gt-basic--light-gray-color);
 }
 
 .has-gray-background-color {
 	background-color: #555555;
-	background-color: var(--gray-color);
+	background-color: var(--gt-basic--gray-color);
 }
 
 .has-dark-gray-background-color {
 	background-color: #252525;
-	background-color: var(--dark-gray-color);
+	background-color: var(--gt-basic--dark-gray-color);
 }
 
 .has-black-background-color {
@@ -2184,7 +2184,7 @@ object {
 
 	.main-navigation ul ul li {
 		background-color: #252525;
-		background-color: var(--navi-color);
+		background-color: var(--gt-basic--navi-color);
 	}
 
 	.main-navigation ul ul li:hover > ul,
@@ -2223,7 +2223,7 @@ object {
 		width: 15px;
 		height: 15px;
 		fill: #fff;
-		fill: var(--navi-text-color);
+		fill: var(--gt-basic--navi-text-color);
 	}
 
 	.main-navigation ul ul .menu-item-has-children > a > .icon,
@@ -2239,7 +2239,7 @@ object {
 		/* IE 9 */
 		transform: rotate(-90deg);
 		fill: #fff;
-		fill: var(--navi-text-color);
+		fill: var(--gt-basic--navi-text-color);
 	}
 }
 

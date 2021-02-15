@@ -61,37 +61,37 @@ class GT_Basic_Custom_Fonts {
 
 		// Set Text Font.
 		if ( $theme_options['text_font'] !== $default_options['text_font'] ) {
-			$font_variables .= '--text-font: ' . self::get_font_family( $theme_options['text_font'] );
+			$font_variables .= '--gt-basic--text-font: ' . self::get_font_family( $theme_options['text_font'] );
 		}
 
 		// Set Title Font.
 		if ( $theme_options['title_font'] !== $default_options['title_font'] ) {
-			$font_variables .= '--title-font: ' . self::get_font_family( $theme_options['title_font'] );
+			$font_variables .= '--gt-basic--title-font: ' . self::get_font_family( $theme_options['title_font'] );
 		}
 
 		// Set Title Font Weight.
 		if ( $theme_options['title_is_bold'] !== $default_options['title_is_bold'] ) {
-			$font_variables .= '--title-font-weight: ' . ( $theme_options['title_is_bold'] ? 'bold' : 'normal' ) . '; ';
+			$font_variables .= '--gt-basic--title-font-weight: ' . ( $theme_options['title_is_bold'] ? 'bold' : 'normal' ) . '; ';
 		}
 
 		// Set Title Text Transform.
 		if ( $theme_options['title_is_uppercase'] !== $default_options['title_is_uppercase'] ) {
-			$font_variables .= '--title-text-transform: ' . ( $theme_options['title_is_uppercase'] ? 'uppercase' : 'none' ) . '; ';
+			$font_variables .= '--gt-basic--title-text-transform: ' . ( $theme_options['title_is_uppercase'] ? 'uppercase' : 'none' ) . '; ';
 		}
 
 		// Set Navi Font.
 		if ( $theme_options['navi_font'] !== $default_options['navi_font'] ) {
-			$font_variables .= '--navi-font: ' . self::get_font_family( $theme_options['navi_font'] );
+			$font_variables .= '--gt-basic--navi-font: ' . self::get_font_family( $theme_options['navi_font'] );
 		}
 
 		// Set Navi Font Weight.
 		if ( $theme_options['navi_is_bold'] !== $default_options['navi_is_bold'] ) {
-			$font_variables .= '--navi-font-weight: ' . ( $theme_options['navi_is_bold'] ? 'bold' : 'normal' ) . '; ';
+			$font_variables .= '--gt-basic--navi-font-weight: ' . ( $theme_options['navi_is_bold'] ? 'bold' : 'normal' ) . '; ';
 		}
 
 		// Set Navi Text Transform.
 		if ( $theme_options['navi_is_uppercase'] !== $default_options['navi_is_uppercase'] ) {
-			$font_variables .= '--navi-text-transform: ' . ( $theme_options['navi_is_uppercase'] ? 'uppercase' : 'none' ) . '; ';
+			$font_variables .= '--gt-basic--navi-text-transform: ' . ( $theme_options['navi_is_uppercase'] ? 'uppercase' : 'none' ) . '; ';
 		}
 
 		// Return if no font variables were defined.
