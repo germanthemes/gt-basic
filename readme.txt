@@ -4,7 +4,7 @@ Theme URI: https://germanthemes.de/themes/gt-basic/
 Contributors: germanthemes
 Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-styles, block-patterns
 Requires at least: 5.3
-Tested up to: 5.6
+Tested up to: 5.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,9 @@ For more information about GT Basic please go to https://germanthemes.de/themes/
 3. Go to https://germanthemes.de/docs/gt-basic-dokumentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
+
+= 1.6.2 - 2021-11-02 =
+* fixed deprecated block editor function warning
 
 = 1.6.1 - 2021-02-15 =
 * added prefix for CSS variables

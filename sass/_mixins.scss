@@ -22,6 +22,12 @@
 	text-transform: var($themeSlug + $textVar);
 }
 
+// Line Height Variable
+@mixin line-height($lineVar) {
+	line-height: map-get($lineHeight, $lineVar);
+	line-height: var($themeSlug + $lineVar);
+}
+
 // Color CSS Variable.
 @mixin color($colorVar) {
 	color: map-get($themeColors, $colorVar);
@@ -32,6 +38,24 @@
 @mixin background($colorVar) {
 	background-color: map-get($themeColors, $colorVar);
 	background-color: var($themeSlug + $colorVar);
+}
+
+// Color CSS Variable
+@mixin border-color($colorVar) {
+	border-color: map-get($themeColors, $colorVar);
+	border-color: var($themeSlug + $colorVar);
+}
+
+// Color CSS Variable
+@mixin border-top-color($colorVar) {
+	border-top-color: map-get($themeColors, $colorVar);
+	border-top-color: var($themeSlug + $colorVar);
+}
+
+// Color CSS Variable
+@mixin border-bottom-color($colorVar) {
+	border-bottom-color: map-get($themeColors, $colorVar);
+	border-bottom-color: var($themeSlug + $colorVar);
 }
 
 // Fill Icon CSS Variable.
